@@ -272,7 +272,17 @@ function Questie:OptionsForm_SettingOnEnter(SettingsName)
     local setting = QuestieInterfaceTexts["Settings"][SettingsName]
     local language = QuestieLanguage or "enUS"
 
-    -- Some custom options, such as Quest Spacing, do not have localized tooltip entries.
+    -- Quest Spacing is a custom option without a localized tooltip entry.
+    if SettingsName == "trackerSpacing" then
+        QuestieOptionsToolTip:SetText("Quest Spacing", 1, 1, 0)
+        QuestieOptionsToolTip:AddLine("Sets the vertical gap between quest entries in the tracker.", 1, 1, 1, true)
+        QuestieOptionsToolTip:AddLine("Lower values pack quests closer together; higher values add more space.", 1, 1, 1, true)
+        QuestieOptionsToolTip:AddLine("The tracker updates as you drag. Click Apply to keep the setting, or Cancel to restore it.", 0.7, 0.7, 0.7, true)
+        QuestieOptionsToolTip:Show()
+        return
+    end
+
+    -- Some custom options do not have localized tooltip entries.
     if not setting or not setting[language] then
         QuestieOptionsToolTip:SetText(SettingsName)
         QuestieOptionsToolTip:Show()
