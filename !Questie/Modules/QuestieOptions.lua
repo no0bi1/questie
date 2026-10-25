@@ -54,6 +54,7 @@ end
 
 function Questie:OptionsForm_Display()
     Questie:OptionsForm_Init()
+    QO_originalTrackerSpacing = QuestieConfig.trackerSpacing or 2
 
     QO_arrowenabled:SetChecked(QuestieConfig["arrowEnabled"])
 
@@ -115,6 +116,12 @@ function Questie:OptionsForm_Display()
 end
 
 function Questie:OptionsForm_CancelOptions()
+    if QO_originalTrackerSpacing ~= nil then
+        QuestieConfig.trackerSpacing = QO_originalTrackerSpacing
+        if QuestieTracker and QuestieTracker.FillTrackingFrame then
+            QuestieTracker:FillTrackingFrame()
+        end
+    end
     QuestieOptionsForm:Hide()
 end
 
@@ -310,8 +317,16 @@ function Questie:OptionsForm_SettingOnValueChanged()
             QO_trackerscale_current:SetText(tostring(this:GetValue()).."%")
         end
     elseif(this:GetName() == QO_FormName.."TrackerSpacingSlider") then
+        local spacing = math.floor(this:GetValue() + 0.5)
         if(QO_trackerspacing_current ~= nil) then
-            QO_trackerspacing_current:SetText(tostring(this:GetValue()))
+            QO_trackerspacing_current:SetText(tostring(spacing))
+        end
+        -- Preview the spacing immediately while dragging; Cancel restores the opening value.
+        if QuestieConfig and QuestieConfig.trackerSpacing ~= spacing then
+            QuestieConfig.trackerSpacing = spacing
+            if QuestieTracker and QuestieTracker.FillTrackingFrame then
+                QuestieTracker:FillTrackingFrame()
+            end
         end
     end
 end
