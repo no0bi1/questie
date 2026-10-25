@@ -45,6 +45,7 @@ function Questie:SetupDefaults()
         ["trackerList"] = false,
         ["trackerMinimize"] = false,
         ["trackerScale"] = 1.0,
+        ["trackerSpacing"] = 2,
         ["useQuestLinks"] = true,
     };
     end
@@ -142,6 +143,14 @@ function Questie:CheckDefaults()
     end
     if QuestieConfig.trackerScale == nil then
         QuestieConfig.trackerScale = 1.0;
+    end
+    if QuestieConfig.trackerSpacing == nil or type(QuestieConfig.trackerSpacing) ~= "number" then
+        QuestieConfig.trackerSpacing = 2;
+    end
+    if QuestieConfig.trackerSpacing < 0 then
+        QuestieConfig.trackerSpacing = 0;
+    elseif QuestieConfig.trackerSpacing > 12 then
+        QuestieConfig.trackerSpacing = 12;
     end
     if QuestieConfig.useQuestLinks == nil then
         QuestieConfig.useQuestLinks = true;

@@ -46,6 +46,8 @@ function Questie:OptionsForm_Init()
     QO_trackerscale_current = getglobal(QO_FormName.."TrackerScaleSlider".."Current")
     QO_trackertransparency = getglobal(QO_FormName.."TrackerTransparencySlider")
     QO_trackertransparency_current = getglobal(QO_FormName.."TrackerTransparencySlider".."Current")
+    QO_trackerspacing = getglobal(QO_FormName.."TrackerSpacingSlider")
+    QO_trackerspacing_current = getglobal(QO_FormName.."TrackerSpacingSlider".."Current")
     QO_usequestlinks = getglobal(QO_FormName.."UseQuestLinksCheck")
     QO_versionlabel = getglobal(QO_FormName.."VersionLabel".."Label")
 end
@@ -101,6 +103,9 @@ function Questie:OptionsForm_Display()
     QO_trackertransparency:SetValue(QuestieConfig["trackerAlpha"] * 100)
     QO_trackertransparency_current:SetText(tostring(QuestieConfig["trackerAlpha"] * 100).."%")
 
+    QO_trackerspacing:SetValue(QuestieConfig["trackerSpacing"])
+    QO_trackerspacing_current:SetText(tostring(QuestieConfig["trackerSpacing"]))
+
     QO_usequestlinks:SetChecked(QuestieConfig["useQuestLinks"])
 
     QO_versionlabel:SetText("Version: " .. tostring(QuestieConfig["getVersion"]))
@@ -145,6 +150,10 @@ function Questie:OptionsForm_ApplyOptions()
 
     QuestieConfig.trackerAlpha = tonumber((QO_trackertransparency:GetValue()) / 100)
 
+    QuestieConfig.trackerSpacing = math.floor(QO_trackerspacing:GetValue() + 0.5)
+    if QuestieConfig.trackerSpacing < 0 then QuestieConfig.trackerSpacing = 0 end
+    if QuestieConfig.trackerSpacing > 12 then QuestieConfig.trackerSpacing = 12 end
+
     QuestieConfig.useQuestLinks = Questie:toboolean(QO_usequestlinks:GetChecked())
 
     -- Compare opening values and values attempting to be set, if any are different a reload will be needed
@@ -165,6 +174,10 @@ function Questie:OptionsForm_ApplyOptions()
     QuestieConfig.trackerEnabled = Questie:toboolean(QO_trackerenabled:GetChecked())
     QuestieConfig.trackerList = Questie:toboolean(QO_trackerlist:GetChecked())
     QuestieConfig.trackerScale = tonumber(QO_trackerscale:GetValue() / 100)
+
+    if QuestieTracker and QuestieTracker.FillTrackingFrame then
+        QuestieTracker:FillTrackingFrame()
+    end
 
     DEFAULT_CHAT_FRAME:AddMessage("Questie Options Applied", 1, 0.75, 0)
 

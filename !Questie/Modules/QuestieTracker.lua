@@ -2127,6 +2127,48 @@ function QuestieTracker:FillTrackingFrame()
             local button =
                 QuestieTracker:createOrGetTrackingButton(index);
 
+            -- Re-anchor every button so spacing changes take effect immediately.
+            button:ClearAllPoints();
+
+            local positionParent = QuestieTracker.frame;
+            if index > 1 then
+                positionParent = QuestieTracker.questButtons[index - 1];
+            end
+
+            local spacing = QuestieConfig.trackerSpacing or 2;
+            if spacing < 0 then spacing = 0 end
+            if spacing > 12 then spacing = 12 end
+
+            if QuestieConfig.showTrackerHeader == true then
+                if QuestieConfig.trackerList == true then
+                    if index == 1 then
+                        button:SetPoint("BOTTOMLEFT", positionParent, "BOTTOMLEFT", 0, 22);
+                    else
+                        button:SetPoint("BOTTOMLEFT", positionParent, "TOPLEFT", 0, spacing);
+                    end
+                else
+                    if index == 1 then
+                        button:SetPoint("TOPLEFT", positionParent, "TOPLEFT", 0, -22);
+                    else
+                        button:SetPoint("TOPLEFT", positionParent, "BOTTOMLEFT", 0, -spacing);
+                    end
+                end
+            else
+                if QuestieConfig.trackerList == true then
+                    if index == 1 then
+                        button:SetPoint("BOTTOMLEFT", positionParent, "BOTTOMLEFT", 0, 10);
+                    else
+                        button:SetPoint("BOTTOMLEFT", positionParent, "TOPLEFT", 0, spacing);
+                    end
+                else
+                    if index == 1 then
+                        button:SetPoint("TOPLEFT", positionParent, "TOPLEFT", 0, -10);
+                    else
+                        button:SetPoint("TOPLEFT", positionParent, "BOTTOMLEFT", 0, -spacing);
+                    end
+                end
+            end
+
             button.hash = hash;
 
             local colorString =
