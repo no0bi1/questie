@@ -262,20 +262,28 @@ end
 function Questie:OptionsForm_SettingOnEnter(SettingsName)
     QuestieOptionsToolTip:SetOwner(this, "ANCHOR_RIGHT", -(this:GetWidth() / 2), 10)
 
+    local setting = QuestieInterfaceTexts["Settings"][SettingsName]
     local language = QuestieLanguage or "enUS"
 
+    -- Some custom options, such as Quest Spacing, do not have localized tooltip entries.
+    if not setting or not setting[language] then
+        QuestieOptionsToolTip:SetText(SettingsName)
+        QuestieOptionsToolTip:Show()
+        return
+    end
+
     QuestieOptionsToolTip:AddLine(
-        QuestieInterfaceTexts["Settings"][SettingsName][language]["name"]..
+        setting[language]["name"]..
         " (Default: "..
-        QuestieInterfaceTexts["Settings"][SettingsName][language]["default"]..
+        setting[language]["default"]..
         ")",
         1, 1, 0)
 
-    if QuestieInterfaceTexts["Settings"][SettingsName]["requiresReload"] then
+    if setting["requiresReload"] then
         QuestieOptionsToolTip:AddLine("Requires ReloadUI", 1, 0, 0)
     end
 
-    QuestieOptionsToolTip:AddLine(QuestieInterfaceTexts["Settings"][SettingsName][language]["description"], 1, 1, 1, true)
+    QuestieOptionsToolTip:AddLine(setting[language]["description"], 1, 1, 1, true)
 
     QuestieOptionsToolTip:Show()
 end
@@ -300,6 +308,10 @@ function Questie:OptionsForm_SettingOnValueChanged()
     elseif(this:GetName() == QO_FormName.."TrackerScaleSlider") then
         if(QO_trackerscale_current ~= nil) then
             QO_trackerscale_current:SetText(tostring(this:GetValue()).."%")
+        end
+    elseif(this:GetName() == QO_FormName.."TrackerSpacingSlider") then
+        if(QO_trackerspacing_current ~= nil) then
+            QO_trackerspacing_current:SetText(tostring(this:GetValue()))
         end
     end
 end
