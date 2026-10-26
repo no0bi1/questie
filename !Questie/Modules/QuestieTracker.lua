@@ -19,6 +19,25 @@ local QGet_NumQuestWatches = GetNumQuestWatches;
 local QGet_QuestLogSelection = GetQuestLogSelection;
 local QSelect_QuestLogEntry = SelectQuestLogEntry;
 
+-- Expand collapsed quest categories before resolving quest-log indices.
+-- In the Vanilla quest log, quests under collapsed headers are not exposed
+-- as selectable entries, so cached indices can point at the wrong quest.
+local function ExpandAllQuestLogHeaders()
+    local numEntries = QGet_NumQuestLogEntries();
+    local i = 1;
+
+    while i <= numEntries do
+        local _, _, _, isHeader, isCollapsed = QGet_QuestLogTitle(i);
+
+        if isHeader and isCollapsed then
+            ExpandQuestHeader(i);
+            numEntries = QGet_NumQuestLogEntries();
+        end
+
+        i = i + 1;
+    end
+end
+
 local TrackerTooltip = GameTooltip;
 
 ---------------------------------------------------------------------------------------------------
@@ -1290,8 +1309,9 @@ end
 
             if IsShiftKeyDown() then
 
-                -- Cached log IDs can become stale when quest headers are collapsed.
-                -- Resolve the clicked quest against the current quest log instead.
+                ExpandAllQuestLogHeaders();
+
+                -- Rebuild/resolve the index after revealing collapsed quests.
                 local questLogId =
                     Questie:GetQuestIdFromHash(questHash);
 
@@ -1327,16 +1347,18 @@ end
 
             if not IsControlKeyDown() then
 
-                -- Cached log IDs can become stale when quest headers are collapsed.
-                -- Resolve the clicked quest against the current quest log instead.
+                if not QuestLogFrame:IsVisible() then
+                    ShowUIPanel(QuestLogFrame);
+                end
+
+                ExpandAllQuestLogHeaders();
+
+                -- Resolve the index only after collapsed quests are visible.
                 local questLogId =
                     Questie:GetQuestIdFromHash(questHash);
 
                 if questLogId then
 
-                    if not QuestLogFrame:IsVisible() then
-    ShowUIPanel(QuestLogFrame);
-end
                     QuestLog_SetSelection(questLogId);
                     QuestLog_Update();
 
