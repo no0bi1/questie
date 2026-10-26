@@ -456,6 +456,17 @@ function Questie:OnEvent(this, event, arg1, arg2, arg3, arg4, arg5, arg6, arg7, 
         Questie:AddEvent("DRAWNOTES", 0.1);
     -------------------------------------------------
     elseif (event == "PLAYER_LOGIN") then
+        -- Expand all quest-log categories by default on login and /reload.
+        local numEntries = GetNumQuestLogEntries();
+        local i = 1;
+        while i <= numEntries do
+            local _, _, _, isHeader, isCollapsed = GetQuestLogTitle(i);
+            if isHeader and isCollapsed then
+                ExpandQuestHeader(i);
+                numEntries = GetNumQuestLogEntries();
+            end
+            i = i + 1;
+        end
         Questie:debug_Print("OnEvent: PLAYER_LOGIN");
         Questie:hookTooltip();
         Questie:hookTooltipLineCheck();
