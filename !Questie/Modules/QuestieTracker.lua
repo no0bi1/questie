@@ -1290,8 +1290,10 @@ end
 
             if IsShiftKeyDown() then
 
+                -- Cached log IDs can become stale when quest headers are collapsed.
+                -- Resolve the clicked quest against the current quest log instead.
                 local questLogId =
-                    quest["logId"];
+                    Questie:GetQuestIdFromHash(questHash);
 
                 if questLogId then
 
@@ -1325,8 +1327,10 @@ end
 
             if not IsControlKeyDown() then
 
+                -- Cached log IDs can become stale when quest headers are collapsed.
+                -- Resolve the clicked quest against the current quest log instead.
                 local questLogId =
-                    quest["logId"];
+                    Questie:GetQuestIdFromHash(questHash);
 
                 if questLogId then
 
