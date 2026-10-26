@@ -1295,6 +1295,9 @@ end
 
             if IsAltKeyDown() then
 
+                -- Ensure collapsed quest-log entries can be resolved for map clicks.
+                ExpandAllQuestLogHeaders();
+
                 Questie:ShowQuestOnMap(
                     btn.hash
                 );
