@@ -718,13 +718,6 @@ end
 -- OnEvent
 ---------------------------------------------------------------------------------------------------
 
-function QuestieTracker:PLAYER_LOGIN()
-
-    -- Keep the quest log fully expanded by default after login or /reload.
-    ExpandAllQuestLogHeaders();
-
-end
-
 function QuestieTracker:OnEvent()
 
     QuestieTracker[event](
@@ -823,7 +816,6 @@ end
 ---------------------------------------------------------------------------------------------------
 
 QuestieTracker:SetScript("OnEvent", QuestieTracker.OnEvent);
-QuestieTracker:RegisterEvent("PLAYER_LOGIN");
 QuestieTracker:SetScript("OnUpdate", QuestieTracker_OnUpdate);
 
 ---------------------------------------------------------------------------------------------------
