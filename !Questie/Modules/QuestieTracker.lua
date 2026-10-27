@@ -51,9 +51,12 @@ QuestieTracker.trackerSize = 0;
 QuestieTracker.GeneralInterval = 0;
 QuestieTracker.btnUpdate = 1;
 QuestieTracker.questButtons = {};
--- Persist objective collapse state per character across reloads.
-QuestieTrackerCollapsedQuests = QuestieTrackerCollapsedQuests or {};
-QuestieTracker.collapsedQuests = QuestieTrackerCollapsedQuests;
+-- Keep objective collapse state in the existing per-character saved table.
+QuestieTrackerVariables = QuestieTrackerVariables or {};
+QuestieTrackerVariables["collapsedQuests"] =
+    QuestieTrackerVariables["collapsedQuests"] or {};
+QuestieTracker.collapsedQuests =
+    QuestieTrackerVariables["collapsedQuests"];
 QuestieTracker.questNames = {};
 QuestieTracker.questObjects = {};
 QuestieTracker.MaxButtonWidths = {};
@@ -874,7 +877,7 @@ function QuestieTracker:updateTrackingFrameSize()
 
     -- Leave a small horizontal inset so quest buttons do not touch or
     -- protrude through the tracker backdrop border.
-    local totalWidth = maxWidth + 4;
+    local totalWidth = maxWidth + 12;
     local contentHeight = 0;
     local spacing = QuestieConfig.trackerSpacing or 2;
 
@@ -2141,29 +2144,29 @@ function QuestieTracker:FillTrackingFrame()
             if QuestieConfig.showTrackerHeader == true then
                 if QuestieConfig.trackerList == true then
                     if index == 1 then
-                        button:SetPoint("BOTTOMLEFT", positionParent, "BOTTOMLEFT", 0, 22);
+                        button:SetPoint("BOTTOMLEFT", positionParent, "BOTTOMLEFT", 6, 22);
                     else
-                        button:SetPoint("BOTTOMLEFT", positionParent, "TOPLEFT", 0, spacing);
+                        button:SetPoint("BOTTOMLEFT", positionParent, "TOPLEFT", 6, spacing);
                     end
                 else
                     if index == 1 then
-                        button:SetPoint("TOPLEFT", positionParent, "TOPLEFT", 0, -22);
+                        button:SetPoint("TOPLEFT", positionParent, "TOPLEFT", 6, -22);
                     else
-                        button:SetPoint("TOPLEFT", positionParent, "BOTTOMLEFT", 0, -spacing);
+                        button:SetPoint("TOPLEFT", positionParent, "BOTTOMLEFT", 6, -spacing);
                     end
                 end
             else
                 if QuestieConfig.trackerList == true then
                     if index == 1 then
-                        button:SetPoint("BOTTOMLEFT", positionParent, "BOTTOMLEFT", 0, 10);
+                        button:SetPoint("BOTTOMLEFT", positionParent, "BOTTOMLEFT", 6, 10);
                     else
-                        button:SetPoint("BOTTOMLEFT", positionParent, "TOPLEFT", 0, spacing);
+                        button:SetPoint("BOTTOMLEFT", positionParent, "TOPLEFT", 6, spacing);
                     end
                 else
                     if index == 1 then
-                        button:SetPoint("TOPLEFT", positionParent, "TOPLEFT", 0, -10);
+                        button:SetPoint("TOPLEFT", positionParent, "TOPLEFT", 6, -10);
                     else
-                        button:SetPoint("TOPLEFT", positionParent, "BOTTOMLEFT", 0, -spacing);
+                        button:SetPoint("TOPLEFT", positionParent, "BOTTOMLEFT", 6, -spacing);
                     end
                 end
             end
@@ -3987,8 +3990,6 @@ function QuestieTracker:saveFramePosition()
 
         if QuestieConfig.trackerList == true then
 
-            QuestieTrackerVariables = {};
-
             QuestieTrackerVariables["position"] = {
                 ["point"] = "BOTTOMLEFT",
                 ["relativePoint"] = "BOTTOMLEFT",
@@ -3998,8 +3999,6 @@ function QuestieTracker:saveFramePosition()
             };
 
         else
-
-            QuestieTrackerVariables = {};
 
             QuestieTrackerVariables["position"] = {
                 ["point"] = "TOPLEFT",
@@ -4015,8 +4014,6 @@ function QuestieTracker:saveFramePosition()
 
         if QuestieConfig.trackerList == true then
 
-            QuestieTrackerVariables = {};
-
             QuestieTrackerVariables["position"] = {
                 ["point"] = "BOTTOMRIGHT",
                 ["relativePoint"] = "BOTTOMLEFT",
@@ -4026,8 +4023,6 @@ function QuestieTracker:saveFramePosition()
             };
 
         else
-
-            QuestieTrackerVariables = {};
 
             QuestieTrackerVariables["position"] = {
                 ["point"] = "TOPRIGHT",
