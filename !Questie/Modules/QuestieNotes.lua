@@ -737,8 +737,22 @@ function Questie_Tooltip_OnEnter()
                     if QuestLogID then
                         QSelect_QuestLogEntry(QuestLogID);
                         local q, level, questTag, isHeader, isCollapsed, isComplete = QGet_QuestLogTitle(QuestLogID);
+                        local questInfo = QuestieHashMap[data.questHash];
 
-                        Tooltip:AddLine(q);
+                        if questInfo then
+                            local questLevel = questInfo.questLevel or level;
+                            local questLine = "[" .. questLevel .. "] " .. q;
+                            Tooltip:AddLine(questLine);
+
+                            if questInfo.level ~= nil then
+                                Tooltip:AddLine(
+                                    "Required Level: |cFFa6a6a6" .. questInfo.level .. "|r",
+                                    1, 1, 1
+                                );
+                            end
+                        else
+                            Tooltip:AddLine(q);
+                        end
 
                         for objectiveid, objectivePath in pairs(questMeta['objectives']) do
                             local objectiveName;
@@ -755,8 +769,12 @@ function Questie_Tooltip_OnEnter()
                         end
                     end
                 else
-                    Tooltip:AddLine("["..QuestieHashMap[data.questHash].questLevel.."] "..Quest["name"].." |cFF33FF00(complete)|r");
-                    Tooltip:AddLine("Finished by: |cFFa6a6a6"..QuestieHashMap[data.questHash].finishedBy.."|r",1,1,1);
+                    local questInfo = QuestieHashMap[data.questHash];
+                    Tooltip:AddLine("["..questInfo.questLevel.."] "..Quest["name"].." |cFF33FF00(complete)|r");
+                    if questInfo.level ~= nil then
+                        Tooltip:AddLine("Required Level: |cFFa6a6a6"..questInfo.level.."|r",1,1,1);
+                    end
+                    Tooltip:AddLine("Finished by: |cFFa6a6a6"..questInfo.finishedBy.."|r",1,1,1);
                 end
             else
                 questOb = nil;
