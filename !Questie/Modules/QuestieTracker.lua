@@ -2220,7 +2220,7 @@ function QuestieTracker:FillTrackingFrame()
             if quest["isComplete"] then
 
                 titleData =
-                    "|cFF33FF00" ..
+                    "|cFF4CFF4C" ..
                     titleData ..
                     quest["questName"] ..
                     "|r";
