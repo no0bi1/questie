@@ -2197,13 +2197,11 @@ function QuestieTracker:FillTrackingFrame()
                     quest["level"]
                 );
 
-            local titleData =
-                colorString;
+            local titleData;
 
             if quest["questTag"] then
 
                 titleData =
-                    titleData ..
                     "[" ..
                     quest["level"] ..
                     "+] ";
@@ -2211,27 +2209,44 @@ function QuestieTracker:FillTrackingFrame()
             else
 
                 titleData =
-                    titleData ..
                     "[" ..
                     quest["level"] ..
                     "] ";
 
             end
 
-            if QuestieConfig.boldColors == true then
+            -- Completed quest titles use the same green as Questie's
+            -- "(complete)" map-note label, overriding difficulty colors.
+            if quest["isComplete"] then
 
                 titleData =
+                    "|cFF33FF00" ..
                     titleData ..
-                    "|r|cFFFFFFFF" ..
                     quest["questName"] ..
                     "|r";
 
             else
 
                 titleData =
-                    titleData ..
-                    quest["questName"] ..
-                    "|r";
+                    colorString ..
+                    titleData;
+
+                if QuestieConfig.boldColors == true then
+
+                    titleData =
+                        titleData ..
+                        "|r|cFFFFFFFF" ..
+                        quest["questName"] ..
+                        "|r";
+
+                else
+
+                    titleData =
+                        titleData ..
+                        quest["questName"] ..
+                        "|r";
+
+                end
 
             end
 
