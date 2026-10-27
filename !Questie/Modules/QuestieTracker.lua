@@ -51,12 +51,12 @@ QuestieTracker.trackerSize = 0;
 QuestieTracker.GeneralInterval = 0;
 QuestieTracker.btnUpdate = 1;
 QuestieTracker.questButtons = {};
--- Keep objective collapse state in the existing per-character saved table.
-QuestieTrackerVariables = QuestieTrackerVariables or {};
-QuestieTrackerVariables["collapsedQuests"] =
-    QuestieTrackerVariables["collapsedQuests"] or {};
+-- QuestieConfig is a per-character SavedVariable and survives tracker position updates.
+QuestieConfig = QuestieConfig or {};
+QuestieConfig["trackerCollapsedQuests"] =
+    QuestieConfig["trackerCollapsedQuests"] or {};
 QuestieTracker.collapsedQuests =
-    QuestieTrackerVariables["collapsedQuests"];
+    QuestieConfig["trackerCollapsedQuests"];
 QuestieTracker.questNames = {};
 QuestieTracker.questObjects = {};
 QuestieTracker.MaxButtonWidths = {};
@@ -1146,13 +1146,13 @@ function QuestieTracker:createOrGetTrackingButton(index)
         collapseToggle:SetPushedTexture("Interface\\Buttons\\UI-PlusButton-Down");
         collapseToggle:SetHighlightTexture("Interface\\Buttons\\UI-PlusButton-Hilight");
         collapseToggle:SetScript("OnClick", function()
-            local hash = btn.hash;
-            if not hash then
+            local collapseKey = btn.collapseKey;
+            if not collapseKey then
                 return;
             end
 
-            QuestieTracker.collapsedQuests[hash] =
-                not QuestieTracker.collapsedQuests[hash];
+            QuestieTracker.collapsedQuests[collapseKey] =
+                not QuestieTracker.collapsedQuests[collapseKey];
 
             QuestieTracker:FillTrackingFrame();
         end);
@@ -2141,30 +2141,36 @@ function QuestieTracker:FillTrackingFrame()
             if spacing < 0 then spacing = 0 end
             if spacing > 12 then spacing = 12 end
 
+            -- Only the first button needs an inset from the frame border.
+            -- Later buttons align with it; applying the inset repeatedly
+            -- makes the list staircase to the right.
+            local buttonInset = 0;
+            if index == 1 then buttonInset = 6 end
+
             if QuestieConfig.showTrackerHeader == true then
                 if QuestieConfig.trackerList == true then
                     if index == 1 then
-                        button:SetPoint("BOTTOMLEFT", positionParent, "BOTTOMLEFT", 6, 22);
+                        button:SetPoint("BOTTOMLEFT", positionParent, "BOTTOMLEFT", buttonInset, 22);
                     else
-                        button:SetPoint("BOTTOMLEFT", positionParent, "TOPLEFT", 6, spacing);
+                        button:SetPoint("BOTTOMLEFT", positionParent, "TOPLEFT", buttonInset, spacing);
                     end
                 else
                     if index == 1 then
-                        button:SetPoint("TOPLEFT", positionParent, "TOPLEFT", 6, -22);
+                        button:SetPoint("TOPLEFT", positionParent, "TOPLEFT", buttonInset, -22);
                     else
-                        button:SetPoint("TOPLEFT", positionParent, "BOTTOMLEFT", 6, -spacing);
+                        button:SetPoint("TOPLEFT", positionParent, "BOTTOMLEFT", buttonInset, -spacing);
                     end
                 end
             else
                 if QuestieConfig.trackerList == true then
                     if index == 1 then
-                        button:SetPoint("BOTTOMLEFT", positionParent, "BOTTOMLEFT", 6, 10);
+                        button:SetPoint("BOTTOMLEFT", positionParent, "BOTTOMLEFT", buttonInset, 10);
                     else
                         button:SetPoint("BOTTOMLEFT", positionParent, "TOPLEFT", 6, spacing);
                     end
                 else
                     if index == 1 then
-                        button:SetPoint("TOPLEFT", positionParent, "TOPLEFT", 6, -10);
+                        button:SetPoint("TOPLEFT", positionParent, "TOPLEFT", buttonInset, -10);
                     else
                         button:SetPoint("TOPLEFT", positionParent, "BOTTOMLEFT", 6, -spacing);
                     end
@@ -2173,8 +2179,12 @@ function QuestieTracker:FillTrackingFrame()
 
             button.hash = hash;
 
+            -- Use the quest name as the persistent key; internal hashes can
+            -- change when the quest database/server data changes.
+            button.collapseKey = quest["questName"] or hash;
+
             local isCollapsed =
-                QuestieTracker.collapsedQuests[hash] == true;
+                QuestieTracker.collapsedQuests[button.collapseKey] == true;
 
             if isCollapsed then
                 button.collapseToggle:SetNormalTexture("Interface\\Buttons\\UI-PlusButton-Up");
