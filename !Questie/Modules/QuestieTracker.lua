@@ -870,7 +870,9 @@ function QuestieTracker:updateTrackingFrameSize()
         maxWidth = 1;
     end
 
-    local totalWidth = maxWidth;
+    -- Leave a small horizontal inset so quest buttons do not touch or
+    -- protrude through the tracker backdrop border.
+    local totalWidth = maxWidth + 4;
     local contentHeight = 0;
     local spacing = QuestieConfig.trackerSpacing or 2;
 
