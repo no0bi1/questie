@@ -1192,16 +1192,13 @@ function QuestieTracker:createOrGetTrackingButton(index)
             nil,
             btn
         );
-        collapseToggle:SetWidth(32);
+        collapseToggle:SetWidth(16);
         collapseToggle:SetHeight(16);
         collapseToggle:SetPoint("TOPLEFT", btn, "TOPLEFT", 0, 0);
 
-        collapseToggle.label = collapseToggle:CreateFontString(
-            nil,
-            "OVERLAY",
-            "GameFontNormal"
-        );
-        collapseToggle.label:SetPoint("CENTER", collapseToggle, "CENTER", 0, 0);
+        collapseToggle:SetNormalTexture("Interface\\Buttons\\UI-PlusButton-Up");
+        collapseToggle:SetPushedTexture("Interface\\Buttons\\UI-PlusButton-Down");
+        collapseToggle:SetHighlightTexture("Interface\\Buttons\\UI-PlusButton-Hilight");
         collapseToggle:SetScript("OnClick", function()
             local hash = btn.hash;
             if not hash then
@@ -1527,7 +1524,7 @@ end
             "TOPLEFT",
             btn,
             "TOPLEFT",
-            34,
+            20,
             0
         );
 
@@ -1547,7 +1544,7 @@ end
             "TOPLEFT",
             btn,
             "TOPLEFT",
-            34,
+            20,
             0
         );
 
@@ -2233,9 +2230,15 @@ function QuestieTracker:FillTrackingFrame()
             local isCollapsed =
                 QuestieTracker.collapsedQuests[hash] == true;
 
-            button.collapseToggle.label:SetText(
-                isCollapsed and "[ + ]" or "[ - ]"
-            );
+            if isCollapsed then
+                button.collapseToggle:SetNormalTexture("Interface\\Buttons\\UI-PlusButton-Up");
+                button.collapseToggle:SetPushedTexture("Interface\\Buttons\\UI-PlusButton-Down");
+                button.collapseToggle:SetHighlightTexture("Interface\\Buttons\\UI-PlusButton-Hilight");
+            else
+                button.collapseToggle:SetNormalTexture("Interface\\Buttons\\UI-MinusButton-Up");
+                button.collapseToggle:SetPushedTexture("Interface\\Buttons\\UI-MinusButton-Down");
+                button.collapseToggle:SetHighlightTexture("Interface\\Buttons\\UI-MinusButton-Hilight");
+            end
             button.collapseToggle:Show();
 
             local colorString =
@@ -2286,7 +2289,7 @@ function QuestieTracker:FillTrackingFrame()
             button.quest:Show();
 
             local titleWidth =
-                button.quest:GetStringWidth() + 44;
+                button.quest:GetStringWidth() + 26;
 
             local maxWidth = titleWidth;
 
