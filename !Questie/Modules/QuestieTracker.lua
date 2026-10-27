@@ -51,6 +51,7 @@ QuestieTracker.trackerSize = 0;
 QuestieTracker.GeneralInterval = 0;
 QuestieTracker.btnUpdate = 1;
 QuestieTracker.questButtons = {};
+QuestieTracker.collapsedQuests = {};
 QuestieTracker.questNames = {};
 QuestieTracker.questObjects = {};
 QuestieTracker.MaxButtonWidths = {};
@@ -1185,6 +1186,35 @@ function QuestieTracker:createOrGetTrackingButton(index)
 
         btn.objectives = {};
 
+        -- Separate control for collapsing this quest's objective lines.
+        local collapseToggle = CreateFrame(
+            "Button",
+            nil,
+            btn
+        );
+        collapseToggle:SetWidth(10);
+        collapseToggle:SetHeight(12);
+        collapseToggle:SetPoint("TOPLEFT", btn, "TOPLEFT", 0, 0);
+
+        collapseToggle.label = collapseToggle:CreateFontString(
+            nil,
+            "OVERLAY",
+            "GameFontNormalSmall"
+        );
+        collapseToggle.label:SetPoint("CENTER", collapseToggle, "CENTER", 0, 0);
+        collapseToggle:SetScript("OnClick", function()
+            local hash = btn.hash;
+            if not hash then
+                return;
+            end
+
+            QuestieTracker.collapsedQuests[hash] =
+                not QuestieTracker.collapsedQuests[hash];
+
+            QuestieTracker:FillTrackingFrame();
+        end);
+        btn.collapseToggle = collapseToggle;
+
         btn:SetWidth(0);
         btn:SetHeight(0);
 
@@ -2200,6 +2230,14 @@ function QuestieTracker:FillTrackingFrame()
 
             button.hash = hash;
 
+            local isCollapsed =
+                QuestieTracker.collapsedQuests[hash] == true;
+
+            button.collapseToggle.label:SetText(
+                isCollapsed and "+" or "-"
+            );
+            button.collapseToggle:Show();
+
             local colorString =
                 "|c" ..
                 QuestieTracker:GetDifficultyColor(
@@ -2254,7 +2292,11 @@ function QuestieTracker:FillTrackingFrame()
 
             local obj = 1;
 
-            if quest["isComplete"] or
+            if isCollapsed then
+
+                -- Keep only the quest title visible.
+
+            elseif quest["isComplete"] or
                quest["leaderboards"] == 0 then
 
                 QuestieTracker:AddObjectiveToButton(
