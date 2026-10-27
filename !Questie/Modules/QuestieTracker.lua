@@ -1192,14 +1192,14 @@ function QuestieTracker:createOrGetTrackingButton(index)
             nil,
             btn
         );
-        collapseToggle:SetWidth(10);
-        collapseToggle:SetHeight(12);
+        collapseToggle:SetWidth(32);
+        collapseToggle:SetHeight(16);
         collapseToggle:SetPoint("TOPLEFT", btn, "TOPLEFT", 0, 0);
 
         collapseToggle.label = collapseToggle:CreateFontString(
             nil,
             "OVERLAY",
-            "GameFontNormalSmall"
+            "GameFontNormal"
         );
         collapseToggle.label:SetPoint("CENTER", collapseToggle, "CENTER", 0, 0);
         collapseToggle:SetScript("OnClick", function()
@@ -1527,7 +1527,7 @@ end
             "TOPLEFT",
             btn,
             "TOPLEFT",
-            10,
+            34,
             0
         );
 
@@ -1547,7 +1547,7 @@ end
             "TOPLEFT",
             btn,
             "TOPLEFT",
-            10,
+            34,
             0
         );
 
@@ -2234,7 +2234,7 @@ function QuestieTracker:FillTrackingFrame()
                 QuestieTracker.collapsedQuests[hash] == true;
 
             button.collapseToggle.label:SetText(
-                isCollapsed and "+" or "-"
+                isCollapsed and "[ + ]" or "[ - ]"
             );
             button.collapseToggle:Show();
 
@@ -2286,7 +2286,7 @@ function QuestieTracker:FillTrackingFrame()
             button.quest:Show();
 
             local titleWidth =
-                button.quest:GetStringWidth() + 20;
+                button.quest:GetStringWidth() + 44;
 
             local maxWidth = titleWidth;
 
