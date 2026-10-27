@@ -1192,9 +1192,9 @@ function QuestieTracker:createOrGetTrackingButton(index)
             nil,
             btn
         );
-        collapseToggle:SetWidth(12);
-        collapseToggle:SetHeight(12);
-        collapseToggle:SetPoint("TOPLEFT", btn, "TOPLEFT", 2, -2);
+        collapseToggle:SetWidth(16);
+        collapseToggle:SetHeight(16);
+        collapseToggle:SetPoint("TOPLEFT", btn, "TOPLEFT", 0, 0);
 
         collapseToggle:SetNormalTexture("Interface\\Buttons\\UI-PlusButton-Up");
         collapseToggle:SetPushedTexture("Interface\\Buttons\\UI-PlusButton-Down");
@@ -2289,7 +2289,7 @@ function QuestieTracker:FillTrackingFrame()
             button.quest:Show();
 
             local titleWidth =
-                button.quest:GetStringWidth() + 22;
+                button.quest:GetStringWidth() + 36;
 
             local maxWidth = titleWidth;
 
@@ -2344,7 +2344,7 @@ function QuestieTracker:FillTrackingFrame()
                     end
 
                     local objectiveWidth =
-                        button.objectives[obj]:GetStringWidth() + 32;
+                        button.objectives[obj]:GetStringWidth() + 40;
 
                     if objectiveWidth > maxWidth then
                         maxWidth = objectiveWidth;
