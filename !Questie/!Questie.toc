@@ -6,7 +6,7 @@
 ## RequiredDeps:
 ## OptionalDeps: Cartographer, MetaMap, EQL3, ShaguQuest
 ## SavedVariables:
-## SavedVariablesPerCharacter: QuestieSeenQuests, QuestieCachedQuests, QuestieConfig, QuestieTrackerVariables, QuestieMinimapPosition
+## SavedVariablesPerCharacter: QuestieSeenQuests, QuestieCachedQuests, QuestieConfig, QuestieTrackerVariables, QuestieMinimapPosition, QuestieTrackerCollapsedQuests
 
 # Astrolabe
 Libs\AceLibrary\AceLibrary.lua
