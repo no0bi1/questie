@@ -863,15 +863,6 @@ function QuestieTracker:updateTrackingFrameSize()
 
     end
 
-    local lastButton =
-        QuestieTracker.questButtons[
-            QuestieTracker.highestIndex
-        ];
-
-    if lastButton == nil then
-        return;
-    end
-
     local maxWidth =
         QuestieTracker.questButtons.maxWidth;
 
@@ -880,110 +871,59 @@ function QuestieTracker:updateTrackingFrameSize()
     end
 
     local totalWidth = maxWidth;
+    local contentHeight = 0;
+    local spacing = QuestieConfig.trackerSpacing or 2;
+
+    if spacing < 0 then spacing = 0 end
+    if spacing > 12 then spacing = 12 end
+
+    -- Calculate from the buttons' assigned sizes, not GetTop/GetBottom.
+    -- WoW 1.12 can report stale frame coordinates immediately after a
+    -- collapse toggle changes objective visibility and button heights.
+    for i = 1, QuestieTracker.highestIndex do
+        local button = QuestieTracker.questButtons[i];
+
+        if button and button:IsShown() then
+            contentHeight = contentHeight + button:GetHeight();
+
+            if i > 1 then
+                contentHeight = contentHeight + spacing;
+            end
+        end
+    end
 
     QuestieTracker.frame:SetWidth(totalWidth);
 
-    if QuestieConfig.trackerList == true then
+    local topOffset = 10;
+    local bottomPadding = 11;
 
-        local lastbuttonTop = lastButton:GetTop();
-        local trackerBottom = QuestieTracker.frame:GetBottom();
+    if QuestieConfig.showTrackerHeader == true then
+        topOffset = 22;
 
-        if trackerBottom == nil then
-            trackerBottom = 0;
+        if QuestieConfig.trackerList == true then
+            bottomPadding = 7;
         end
 
-        if lastbuttonTop == nil then
-            lastbuttonTop = 0;
-        end
-
-        local totalHeight =
-            lastbuttonTop - trackerBottom;
-
-        if QuestieConfig.showTrackerHeader == true then
-
-            QuestieTracker.frame:SetHeight(
-                totalHeight + 7
-            );
-
-            if watcher and
-               totalWidth < watcher:GetStringWidth() + 22 then
-
-                QuestieTracker.frame:SetWidth(
-                    watcher:GetStringWidth() + 22
-                );
-
-            end
-
-        else
-
-            QuestieTracker.frame:SetHeight(
-                totalHeight + 11
-            );
+        if watcher and
+           totalWidth < watcher:GetStringWidth() + 22 then
 
             QuestieTracker.frame:SetWidth(
-                totalWidth
+                watcher:GetStringWidth() + 22
             );
 
         end
-
-        QuestieTracker.frame:SetBackdropColor(
-            0,
-            0,
-            0,
-            QuestieConfig.trackerAlpha
-        );
-
-    else
-
-        local lastbuttonBottom = lastButton:GetBottom();
-        local trackerTop = QuestieTracker.frame:GetTop();
-
-        if trackerTop == nil then
-            trackerTop = 0;
-        end
-
-        if lastbuttonBottom == nil then
-            lastbuttonBottom = 0;
-        end
-
-        local totalHeight =
-            trackerTop - lastbuttonBottom;
-
-        if QuestieConfig.showTrackerHeader == true then
-
-            QuestieTracker.frame:SetHeight(
-                totalHeight + 11
-            );
-
-            if watcher and
-               totalWidth < watcher:GetStringWidth() + 22 then
-
-                QuestieTracker.frame:SetWidth(
-                    watcher:GetStringWidth() + 22
-                );
-
-            end
-
-        else
-
-            QuestieTracker.frame:SetHeight(
-                totalHeight + 11
-            );
-
-            QuestieTracker.frame:SetWidth(
-                totalWidth
-            );
-
-        end
-
-        QuestieTracker.frame:SetBackdropColor(
-            0,
-            0,
-            0,
-            QuestieConfig.trackerAlpha
-        );
-
     end
+
+    QuestieTracker.frame:SetHeight(
+        contentHeight + topOffset + bottomPadding
+    );
+
+    QuestieTracker.frame:SetBackdropColor(
+        0,
+        0,
+        0,
+        QuestieConfig.trackerAlpha
+    );
 
     -- IMPORTANT:
     -- Do not Hide()/Show() the tracker during resizing.
@@ -993,7 +933,6 @@ function QuestieTracker:updateTrackingFrameSize()
     QuestieTracker.frame:Show();
 
 end
-
 ---------------------------------------------------------------------------------------------------
 -- Color quest objective scheme for quest tracker color option 2
 ---------------------------------------------------------------------------------------------------
