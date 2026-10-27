@@ -51,12 +51,6 @@ QuestieTracker.trackerSize = 0;
 QuestieTracker.GeneralInterval = 0;
 QuestieTracker.btnUpdate = 1;
 QuestieTracker.questButtons = {};
--- QuestieConfig is a per-character SavedVariable and survives tracker position updates.
-QuestieConfig = QuestieConfig or {};
-QuestieConfig["trackerCollapsedQuests"] =
-    QuestieConfig["trackerCollapsedQuests"] or {};
-QuestieTracker.collapsedQuests =
-    QuestieConfig["trackerCollapsedQuests"];
 QuestieTracker.questNames = {};
 QuestieTracker.questObjects = {};
 QuestieTracker.MaxButtonWidths = {};
@@ -4260,6 +4254,15 @@ function QuestieTracker:LoadModule()
     if not QuestieTrackerVariables then
         QuestieTrackerVariables = {};
     end
+
+    -- SavedVariables are reliable only after VARIABLES_LOADED. Do not cache
+    -- this table while the addon files are being executed: that can leave the
+    -- tracker pointing at a temporary table instead of the persisted one.
+    QuestieConfig = QuestieConfig or {};
+    QuestieConfig["trackerCollapsedQuests"] =
+        QuestieConfig["trackerCollapsedQuests"] or {};
+    QuestieTracker.collapsedQuests =
+        QuestieConfig["trackerCollapsedQuests"];
 
     if not QuestieTrackerVariables["position"] then
         QuestieTrackerVariables["position"] = {
