@@ -2166,13 +2166,13 @@ function QuestieTracker:FillTrackingFrame()
                     if index == 1 then
                         button:SetPoint("BOTTOMLEFT", positionParent, "BOTTOMLEFT", buttonInset, 10);
                     else
-                        button:SetPoint("BOTTOMLEFT", positionParent, "TOPLEFT", 6, spacing);
+                        button:SetPoint("BOTTOMLEFT", positionParent, "TOPLEFT", buttonInset, spacing);
                     end
                 else
                     if index == 1 then
                         button:SetPoint("TOPLEFT", positionParent, "TOPLEFT", buttonInset, -10);
                     else
-                        button:SetPoint("TOPLEFT", positionParent, "BOTTOMLEFT", 6, -spacing);
+                        button:SetPoint("TOPLEFT", positionParent, "BOTTOMLEFT", buttonInset, -spacing);
                     end
                 end
             end
