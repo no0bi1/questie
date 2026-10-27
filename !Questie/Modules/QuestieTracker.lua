@@ -51,7 +51,9 @@ QuestieTracker.trackerSize = 0;
 QuestieTracker.GeneralInterval = 0;
 QuestieTracker.btnUpdate = 1;
 QuestieTracker.questButtons = {};
-QuestieTracker.collapsedQuests = {};
+-- Persist objective collapse state per character across reloads.
+QuestieTrackerCollapsedQuests = QuestieTrackerCollapsedQuests or {};
+QuestieTracker.collapsedQuests = QuestieTrackerCollapsedQuests;
 QuestieTracker.questNames = {};
 QuestieTracker.questObjects = {};
 QuestieTracker.MaxButtonWidths = {};
