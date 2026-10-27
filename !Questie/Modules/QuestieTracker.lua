@@ -4249,7 +4249,9 @@ function QuestieTracker:LoadModule()
 
     if not QuestieTrackerVariables then
         QuestieTrackerVariables = {};
+    end
 
+    if not QuestieTrackerVariables["position"] then
         QuestieTrackerVariables["position"] = {
             point = "CENTER",
             relativeTo = "UIParent",
