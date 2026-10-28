@@ -3311,12 +3311,12 @@ local function expandQuestOnProgressChange(
 
             hadObjectives = true;
 
-            local desc, objectiveType, done =
-                QGet_QuestLogLeaderBoard(i, logId);
-
             if i > leaderboards then
                 progressChanged = true;
             else
+
+                local desc, objectiveType, done =
+                    QGet_QuestLogLeaderBoard(i, logId);
 
                 local expectedDesc = desc;
                 local expectedDone = done == 1 or done == true;
