@@ -3283,6 +3283,70 @@ function QuestLogTitleButton_OnClick(button)
 end
 
 ---------------------------------------------------------------------------------------------------
+-- Expand a collapsed tracker entry when one of its objectives changes.
+---------------------------------------------------------------------------------------------------
+
+local function expandQuestOnProgressChange(
+    hash,
+    questName,
+    logId,
+    leaderboards,
+    isComplete
+)
+
+    local cachedQuest = QuestieCachedQuests[hash];
+
+    if not cachedQuest then
+        return;
+    end
+
+    local hadObjectives = false;
+    local progressChanged = false;
+
+    for i = 1, 20 do
+
+        local oldObjective = cachedQuest["objective" .. i];
+
+        if oldObjective then
+
+            hadObjectives = true;
+
+            local desc, objectiveType, done =
+                QGet_QuestLogLeaderBoard(i, logId);
+
+            if i > leaderboards then
+                progressChanged = true;
+            else
+
+                local expectedDesc = desc;
+                local expectedDone = done == 1 or done == true;
+
+                if isComplete or leaderboards == 0 or expectedDone then
+                    expectedDesc = "Quest Complete!";
+                    expectedDone = true;
+                end
+
+                if oldObjective["desc"] ~= expectedDesc or
+                   (oldObjective["done"] == true or oldObjective["done"] == 1) ~= expectedDone then
+                    progressChanged = true;
+                end
+
+            end
+
+        elseif hadObjectives and i <= leaderboards then
+            progressChanged = true;
+        end
+
+    end
+
+    if progressChanged and hadObjectives and questName and
+       QuestieTracker.collapsedQuests then
+        QuestieTracker.collapsedQuests[questName] = nil;
+    end
+
+end
+
+---------------------------------------------------------------------------------------------------
 -- If a quest is tracked, add quest to tracker and retrieve cached quest data
 ---------------------------------------------------------------------------------------------------
 
@@ -3354,6 +3418,15 @@ function QuestieTracker:addQuestToTrackerCache(
 
     QuestieCachedQuests[hash]["leaderboards"] =
         leaderboards;
+
+    -- Expand a collapsed entry if any objective progress changed since the last cache.
+    expandQuestOnProgressChange(
+        hash,
+        questName,
+        logId,
+        leaderboards,
+        isComplete
+    );
 
     -- Remove objectives from the previous quest state.
     for i=1, 20 do
@@ -3535,6 +3608,15 @@ function QuestieTracker:updateTrackerCache(
     QuestieTracker:updateQuestWatchLogId(
         hash,
         logId
+    );
+
+    -- Expand a collapsed entry if any objective progress changed since the last cache.
+    expandQuestOnProgressChange(
+        hash,
+        questName,
+        logId,
+        leaderboards,
+        isComplete
     );
 
     -- Clear stale objectives.
