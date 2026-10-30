@@ -4153,6 +4153,9 @@ local MAP_STRATA = "LOW";
 
 local QuestieWorldMapOriginalState;
 local QuestieWorldMapModuleActive = false;
+local QuestieMapModuleAllowed = false;
+local QuestieMapEscRegistered = false;
+local QuestieMapEscRegisteredByModule = false;
 local QuestieSetupMapFade, QuestieSetupClickThrough, QuestieSetupTitleBar, QuestieSetupWorldClicks;
 
 local function QuestieCaptureWorldMapState()
@@ -4179,6 +4182,7 @@ local function QuestieCaptureWorldMapState()
         buttonMouseEnabled = WorldMapButton:IsMouseEnabled(),
         movable = WorldMapFrame:IsMovable(),
         tooltipScale = WorldMapTooltip:GetScale(),
+        alpha = WorldMapFrame:GetAlpha(),
         blackoutVisible = BlackoutWorld:IsVisible(),
         panelEntry = UIPanelWindows and UIPanelWindows["WorldMapFrame"],
         specialFrameRegistered = false,
@@ -4198,6 +4202,7 @@ local function QuestieCaptureWorldMapState()
     end
 
     QuestieWorldMapOriginalState = state;
+    QuestieMapEscRegistered = state.specialFrameRegistered;
 end
 
 function QuestieTracker:DisableWorldMapModule()
@@ -4238,7 +4243,7 @@ function QuestieTracker:DisableWorldMapModule()
     WorldMapButton:EnableMouse(state.buttonMouseEnabled);
     WorldMapFrame:EnableKeyboard(state.keyboardEnabled);
     WorldMapTooltip:SetScale(state.tooltipScale);
-    WorldMapFrame:SetAlpha(1.0);
+    WorldMapFrame:SetAlpha(state.alpha);
 
     if state.blackoutVisible then
         BlackoutWorld:Show();
@@ -4256,8 +4261,8 @@ function QuestieTracker:DisableWorldMapModule()
                 table.remove(UISpecialFrames, i);
             end
         end
-        QuestieMapEscRegistered = nil;
-        QuestieMapEscRegisteredByModule = nil;
+        QuestieMapEscRegistered = false;
+        QuestieMapEscRegisteredByModule = false;
     end
 
     QuestieWorldMapModuleActive = false;
@@ -4276,7 +4281,7 @@ function QuestieTracker:EnableWorldMapModule()
     -- it and nothing else closes it or gets blocked by it.
     UIPanelWindows["WorldMapFrame"] = nil;
 
-    -- Let ESC still close the map
+    -- Let ESC still close the map, without duplicating an existing entry.
     if not QuestieMapEscRegistered then
         QuestieMapEscRegistered = true;
         QuestieMapEscRegisteredByModule = true;
