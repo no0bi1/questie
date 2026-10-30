@@ -4183,7 +4183,7 @@ local function QuestieCaptureWorldMapState()
         movable = WorldMapFrame:IsMovable(),
         tooltipScale = WorldMapTooltip:GetScale(),
         alpha = WorldMapFrame:GetAlpha(),
-        blackoutVisible = BlackoutWorld:IsVisible(),
+        blackoutVisible = BlackoutWorld.IsShown and BlackoutWorld:IsShown() or BlackoutWorld:IsVisible(),
         panelEntry = UIPanelWindows and UIPanelWindows["WorldMapFrame"],
         specialFrameRegistered = false,
     };
