@@ -447,6 +447,7 @@ function Questie:OnEvent(this, event, arg1, arg2, arg3, arg4, arg5, arg6, arg7, 
     -------------------------------------------------
     elseif ( event == "PLAYER_ENTERING_WORLD" or event == "ZONE_CHANGED_NEW_AREA" ) then
         if not WorldMapFrame:IsVisible() then SetMapToCurrentZone() end
+        QuestieTracker:UpdateWorldMapModule()
     -------------------------------------------------
     elseif ( event == "PLAYER_LEAVING_WORLD" ) then
         Questie:CLEAR_ALL_NOTES();
