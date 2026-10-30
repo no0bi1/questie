@@ -4151,6 +4151,190 @@ local MAP_SCALE = 0.8;
 local FADE_ALPHA = 0.35;
 local MAP_STRATA = "LOW";
 
+local QuestieWorldMapOriginalState;
+local QuestieWorldMapModuleActive = false;
+
+local function QuestieCaptureWorldMapState()
+    if QuestieWorldMapOriginalState then
+        return;
+    end
+
+    local point, relativeTo, relativePoint, x, y = WorldMapFrame:GetPoint(1);
+    local state = {
+        point = point,
+        relativeTo = relativeTo,
+        relativePoint = relativePoint,
+        x = x,
+        y = y,
+        width = WorldMapFrame:GetWidth(),
+        height = WorldMapFrame:GetHeight(),
+        scale = WorldMapFrame:GetScale(),
+        strata = WorldMapFrame:GetFrameStrata(),
+        onShow = WorldMapFrame:GetScript("OnShow"),
+        onKeyDown = WorldMapFrame:GetScript("OnKeyDown"),
+        worldFrameOnMouseDown = WorldFrame:GetScript("OnMouseDown"),
+        worldFrameOnMouseUp = WorldFrame:GetScript("OnMouseUp"),
+        frameMouseEnabled = WorldMapFrame:IsMouseEnabled(),
+        buttonMouseEnabled = WorldMapButton:IsMouseEnabled(),
+        movable = WorldMapFrame:IsMovable(),
+        tooltipScale = WorldMapTooltip:GetScale(),
+        blackoutVisible = BlackoutWorld:IsVisible(),
+        panelEntry = UIPanelWindows and UIPanelWindows["WorldMapFrame"],
+        specialFrameRegistered = false,
+    };
+
+    if WorldMapFrame.IsKeyboardEnabled then
+        state.keyboardEnabled = WorldMapFrame:IsKeyboardEnabled();
+    else
+        state.keyboardEnabled = true;
+    end
+
+    for _, frameName in ipairs(UISpecialFrames) do
+        if frameName == "WorldMapFrame" then
+            state.specialFrameRegistered = true;
+            break;
+        end
+    end
+
+    QuestieWorldMapOriginalState = state;
+end
+
+function QuestieTracker:DisableWorldMapModule()
+    if not QuestieMapModuleAllowed or not QuestieWorldMapModuleActive then
+        return;
+    end
+
+    local state = QuestieWorldMapOriginalState;
+    if not state then
+        return;
+    end
+
+    if QuestieMapFadeFrame then
+        QuestieMapFadeFrame:SetScript("OnUpdate", nil);
+    end
+    if QuestieClickThrough then
+        QuestieClickThrough:SetScript("OnUpdate", nil);
+    end
+    if QuestieMapTitleBar then
+        QuestieMapTitleBar:Hide();
+    end
+
+    WorldFrame:SetScript("OnMouseDown", state.worldFrameOnMouseDown);
+    WorldFrame:SetScript("OnMouseUp", state.worldFrameOnMouseUp);
+
+    WorldMapFrame:SetScript("OnShow", state.onShow);
+    WorldMapFrame:SetScript("OnKeyDown", state.onKeyDown);
+    WorldMapFrame:SetFrameStrata(state.strata);
+    WorldMapFrame:SetScale(state.scale);
+    WorldMapFrame:SetWidth(state.width);
+    WorldMapFrame:SetHeight(state.height);
+    WorldMapFrame:ClearAllPoints();
+    if state.point then
+        WorldMapFrame:SetPoint(state.point, state.relativeTo, state.relativePoint, state.x, state.y);
+    end
+    WorldMapFrame:SetMovable(state.movable);
+    WorldMapFrame:EnableMouse(state.frameMouseEnabled);
+    WorldMapButton:EnableMouse(state.buttonMouseEnabled);
+    WorldMapFrame:EnableKeyboard(state.keyboardEnabled);
+    WorldMapTooltip:SetScale(state.tooltipScale);
+    WorldMapFrame:SetAlpha(1.0);
+
+    if state.blackoutVisible then
+        BlackoutWorld:Show();
+    else
+        BlackoutWorld:Hide();
+    end
+
+    if UIPanelWindows then
+        UIPanelWindows["WorldMapFrame"] = state.panelEntry;
+    end
+
+    if QuestieMapEscRegisteredByModule and not state.specialFrameRegistered then
+        for i = table.getn(UISpecialFrames), 1, -1 do
+            if UISpecialFrames[i] == "WorldMapFrame" then
+                table.remove(UISpecialFrames, i);
+            end
+        end
+        QuestieMapEscRegistered = nil;
+        QuestieMapEscRegisteredByModule = nil;
+    end
+
+    QuestieWorldMapModuleActive = false;
+end
+
+function QuestieTracker:EnableWorldMapModule()
+    if not QuestieMapModuleAllowed or QuestieWorldMapModuleActive then
+        return;
+    end
+
+    QuestieCaptureWorldMapState();
+
+    -- Do NOT register the map as a UI panel. As a "center" panel it fights
+    -- with the other windows, which is what blocked opening interfaces while
+    -- the map was open. Unregistered, ShowUIPanel/HideUIPanel just Show/Hide
+    -- it and nothing else closes it or gets blocked by it.
+    UIPanelWindows["WorldMapFrame"] = nil;
+
+    -- Let ESC still close the map
+    if not QuestieMapEscRegistered then
+        QuestieMapEscRegistered = true;
+        QuestieMapEscRegisteredByModule = true;
+        tinsert(UISpecialFrames, "WorldMapFrame");
+    end
+
+    -- Keep the map BEHIND other windows (quest log, bags, spellbook, ...)
+    WorldMapFrame:SetFrameStrata(MAP_STRATA);
+
+    -- Remove the key handler AND stop the frame from capturing the keyboard.
+    WorldMapFrame:SetScript("OnKeyDown", nil);
+    WorldMapFrame:EnableKeyboard(false);
+
+    WorldMapFrame:EnableMouse(false);
+    WorldMapFrame:SetMovable(true);
+    WorldMapFrame:SetScale(MAP_SCALE);
+    WorldMapTooltip:SetScale(1);
+
+    WorldMapFrame:SetWidth(MAP_WIDTH);
+    WorldMapFrame:SetHeight(MAP_HEIGHT);
+
+    WorldMapFrame:ClearAllPoints();
+    WorldMapFrame:SetPoint("CENTER", "UIParent", "CENTER", 0, 0);
+
+    BlackoutWorld:Hide();
+
+    WorldMapFrame:SetScript("OnShow", function()
+        SetMapZoom(GetCurrentMapContinent(), GetCurrentMapZone());
+        SetMapToCurrentZone();
+    end);
+
+    QuestieSetupMapFade();
+    QuestieSetupClickThrough();
+    QuestieSetupTitleBar();
+    QuestieSetupWorldClicks();
+
+    QuestieWorldMapModuleActive = true;
+end
+
+function QuestieTracker:UpdateWorldMapModule()
+    if not QuestieMapModuleAllowed then
+        return;
+    end
+
+    local inInstance, instanceType = false, "none";
+    if IsInInstance then
+        inInstance, instanceType = IsInInstance();
+    elseif GetInstanceInfo then
+        local _, instance = GetInstanceInfo();
+        instanceType = instance;
+        inInstance = instance and instance ~= "none";
+    end
+
+    if inInstance and (instanceType == "party" or instanceType == "raid") then
+        self:DisableWorldMapModule();
+    else
+        self:EnableWorldMapModule();
+    end
+end
 
 QuestieMapFadeOffZoneInterval = 1;
 
@@ -4180,14 +4364,12 @@ end
 
 -- Map fade: faded while the player is moving, never on a flight path.
 local function QuestieSetupMapFade()
-    if QuestieMapFadeFrame then
-        return;
+    if not QuestieMapFadeFrame then
+        QuestieMapFadeFrame = CreateFrame("Frame");
+        QuestieMapFadeFrame.elapsed = 0;
+        QuestieMapFadeFrame.nextCheck = 0;
+        QuestieMapFadeFrame.movingUntil = 0;
     end
-
-    QuestieMapFadeFrame = CreateFrame("Frame");
-    QuestieMapFadeFrame.elapsed = 0;
-    QuestieMapFadeFrame.nextCheck = 0;
-    QuestieMapFadeFrame.movingUntil = 0;
 
     QuestieMapFadeFrame:SetScript("OnUpdate", function()
         if not WorldMapFrame:IsVisible() then
@@ -4250,11 +4432,9 @@ end
 -- Click-through map: interactive only while Shift or Ctrl is held
 -- (for notes and POIs). No drag registration here at all.
 local function QuestieSetupClickThrough()
-    if QuestieClickThrough then
-        return;
+    if not QuestieClickThrough then
+        QuestieClickThrough = CreateFrame("Frame");
     end
-
-    QuestieClickThrough = CreateFrame("Frame");
 
     QuestieClickThrough:SetScript("OnUpdate", function()
         if not WorldMapFrame:IsVisible() then
@@ -4277,6 +4457,7 @@ end
 -- Title bar drag handle. This is the only always-clickable part of the map.
 local function QuestieSetupTitleBar()
     if QuestieMapTitleBar then
+        QuestieMapTitleBar:Show();
         return;
     end
 
@@ -4371,56 +4552,15 @@ function QuestieTracker:LoadModule()
         };
     end
 
-    -- Only take over the world map when enabled and no other map addon is loaded
-    if (QuestieConfig == nil)
-       or (QuestieConfig.resizeWorldmap == nil)
-       or (QuestieConfig.resizeWorldmap == false)
-       or IsAddOnLoaded("Cartographer")
-       or IsAddOnLoaded("MetaMap") then
-        return;
-    end
+    -- The world-map takeover is reversible and is suspended in PvE instances.
+    QuestieMapModuleAllowed = not (
+        (QuestieConfig == nil)
+        or (QuestieConfig.resizeWorldmap == nil)
+        or (QuestieConfig.resizeWorldmap == false)
+        or IsAddOnLoaded("Cartographer")
+        or IsAddOnLoaded("MetaMap")
+    );
 
-    -- Do NOT register the map as a UI panel. As a "center" panel it fights
-    -- with the other windows, which is what blocked opening interfaces while
-    -- the map was open. Unregistered, ShowUIPanel/HideUIPanel just Show/Hide
-    -- it and nothing else closes it or gets blocked by it.
-    UIPanelWindows["WorldMapFrame"] = nil;
-
-    -- Let ESC still close the map
-    if not QuestieMapEscRegistered then
-        QuestieMapEscRegistered = true;
-        tinsert(UISpecialFrames, "WorldMapFrame");
-    end
-
-    -- Keep the map BEHIND other windows (quest log, bags, spellbook, ...)
-    WorldMapFrame:SetFrameStrata(MAP_STRATA);
-
-    -- Remove the key handler AND stop the frame from capturing the keyboard.
-    -- Without EnableKeyboard(false) the map swallows keys like L while open.
-    WorldMapFrame:SetScript("OnKeyDown", nil);
-    WorldMapFrame:EnableKeyboard(false);
-
-    WorldMapFrame:EnableMouse(false);
-    WorldMapFrame:SetMovable(true);
-    WorldMapFrame:SetScale(MAP_SCALE);
-    WorldMapTooltip:SetScale(1);
-
-    WorldMapFrame:SetWidth(MAP_WIDTH);
-    WorldMapFrame:SetHeight(MAP_HEIGHT);
-
-    WorldMapFrame:ClearAllPoints();
-    WorldMapFrame:SetPoint("CENTER", "UIParent", "CENTER", 0, 0);
-
-    BlackoutWorld:Hide();
-
-    WorldMapFrame:SetScript("OnShow", function()
-        SetMapZoom(GetCurrentMapContinent(), GetCurrentMapZone());
-        SetMapToCurrentZone();
-    end);
-
-    QuestieSetupMapFade();
-    QuestieSetupClickThrough();
-    QuestieSetupTitleBar();
-    QuestieSetupWorldClicks();
+    self:UpdateWorldMapModule();
 
 end
