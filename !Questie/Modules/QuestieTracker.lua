@@ -4153,6 +4153,7 @@ local MAP_STRATA = "LOW";
 
 local QuestieWorldMapOriginalState;
 local QuestieWorldMapModuleActive = false;
+local QuestieSetupMapFade, QuestieSetupClickThrough, QuestieSetupTitleBar, QuestieSetupWorldClicks;
 
 local function QuestieCaptureWorldMapState()
     if QuestieWorldMapOriginalState then
@@ -4363,7 +4364,7 @@ local function QuestieMapFadeSwitchPos()
 end
 
 -- Map fade: faded while the player is moving, never on a flight path.
-local function QuestieSetupMapFade()
+QuestieSetupMapFade = function()
     if not QuestieMapFadeFrame then
         QuestieMapFadeFrame = CreateFrame("Frame");
         QuestieMapFadeFrame.elapsed = 0;
@@ -4431,7 +4432,7 @@ end
 
 -- Click-through map: interactive only while Shift or Ctrl is held
 -- (for notes and POIs). No drag registration here at all.
-local function QuestieSetupClickThrough()
+QuestieSetupClickThrough = function()
     if not QuestieClickThrough then
         QuestieClickThrough = CreateFrame("Frame");
     end
@@ -4455,7 +4456,7 @@ local function QuestieSetupClickThrough()
 end
 
 -- Title bar drag handle. This is the only always-clickable part of the map.
-local function QuestieSetupTitleBar()
+QuestieSetupTitleBar = function()
     if QuestieMapTitleBar then
         QuestieMapTitleBar:Show();
         return;
@@ -4499,7 +4500,7 @@ end
 -- mouse. Left click = zoom in, right click = zoom out. Only a quick tap counts
 -- as a click, so holding a button to steer or run never zooms. Ignored while
 -- Shift/Ctrl is held (the map handles its own clicks then).
-local function QuestieSetupWorldClicks()
+QuestieSetupWorldClicks = function()
     WorldFrame:SetScript("OnMouseDown", function()
         QuestieMapClickDown = GetTime();
     end);
