@@ -820,7 +820,8 @@ function Questie_Tooltip_OnEnter()
         QSelect_QuestLogEntry(prevQuestLogSelection);
 
         if this.type == "WorldMapNote" then
-            Tooltip:AddLine("Left Click: |cFFa6a6a6Open quest journal (or set waypoint if not accepted).|r",1,1,1);
+            Tooltip:AddLine(" ");
+            Tooltip:AddLine("Left Click: |cFFa6a6a6Open quest journal.|r",1,1,1);
             Tooltip:AddLine("Right Click: |cFFa6a6a6Set waypoint arrow.|r",1,1,1);
         end
 
