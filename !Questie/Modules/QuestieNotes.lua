@@ -819,8 +819,14 @@ function Questie_Tooltip_OnEnter()
 
         QSelect_QuestLogEntry(prevQuestLogSelection);
 
+        if this.type == "WorldMapNote" then
+            Tooltip:AddLine("Left Click: |cFFa6a6a6Open quest journal (or set waypoint if not accepted).|r",1,1,1);
+            Tooltip:AddLine("Right Click: |cFFa6a6a6Set waypoint arrow.|r",1,1,1);
+            Tooltip:AddLine("Different quest names stacked: |cFFa6a6a6Choose from menu.|r",1,1,1);
+        end
+
         if canManualComplete > 0 then
-            if count > 1 then
+            if count > 1 or this.type == "WorldMapNote" then
                 Tooltip:AddLine(" ");
             end
 
@@ -1003,15 +1009,164 @@ end
 ---------------------------------------------------------------------------------------------------
 -- Force a quest to be finished via the Minimap or Worldmap
 ---------------------------------------------------------------------------------------------------
-function Questie_AvailableQuestClick()
+function Questie:OpenQuestFromWorldMapNote(icon, questHash)
+    local questInfo = QuestieHashMap[questHash];
+    if not questInfo then return; end
 
-    
-if IsAltKeyDown() and arg1 == "RightButton" and this.quests then
-    Questie:AltClickCopy(this);
-    return;
+    local questLogID = Questie:GetQuestIdFromHash(questHash);
+
+    -- Available quests are not in the quest log yet; use the waypoint arrow instead.
+    if not questLogID then
+        SetArrowFromData({
+            point = {
+                c = icon.data.continent,
+                z = icon.data.zoneid,
+                x = icon.averageX,
+                y = icon.averageY
+            },
+            questName = questInfo.name,
+            questLevel = questInfo.questLevel
+        });
+        return;
+    end
+
+    if not QuestLogFrame:IsVisible() then
+        ShowUIPanel(QuestLogFrame);
+    end
+
+    if ExpandAllQuestLogHeaders then
+        ExpandAllQuestLogHeaders();
+    end
+
+    -- Resolve the index after expanding collapsed quest-log headers.
+    questLogID = Questie:GetQuestIdFromHash(questHash);
+    if questLogID then
+        QuestLog_SetSelection(questLogID);
+        QuestLog_Update();
+    end
 end
 
+---------------------------------------------------------------------------------------------------
+function Questie:SetWorldMapNoteWaypoint(icon, questHash)
+    local questInfo = QuestieHashMap[questHash];
+    if not questInfo then return; end
 
+    SetArrowFromData({
+        point = {
+            c = icon.data.continent,
+            z = icon.data.zoneid,
+            x = icon.averageX,
+            y = icon.averageY
+        },
+        questName = questInfo.name,
+        questLevel = questInfo.questLevel
+    });
+end
+
+---------------------------------------------------------------------------------------------------
+function Questie:ShowWorldMapNoteQuestMenu(icon, action)
+    local questsByName = {};
+    local orderedQuests = {};
+
+    for questHash, questMeta in pairs(icon.quests) do
+        local questInfo = QuestieHashMap[questHash];
+        if questInfo and not questsByName[questInfo.name] then
+            local entry = {
+                questHash = questHash,
+                name = questInfo.name,
+                level = questInfo.questLevel,
+                sortOrder = questMeta.sortOrder or 0
+            };
+            questsByName[questInfo.name] = entry;
+            table.insert(orderedQuests, entry);
+        end
+    end
+
+    table.sort(orderedQuests, function(a, b)
+        if a.sortOrder ~= b.sortOrder then
+            return a.sortOrder < b.sortOrder;
+        end
+        return a.name < b.name;
+    end);
+
+    local closeFunc = function()
+        Dewdrop:Close();
+    end;
+
+    Dewdrop:Register(WorldMapFrame,
+        'children', function()
+            for _, entry in ipairs(orderedQuests) do
+                local questHash = entry.questHash;
+                local questName = "[" .. entry.level .. "] " .. entry.name;
+                local selectFunc = function()
+                    if action == "waypoint" then
+                        Questie:SetWorldMapNoteWaypoint(icon, questHash);
+                    else
+                        Questie:OpenQuestFromWorldMapNote(icon, questHash);
+                    end
+                    Dewdrop:Close();
+                end;
+
+                Dewdrop:AddLine(
+                    'text', questName,
+                    'func', selectFunc
+                );
+            end
+
+            Dewdrop:AddLine('text', "", 'notClickable', true);
+            Dewdrop:AddLine('text', "Cancel", 'func', closeFunc);
+        end,
+        'dontHook', true,
+        'cursorX', true,
+        'cursorY', true
+    );
+
+    Dewdrop:Open(WorldMapFrame);
+    Dewdrop:Unregister(WorldMapFrame);
+end
+
+---------------------------------------------------------------------------------------------------
+-- Force a quest to be finished via the Minimap or Worldmap
+---------------------------------------------------------------------------------------------------
+function Questie_AvailableQuestClick()
+    if IsAltKeyDown() and arg1 == "RightButton" and this.quests then
+        Questie:AltClickCopy(this);
+        return;
+    end
+
+    -- World-map note clicks have their own controls. Keep Shift+Click completion intact.
+    if this.type == "WorldMapNote" and not IsShiftKeyDown() then
+        if arg1 == "LeftButton" or arg1 == "RightButton" then
+            local action = arg1 == "RightButton" and "waypoint" or "journal";
+            local uniqueNames = {};
+
+            for questHash in pairs(this.quests) do
+                local questInfo = QuestieHashMap[questHash];
+                if questInfo then
+                    uniqueNames[questInfo.name] = true;
+                end
+            end
+
+            local nameCount = 0;
+            for _ in pairs(uniqueNames) do
+                nameCount = nameCount + 1;
+            end
+
+            if nameCount > 1 then
+                Questie:ShowWorldMapNoteQuestMenu(this, action);
+            else
+                for questHash in pairs(this.quests) do
+                    if action == "waypoint" then
+                        Questie:SetWorldMapNoteWaypoint(this, questHash);
+                    else
+                        Questie:OpenQuestFromWorldMapNote(this, questHash);
+                    end
+                    break;
+                end
+            end
+        end
+        return;
+    end
 
     if this.type == "WorldMapNote" then
         local c, z = GetCurrentMapContinent(), GetCurrentMapZone();
