@@ -822,11 +822,10 @@ function Questie_Tooltip_OnEnter()
         if this.type == "WorldMapNote" then
             Tooltip:AddLine("Left Click: |cFFa6a6a6Open quest journal (or set waypoint if not accepted).|r",1,1,1);
             Tooltip:AddLine("Right Click: |cFFa6a6a6Set waypoint arrow.|r",1,1,1);
-            Tooltip:AddLine("Different quest names stacked: |cFFa6a6a6Choose from menu.|r",1,1,1);
         end
 
         if canManualComplete > 0 then
-            if count > 1 or this.type == "WorldMapNote" then
+            if count > 1 and this.type ~= "WorldMapNote" then
                 Tooltip:AddLine(" ");
             end
 
