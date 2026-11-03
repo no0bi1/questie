@@ -1095,6 +1095,11 @@ function Questie:ShowWorldMapNoteQuestMenu(icon, action)
 
     Dewdrop:Register(WorldMapFrame,
         'children', function()
+            Dewdrop:AddLine(
+                'text', action == "waypoint" and "Set waypoint for:" or "Open quest journal for:",
+                'notClickable', true
+            );
+
             for _, entry in ipairs(orderedQuests) do
                 local questHash = entry.questHash;
                 local questName = "[" .. entry.level .. "] " .. entry.name;
