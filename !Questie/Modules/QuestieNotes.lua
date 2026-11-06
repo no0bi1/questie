@@ -2146,12 +2146,8 @@ function Questie:DRAW_NOTES()
         scale = QUESTIE_NOTES_CONTINENT_ICON_SCALE;
     end
 
-    -- DMV owns the world-map canvas while its dungeon map overlay is visible.
-    -- Keep minimap notes active, but do not place Questie icons over the dungeon map.
-    if not DMV_DungeonMapVisible then
-        Questie:DrawClusters(worldMapObjectiveClusters, "WorldMapNote", scale, WorldMapFrame, WorldMapButton);
-        Questie:DrawClusters(worldMapClusters, "WorldMapNote", scale, WorldMapFrame, WorldMapButton);
-    end
+    Questie:DrawClusters(worldMapObjectiveClusters, "WorldMapNote", scale, WorldMapFrame, WorldMapButton);
+    Questie:DrawClusters(worldMapClusters, "WorldMapNote", scale, WorldMapFrame, WorldMapButton);
     Questie:DrawClusters(minimapObjectiveClusters, "MiniMapNote", QUESTIE_NOTES_MINIMAP_ICON_SCALE, Minimap);
     Questie:DrawClusters(minimapClusters, "MiniMapNote", QUESTIE_NOTES_MINIMAP_ICON_SCALE, Minimap);
 end
