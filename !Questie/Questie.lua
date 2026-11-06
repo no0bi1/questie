@@ -443,7 +443,6 @@ function Questie:OnEvent(this, event, arg1, arg2, arg3, arg4, arg5, arg6, arg7, 
     -------------------------------------------------
     elseif ( event == "PLAYER_ENTERING_WORLD" or event == "ZONE_CHANGED_NEW_AREA" ) then
         if not WorldMapFrame:IsVisible() then SetMapToCurrentZone() end
-        QuestieTracker:UpdateWorldMapModule()
     -------------------------------------------------
     elseif ( event == "PLAYER_LEAVING_WORLD" ) then
         Questie:CLEAR_ALL_NOTES();
@@ -1043,11 +1042,6 @@ QuestieFastSlash = {
         DEFAULT_CHAT_FRAME:AddMessage("|c0000c0ff  /questie tracker |r|c0000ffc0(toggle)|r QuestTracker: Turn on and off the quest tracker", 0.75, 0.75, 0.75);
         DEFAULT_CHAT_FRAME:AddMessage("|c0000c0ff  /questie qtscale |r|c0000ffc0(small|medium|large)|r QuestTracker: Adjust the scale of the tracker (default=small)", 0.75, 0.75, 0.75);
         DEFAULT_CHAT_FRAME:AddMessage("|c0000c0ff  /questie questlinks |r|c0000ffc0(toggle)|r QuestLog: Paste links instead of text into chat when shift-clicking a quest", 0.75, 0.75, 0.75);
-        if (IsAddOnLoaded("Cartographer")) or (IsAddOnLoaded("MetaMap")) then
-            return;
-        elseif (not IsAddOnLoaded("Cartographer")) or (not IsAddOnLoaded("MetaMap")) then
-            DEFAULT_CHAT_FRAME:AddMessage("|c0000c0ff  /questie resizemap |r--|c0000ffc0(toggle)|r QuestMap: Shrinks Worldmap and allows dragging", 0.75, 0.75, 0.75);
-        end
     end,
     ["options"] = function()
         Questie:OptionsForm_Display()
