@@ -85,14 +85,6 @@ QuestieInterfaceTexts = {
                 ["description"] = "This option controls how much the level of a quest may be below the player level for the quest start to be shown on the map.",
             },
         },
-        ["resizeWorldmap"] = {
-            ["enUS"] = {
-                ["default"] = "false",
-                ["name"] = "Resize Worldmap",
-                ["description"] = "When enabled, this option resizes the World Map window from a fullscreen display to a movable window. Note that this setting might have no effect if you use separate a map addon.",
-            },
-            ["requiresReload"] = true,
-        },
         ["showMapNotes"] = {
             ["enUS"] = {
                 ["default"] = "True",
