@@ -33,7 +33,6 @@ function Questie:OptionsForm_Init()
     QO_minlevelfilter = getglobal(QO_FormName.."MinLevelFilterCheck")
     QO_minshowlevel = getglobal(QO_FormName.."MinShowLevelSlider")
     QO_minshowlevel_current = getglobal(QO_FormName.."MinShowLevelSlider".."Current")
-    QO_resizeworldmap = getglobal(QO_FormName.."ResizeWorldmapCheck")
     QO_showmapnotes = getglobal(QO_FormName.."ShowMapNotesCheck")
 	QO_hideobjectives = getglobal(QO_FormName.."HideObjectives")
     QO_showprofessionquests = getglobal(QO_FormName.."ShowProfessionQuestsCheck")
@@ -80,7 +79,6 @@ function Questie:OptionsForm_Display()
     QO_minshowlevel:SetValue(QuestieConfig["minShowLevel"])
     QO_minshowlevel_current:SetText(tostring(QuestieConfig["minShowLevel"]))
 
-    QO_resizeworldmap:SetChecked(QuestieConfig["resizeWorldmap"])
 
     QO_showmapnotes:SetChecked(QuestieConfig["showMapNotes"])
 
@@ -165,7 +163,6 @@ function Questie:OptionsForm_ApplyOptions()
 
     -- Compare opening values and values attempting to be set, if any are different a reload will be needed
     local CachedValues = {
-        ["resizeWorldmap"] = QuestieConfig.resizeWorldmap,
         ["showToolTips"] = QuestieConfig.showToolTips,
         ["showTrackerHeader"] = QuestieConfig.showTrackerHeader,
         ["trackerBackground"] = QuestieConfig.trackerBackground,
@@ -174,7 +171,6 @@ function Questie:OptionsForm_ApplyOptions()
         ["trackerScale"] = tonumber(QuestieConfig.trackerScale)
     }
 
-    QuestieConfig.resizeWorldmap = Questie:toboolean(QO_resizeworldmap:GetChecked())
     QuestieConfig.showToolTips = Questie:toboolean(QO_showtooltips:GetChecked())
     QuestieConfig.showTrackerHeader = Questie:toboolean(QO_showtrackerheader:GetChecked())
     QuestieConfig.trackerBackground = Questie:toboolean(QO_trackerbackground:GetChecked())
@@ -190,10 +186,6 @@ function Questie:OptionsForm_ApplyOptions()
 
     local bDisplayWarning = false
     local WarningMessage = "|cFFFFFF00Some options require a ReloadUI to apply:|n|n"
-    if(QuestieConfig.resizeWorldmap ~= CachedValues.resizeWorldmap) then
-        WarningMessage = WarningMessage.."Resize World Map|n"
-        bDisplayWarning = true
-    end
     if(QuestieConfig.showToolTips ~= CachedValues.showToolTips) then
         WarningMessage = WarningMessage.."Show Tool Tips|n"
         bDisplayWarning = true
@@ -230,7 +222,6 @@ function Questie:OptionsForm_ApplyOptions()
             end,
             OnCancel = function()
                 -- Reset to cached values since user opted not to reloadui
-                QuestieConfig.resizeWorldmap = CachedValues.resizeWorldmap
                 QuestieConfig.showToolTips = CachedValues.showToolTips
                 QuestieConfig.showTrackerHeader = CachedValues.showTrackerHeader
                 QuestieConfig.trackerBackground = CachedValues.trackerBackground
