@@ -1287,11 +1287,9 @@ function Questie_AvailableQuestClick()
                 Dewdrop:Unregister(frame);
             end
 
-            if (IsAddOnLoaded("Cartographer")) or (IsAddOnLoaded("MetaMap")) or (QuestieConfig.resizeWorldmap == true) then
+            if IsAddOnLoaded("Cartographer") or IsAddOnLoaded("MetaMap") then
                 registerDewdrop(WorldMapFrame, this.quests, 'cursorX', true, 'cursorY', true);
-            elseif (not IsAddOnLoaded("Cartographer")) or (not IsAddOnLoaded("MetaMap")) and (QuestieConfig.resizeWorldmap == false) then
-                registerDewdrop(this, this.quests, 'point', "TOPLEFT", 'relativePoint', "BOTTOMRIGHT");
-            elseif (IsAddOnLoaded("Cartographer")) and (CartographerDB["disabledModules"]["Default"]["Look 'n' Feel"] == true) then
+            else
                 registerDewdrop(this, this.quests, 'point', "TOPLEFT", 'relativePoint', "BOTTOMRIGHT");
             end
         end
