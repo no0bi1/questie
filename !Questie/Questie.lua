@@ -34,7 +34,6 @@ function Questie:SetupDefaults()
         ["minimapZoom"] = false,
         ["minLevelFilter"] = true,
         ["minShowLevel"] = 4,
-        ["resizeWorldmap"] = false,
         ["showMapNotes"] = true,
         ["showProfessionQuests"] = false,
         ["showToolTips"] = true,
@@ -110,9 +109,6 @@ function Questie:CheckDefaults()
     end
     if QuestieConfig.minShowLevel == nil then
         QuestieConfig.minShowLevel = 4;
-    end
-    if QuestieConfig.resizeWorldmap == nil then
-        QuestieConfig.resizeWorldmap = false;
     end
     if QuestieConfig.showMapNotes == nil then
         QuestieConfig.showMapNotes = true;
@@ -922,15 +918,6 @@ QuestieFastSlash = {
             DEFAULT_CHAT_FRAME:AddMessage("|cFFFF2222 Error: Invalid Option.");
         end
     end,
-    ["resizemap"] = function()
-    --Default: False
-        QuestieConfig.resizeWorldmap = not QuestieConfig.resizeWorldmap;
-        if QuestieConfig.resizeWorldmap then
-            ReloadUI();
-        else
-            ReloadUI();
-        end
-    end,
     ["setmaxlevel"] = function(args)
     --Default7:Quests will not appear until your level is 7 levels below the quest's minimum level
         if args then
@@ -1111,18 +1098,17 @@ function Questie:CurrentUserToggles()
         [13] = { "minimapZoom" },
         [14] = { "minLevelFilter" },
         [15] = { "minShowLevel" },
-        [16] = { "resizeWorldmap" },
-        [17] = { "showMapNotes" },
-        [18] = { "showProfessionQuests" },
-        [19] = { "showTrackerHeader" },
-        [20] = { "showToolTips" },
-        [21] = { "trackerAlpha" },
-        [22] = { "trackerBackground" },
-        [23] = { "trackerEnabled" },
-        [24] = { "trackerList" },
-        [25] = { "trackerMinimize" },
-        [26] = { "trackerScale" },
-        [27] = { "useQuestLinks" },
+        [16] = { "showMapNotes" },
+        [17] = { "showProfessionQuests" },
+        [18] = { "showTrackerHeader" },
+        [19] = { "showToolTips" },
+        [20] = { "trackerAlpha" },
+        [21] = { "trackerBackground" },
+        [22] = { "trackerEnabled" },
+        [23] = { "trackerList" },
+        [24] = { "trackerMinimize" },
+        [25] = { "trackerScale" },
+        [26] = { "useQuestLinks" },
     };
     if QuestieConfig then
         i = 1;
