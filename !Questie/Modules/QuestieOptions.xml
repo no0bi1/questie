@@ -1267,39 +1267,6 @@
                     <OnLeave>Questie:OptionsForm_SettingOnLeave()</OnLeave>
                 </Scripts>
             </Frame>
-            <Frame name="$parentResizeWorldmapLabel">
-                <!--<FrameSkin skinid="f15d4970-d66d-444e-bb2d-1ad102c87fed" frameid="f15d4978-d66d-444e-bb2d-1ad102c87fed" />-->
-                <Size>
-                    <AbsDimension x="128" y="32" />
-                </Size>
-                <Anchors>
-                    <Anchor point="TOPLEFT">
-                        <Offset>
-                            <AbsDimension x="208" y="-35" />
-                        </Offset>
-                    </Anchor>
-                </Anchors>
-                <Layers>
-                    <Layer>
-                        <FontString name="$parentLabel" setAllPoints="true" inherits="GameFontNormalSmall" text="Resize Worldmap">
-                            <FontHeight>
-                                <AbsValue val="12" />
-                            </FontHeight>
-                            <Color r="1" g="0.8196079" b="0" />
-                            <Shadow>
-                                <Color r="0" g="0" b="0" />
-                                <Offset>
-                                    <AbsDimension x="1" y="-1" />
-                                </Offset>
-                            </Shadow>
-                        </FontString>
-                    </Layer>
-                </Layers>
-                <Scripts>
-                    <OnEnter>Questie:OptionsForm_SettingOnEnter("resizeWorldmap")</OnEnter>
-                    <OnLeave>Questie:OptionsForm_SettingOnLeave()</OnLeave>
-                </Scripts>
-            </Frame>
             <Frame name="$parentHideMinimapIconsLabel">
                 <!--<FrameSkin skinid="f15d4970-d66d-444e-bb2d-1ad102c87fed" frameid="f15d4978-d66d-444e-bb2d-1ad102c87fed" />-->
                 <Size>
@@ -1577,30 +1544,6 @@
                 </Anchors>
                 <Scripts>
                     <OnEnter>Questie:OptionsForm_SettingOnEnter("trackerBackground")</OnEnter>
-                    <OnLeave>Questie:OptionsForm_SettingOnLeave()</OnLeave>
-                </Scripts>
-                <NormalTexture file="Interface\Buttons\UI-CheckBox-Up" />
-                <PushedTexture file="Interface\Buttons\UI-CheckBox-Down" />
-                <DisabledTexture />
-                <HighlightTexture file="Interface\Buttons\UI-CheckBox-Highlight" alphaMode="ADD" />
-                <PushedTextOffset x="0" y="0" />
-                <CheckedTexture file="Interface\Buttons\UI-CheckBox-Check" />
-                <DisabledCheckedTexture file="Interface\Buttons\UI-CheckBox-Check-Disabled" />
-            </CheckButton>
-            <CheckButton name="$parentResizeWorldmapCheck">
-                <!--<FrameSkin skinid="f15d4970-d66d-444e-bb2d-1ad102c87fed" frameid="f15d4974-d66d-444e-bb2d-1ad102c87fed" />-->
-                <Size>
-                    <AbsDimension x="32" y="32" />
-                </Size>
-                <Anchors>
-                    <Anchor point="TOPLEFT">
-                        <Offset>
-                            <AbsDimension x="342" y="-35" />
-                        </Offset>
-                    </Anchor>
-                </Anchors>
-                <Scripts>
-                    <OnEnter>Questie:OptionsForm_SettingOnEnter("resizeWorldmap")</OnEnter>
                     <OnLeave>Questie:OptionsForm_SettingOnLeave()</OnLeave>
                 </Scripts>
                 <NormalTexture file="Interface\Buttons\UI-CheckBox-Up" />
