@@ -10395,7 +10395,7 @@ QuestieHashMap = {
   ['finishedBy']="Doctor Serratus",
   ['level']=1,
   ['questLevel']='60',
-  ['rq']=1811977416
+  ['rq']=1811977416,
   ['rr']=178,
  },
  [1084333114]={
@@ -10823,7 +10823,7 @@ QuestieHashMap = {
   ['finishedBy']="Private Draxlegauge",
   ['level']=1,
   ['questLevel']='60',
-  ['rq']=1139593272
+  ['rq']=1139593272,
   ['rr']=77,
  },
  [4269630848]={
@@ -12185,7 +12185,7 @@ QuestieHashMap = {
   ['finishedBy']="Private Porter",
   ['level']=1,
   ['questLevel']='60',
-  ['rq']=1050834840
+  ['rq']=1050834840,
   ['rr']=77,
  },
  [1578875960]={
@@ -14521,7 +14521,7 @@ QuestieHashMap = {
   ['finishedBy']="Prospector Stonehewer",
   ['level']=51,
   ['questLevel']='0PVP',
-  ['rq']=350236800
+  ['rq']=350236800,
   ['rr']=77,
  },
  [1882807944]={
@@ -14572,7 +14572,7 @@ QuestieHashMap = {
   ['startedBy']="unknown",
   ['finishedBy']="unknown",
   ['level']=55,
-  ['questLevel']='60PVP'
+  ['questLevel']='60PVP',
   ['rr']=77,
  },
  [1924493264]={
@@ -14737,7 +14737,7 @@ QuestieHashMap = {
   ['startedBy']="unknown",
   ['finishedBy']="unknown",
   ['level']=10,
-  ['questLevel']='15PVP'
+  ['questLevel']='15PVP',
   ['rr']=178,
  },
  [3166190386]={
@@ -15183,7 +15183,7 @@ QuestieHashMap = {
   ['startedBy']="Onu",
   ['finishedBy']="Onu",
   ['level']=1,
-  ['questLevel']='1'
+  ['questLevel']='1',
   ['rr']=77,
  },
  [73905509]={
@@ -15385,7 +15385,7 @@ QuestieHashMap = {
   ['finishedBy']="Sergeant Umala",
   ['level']=1,
   ['questLevel']='60',
-  ['rq']=2571749528
+  ['rq']=2571749528,
   ['rr']=178,
  },
  [1663960077]={
@@ -16363,7 +16363,7 @@ QuestieHashMap = {
   ['finishedBy']="Huntress Swiftriver",
   ['level']=1,
   ['questLevel']='60',
-  ['rq']=4095272584
+  ['rq']=4095272584,
   ['rr']=77,
  },
  [611883498]={
@@ -16548,7 +16548,7 @@ QuestieHashMap = {
   ['startedBy']="Private Porter",
   ['finishedBy']="Private Porter",
   ['level']=52,
-  ['questLevel']='60'
+  ['questLevel']='60',
   ['rr']=77,
  },
  [3689439533]={
@@ -17201,7 +17201,7 @@ QuestieHashMap = {
   ['finishedBy']="Sergeant Major Germaine",
   ['level']=1,
   ['questLevel']='60',
-  ['rq']=3485512656
+  ['rq']=3485512656,
   ['rr']=77,
  },
  [1877180589]={
@@ -18245,7 +18245,7 @@ QuestieHashMap = {
   ['finishedBy']="Corporal Carnes",
   ['level']=1,
   ['questLevel']='60',
-  ['rq']=960619432
+  ['rq']=960619432,
   ['rr']=77,
  },
  [3859909405]={
@@ -18714,7 +18714,7 @@ QuestieHashMap = {
   ['finishedBy']="Nurse Stonefield",
   ['level']=43,
   ['questLevel']='60',
-  ['rq']=1235778317
+  ['rq']=1235778317,
   ['rr']=77,
  },
  [327627712]={
@@ -20235,7 +20235,7 @@ QuestieHashMap = {
   ['finishedBy']="Skinner Jamani",
   ['level']=1,
   ['questLevel']='60',
-  ['rq']=2342151408
+  ['rq']=2342151408,
   ['rr']=178,
  },
  [1587636725]={
@@ -20331,7 +20331,7 @@ QuestieHashMap = {
   ['finishedBy']="Miner Cromwell",
   ['level']=1,
   ['questLevel']='60',
-  ['rq']=1583144736
+  ['rq']=1583144736,
   ['rr']=178,
  },
  [4039358074]={
@@ -20521,7 +20521,7 @@ QuestieHashMap = {
   ['startedBy']="Master Nightsong",
   ['finishedBy']="Master Nightsong",
   ['level']=37,
-  ['questLevel']='60'
+  ['questLevel']='60',
   ['rr']=77,
  },
  [973539144]={
@@ -21852,7 +21852,7 @@ QuestieHashMap = {
   ['finishedBy']="Shadow Priestess Vandis",
   ['level']=50,
   ['questLevel']='55',
-  ['rq']=1866386530
+  ['rq']=1866386530,
   ['rr']=178,
  },
  [1648995789]={
@@ -21995,7 +21995,7 @@ QuestieHashMap = {
   ['finishedBy']="Grunt Maug",
   ['level']=1,
   ['questLevel']='60',
-  ['rq']=2185296896
+  ['rq']=2185296896,
   ['rr']=178,
  },
  [535995674]={
@@ -22426,7 +22426,7 @@ QuestieHashMap = {
   ['finishedBy']="unknown",
   ['level']=55,
   ['questLevel']='60PVP',
-  ['rq']=1373349890
+  ['rq']=1373349890,
   ['rr']=178,
  },
  [2295450348]={
@@ -24772,7 +24772,7 @@ QuestieHashMap = {
   ['finishedBy']="Stoneguard Clayhoof",
   ['level']=1,
   ['questLevel']='60',
-  ['rq']=3611500648
+  ['rq']=3611500648,
   ['rr']=178,
  },
  [4036264904]={
@@ -25777,7 +25777,7 @@ QuestieHashMap = {
   ['startedBy']="Sarah Sadwhistle",
   ['finishedBy']="Sarah Sadwhistle",
   ['level']=33,
-  ['questLevel']='60'
+  ['questLevel']='60',
   ['rr']=77,
  },
  [1729051490]={
@@ -26038,7 +26038,7 @@ QuestieHashMap = {
   ['finishedBy']="Lady Callow",
   ['level']=1,
   ['questLevel']='60',
-  ['rq']=4128825392
+  ['rq']=4128825392,
   ['rr']=178,
  },
  [236395010]={
@@ -27090,7 +27090,7 @@ QuestieHashMap = {
   ['startedBy']="Grunt Maug",
   ['finishedBy']="Grunt Maug",
   ['level']=54,
-  ['questLevel']='60'
+  ['questLevel']='60',
   ['rr']=178,
  },
  [3589817602]={
@@ -27536,7 +27536,7 @@ QuestieHashMap = {
   ['startedBy']="Batrider Pele'keiki",
   ['finishedBy']="Batrider Pele'keiki",
   ['level']=57,
-  ['questLevel']='60'
+  ['questLevel']='60',
   ['rr']=178,
  },
  [1622724893]={
@@ -27906,7 +27906,7 @@ QuestieHashMap = {
   ['startedBy']="Warmaster Laggrond",
   ['finishedBy']="Warmaster Laggrond",
   ['level']=55,
-  ['questLevel']='60'
+  ['questLevel']='60',
   ['rr']=178,
  },
  [4292548632]={
@@ -28027,7 +28027,7 @@ QuestieHashMap = {
   ['startedBy']="Dame Twinbraid",
   ['finishedBy']="Dame Twinbraid",
   ['level']=48,
-  ['questLevel']='60'
+  ['questLevel']='60',
   ['rr']=77,
  },
  [465112320]={
@@ -29045,7 +29045,7 @@ QuestieHashMap = {
   ['startedBy']="Chief Sharpclaw",
   ['finishedBy']="Chief Sharpclaw",
   ['level']=20,
-  ['questLevel']='60'
+  ['questLevel']='60',
   ['rr']=178,
  },
  [1139940189]={
@@ -29567,7 +29567,7 @@ QuestieHashMap = {
   ['startedBy']="Fisherman Lin'do",
   ['finishedBy']="Fisherman Lin'do",
   ['level']=52,
-  ['questLevel']='60'
+  ['questLevel']='60',
   ['rr']=178,
  },
  [2913570210]={
@@ -30034,7 +30034,7 @@ QuestieHashMap = {
   ['finishedBy']="Marta Finespindle",
   ['level']=1,
   ['questLevel']='60',
-  ['rq']=2930483360
+  ['rq']=2930483360,
   ['rr']=77,
  },
  [3631723474]={
@@ -30530,7 +30530,7 @@ QuestieHashMap = {
   ['finishedBy']="Lieutenant Haggerdin",
   ['level']=51,
   ['questLevel']='60',
-  ['rq']=4038430472
+  ['rq']=4038430472,
   ['rr']=77,
  },
  [4214696864]={
@@ -31608,7 +31608,7 @@ QuestieHashMap = {
   ['startedBy']="Slicky Gastronome",
   ['finishedBy']="Slicky Gastronome",
   ['level']=54,
-  ['questLevel']='60'
+  ['questLevel']='60',
   ['rr']=77,
  },
  [1133791962]={
@@ -31862,7 +31862,7 @@ QuestieHashMap = {
   ['startedBy']="Sergeant Umala",
   ['finishedBy']="Sergeant Umala",
   ['level']=54,
-  ['questLevel']='60'
+  ['questLevel']='60',
   ['rr']=178,
  },
  [2493930637]={
@@ -31967,7 +31967,7 @@ QuestieHashMap = {
   ['finishedBy']="Keeper Moonshade",
   ['level']=1,
   ['questLevel']='60',
-  ['rq']=2718223312
+  ['rq']=2718223312,
   ['rr']=77,
  },
  [236635928]={
@@ -32331,7 +32331,7 @@ QuestieHashMap = {
   ['startedBy']="Sentinel Silversky",
   ['finishedBy']="Sentinel Silversky",
   ['level']=51,
-  ['questLevel']='60'
+  ['questLevel']='60',
   ['rr']=77,
  },
  [3965716960]={
@@ -33728,7 +33728,7 @@ QuestieHashMap = {
   ['finishedBy']="Master Nightsong",
   ['level']=1,
   ['questLevel']='60',
-  ['rq']=266402072
+  ['rq']=266402072,
   ['rr']=77,
  },
  [314142637]={
@@ -34561,7 +34561,7 @@ QuestieHashMap = {
   ['startedBy']="Keeper Moonshade",
   ['finishedBy']="Keeper Moonshade",
   ['level']=56,
-  ['questLevel']='60'
+  ['questLevel']='60',
   ['rr']=77,
  },
  [3359396221]={
@@ -34796,7 +34796,7 @@ QuestieHashMap = {
   ['finishedBy']="Senior Sergeant T'kelah",
   ['level']=1,
   ['questLevel']='60',
-  ['rq']=2411992296
+  ['rq']=2411992296,
   ['rr']=178,
  },
  [326329624]={
@@ -34826,7 +34826,7 @@ QuestieHashMap = {
   ['finishedBy']="Sentinel Silversky",
   ['level']=1,
   ['questLevel']='60',
-  ['rq']=969989248
+  ['rq']=969989248,
   ['rr']=77,
  },
  [2713603629]={
@@ -35053,7 +35053,7 @@ QuestieHashMap = {
   ['startedBy']="Aristan Mottar",
   ['finishedBy']="Innkeeper Allison",
   ['level']=18,
-  ['questLevel']='0'
+  ['questLevel']='0',
   ['rr']=77,
  },
  [275170893]={
@@ -35521,7 +35521,7 @@ QuestieHashMap = {
   ['level']=5,
   ['questLevel']='8',
   ['rs']=171,
-  ['rsc']=20
+  ['rsc']=20,
   ['rr']=77,
  },
  [1493254741]={
@@ -35656,7 +35656,7 @@ QuestieHashMap = {
   ['startedBy']="Apothecary Jezel",
   ['finishedBy']="Apothecary Jezel",
   ['level']=50,
-  ['questLevel']='60'
+  ['questLevel']='60',
   ['rr']=178,
  },
  [3470907400]={
@@ -36187,7 +36187,7 @@ QuestieHashMap = {
   ['startedBy']="Apothecary Zinge",
   ['finishedBy']="Fenstad Argyle",
   ['level']=58,
-  ['questLevel']='0'
+  ['questLevel']='0',
   ['rr']=178,
  },
  [539468397]={
@@ -37227,7 +37227,7 @@ QuestieHashMap = {
   ['startedBy']="Voggah Deathgrip",
   ['finishedBy']="Voggah Deathgrip",
   ['level']=51,
-  ['questLevel']='60PVP'
+  ['questLevel']='60PVP',
   ['rr']=178,
  },
  [3488834040]={
@@ -38280,7 +38280,7 @@ QuestieHashMap = {
   ['finishedBy']="Bloodguard Rawtar",
   ['level']=1,
   ['questLevel']='60',
-  ['rq']=1276163152
+  ['rq']=1276163152,
   ['rr']=178,
  },
  [343138242]={
@@ -39128,7 +39128,7 @@ QuestieHashMap = {
   ['finishedBy']="Fisherman Lin'do",
   ['level']=1,
   ['questLevel']='60',
-  ['rq']=4228324784
+  ['rq']=4228324784,
   ['rr']=178,
  },
  [524543314]={
@@ -39150,7 +39150,7 @@ QuestieHashMap = {
   ['startedBy']="Private Draxlegauge",
   ['finishedBy']="Private Draxlegauge",
   ['level']=37,
-  ['questLevel']='60'
+  ['questLevel']='60',
   ['rr']=77,
  },
  [4061676304]={
@@ -40110,7 +40110,7 @@ QuestieHashMap = {
   ['startedBy']="Marta Finespindle",
   ['finishedBy']="Marta Finespindle",
   ['level']=44,
-  ['questLevel']='60'
+  ['questLevel']='60',
   ['rr']=77,
  },
  [3808588888]={
@@ -41153,7 +41153,7 @@ QuestieHashMap = {
   ['finishedBy']="unknown",
   ['level']=55,
   ['questLevel']='60PVP',
-  ['rq']=2668433696
+  ['rq']=2668433696,
   ['rr']=77,
  },
  [3855231680]={
@@ -41337,7 +41337,7 @@ QuestieHashMap = {
   ['startedBy']="Corporal Carnes",
   ['finishedBy']="Corporal Carnes",
   ['level']=40,
-  ['questLevel']='60'
+  ['questLevel']='60',
   ['rr']=77,
  },
  [4192190573]={
@@ -41432,7 +41432,7 @@ QuestieHashMap = {
   ['startedBy']="Senior Sergeant T'kelah",
   ['finishedBy']="Senior Sergeant T'kelah",
   ['level']=52,
-  ['questLevel']='60'
+  ['questLevel']='60',
   ['rr']=178,
  },
  [537127125]={
@@ -41809,7 +41809,7 @@ QuestieHashMap = {
   ['finishedBy']="Healer Longrunner",
   ['level']=1,
   ['questLevel']='60',
-  ['rq']=1233768224
+  ['rq']=1233768224,
   ['rr']=178,
  },
  [29525856]={
@@ -42566,7 +42566,7 @@ QuestieHashMap = {
   ['finishedBy']="Apothecary Jezel",
   ['level']=1,
   ['questLevel']='60',
-  ['rq']=592391776
+  ['rq']=592391776,
   ['rr']=178,
  },
  [7516488]={
@@ -42692,7 +42692,7 @@ QuestieHashMap = {
   ['finishedBy']="Chief Sharpclaw",
   ['level']=1,
   ['questLevel']='60',
-  ['rq']=4252666304
+  ['rq']=4252666304,
   ['rr']=178,
  },
  [2561009149]={
@@ -43611,7 +43611,7 @@ QuestieHashMap = {
   ['startedBy']="Lady Callow",
   ['finishedBy']="Lady Callow",
   ['level']=57,
-  ['questLevel']='60'
+  ['questLevel']='60',
   ['rr']=178,
  },
  [2435011080]={
@@ -45975,7 +45975,7 @@ QuestieHashMap = {
   ['startedBy']="Sergeant Stonebrow",
   ['finishedBy']="Sergeant Stonebrow",
   ['level']=50,
-  ['questLevel']='60'
+  ['questLevel']='60',
   ['rr']=77,
  },
  [2915617101]={
@@ -46597,7 +46597,7 @@ QuestieHashMap = {
   ['finishedBy']="Arantir",
   ['level']=16,
   ['questLevel']='22',
-  ['rc']=8
+  ['rc']=8,
   ['rr']=77,
  },
  [3252089312]={
@@ -46849,7 +46849,7 @@ QuestieHashMap = {
   ['startedBy']="Doctor Serratus",
   ['finishedBy']="Doctor Serratus",
   ['level']=55,
-  ['questLevel']='60'
+  ['questLevel']='60',
   ['rr']=178,
  },
  [694347778]={
@@ -47263,7 +47263,7 @@ QuestieHashMap = {
   ['finishedBy']="Batrider Pele'keiki",
   ['level']=1,
   ['questLevel']='60',
-  ['rq']=350103752
+  ['rq']=350103752,
   ['rr']=178,
  },
  [2671410906]={
@@ -47803,7 +47803,7 @@ QuestieHashMap = {
   ['finishedBy']="Sergeant Stonebrow",
   ['level']=1,
   ['questLevel']='60',
-  ['rq']=2979987744
+  ['rq']=2979987744,
   ['rr']=77,
  },
  [1450752197]={
@@ -48370,7 +48370,7 @@ QuestieHashMap = {
   ['startedBy']="Healer Longrunner",
   ['finishedBy']="Healer Longrunner",
   ['level']=55,
-  ['questLevel']='60'
+  ['questLevel']='60',
   ['rr']=178,
  },
  [1348600250]={
@@ -48598,7 +48598,7 @@ QuestieHashMap = {
   ['finishedBy']="Slicky Gastronome",
   ['level']=1,
   ['questLevel']='60',
-  ['rq']=1949484904
+  ['rq']=1949484904,
   ['rr']=77,
  },
  [4181245104]={
@@ -48864,7 +48864,7 @@ QuestieHashMap = {
   ['startedBy']="Skinner Jamani",
   ['finishedBy']="Skinner Jamani",
   ['level']=53,
-  ['questLevel']='60'
+  ['questLevel']='60',
   ['rr']=178,
  },
  [3266446432]={
@@ -49654,7 +49654,7 @@ QuestieHashMap = {
   ['startedBy']="Huntress Swiftriver",
   ['finishedBy']="Huntress Swiftriver",
   ['level']=42,
-  ['questLevel']='60'
+  ['questLevel']='60',
   ['rr']=77,
  },
  [468859941]={
@@ -50191,7 +50191,7 @@ QuestieHashMap = {
   ['finishedBy']="Nurse Stonefield",
   ['level']=1,
   ['questLevel']='60',
-  ['rq']=1147316168
+  ['rq']=1147316168,
   ['rr']=77,
  },
  [2693620840]={
@@ -50452,7 +50452,7 @@ QuestieHashMap = {
   ['startedBy']="Bloodguard Rawtar",
   ['finishedBy']="Bloodguard Rawtar",
   ['level']=49,
-  ['questLevel']='60'
+  ['questLevel']='60',
   ['rr']=178,
  },
  [1166496981]={
@@ -50577,7 +50577,7 @@ QuestieHashMap = {
   ['startedBy']="Miner Cromwell",
   ['finishedBy']="Miner Cromwell",
   ['level']=54,
-  ['questLevel']='60'
+  ['questLevel']='60',
   ['rr']=178,
  },
  [3847232824]={
@@ -50771,7 +50771,7 @@ QuestieHashMap = {
   ['finishedBy']="Voggah Deathgrip",
   ['level']=51,
   ['questLevel']='0PVP',
-  ['rq']=95380336
+  ['rq']=95380336,
   ['rr']=178,
  },
  [36587261]={
@@ -51965,7 +51965,7 @@ QuestieHashMap = {
   ['startedBy']="Sergeant Major Germaine",
   ['finishedBy']="Sergeant Major Germaine",
   ['level']=34,
-  ['questLevel']='60'
+  ['questLevel']='60',
   ['rr']=77,
  },
  [3780643082]={
@@ -52134,7 +52134,7 @@ QuestieHashMap = {
   ['finishedBy']="Sarah Sadwhistle",
   ['level']=1,
   ['questLevel']='60',
-  ['rq']=4011868664
+  ['rq']=4011868664,
   ['rr']=77,
  },
  [255561112]={
