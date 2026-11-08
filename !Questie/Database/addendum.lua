@@ -52314,7 +52314,7 @@ QuestieHashMap = {
   ['questLevel']='60R',
   ['rr']=77,
   ['rq']=805459061
- },,
+ },
  [2694989448]={
   ['name']="The Ancient Leaf",
   ['startedType']="item",
@@ -52324,7 +52324,7 @@ QuestieHashMap = {
   ['level']=60,
   ['questLevel']='60',
   ['rc']=4
- },,
+ },
  [1383461952]={
   ['name']="Into The Maw of Madness",
   ['startedType']="monster",
