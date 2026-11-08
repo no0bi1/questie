@@ -52303,7 +52303,39 @@ QuestieHashMap = {
   ['finishedBy']="Argent Quartermaster Lightspark",
   ['level']=55,
   ['questLevel']='60'
- }
+ },
+ [949127781]={
+  ['name']="Order Must Be Restored",
+  ['startedType']="monster",
+  ['finishedType']="monster",
+  ['startedBy']="Highlord Bolvar Fordragon",
+  ['finishedBy']="Highlord Bolvar Fordragon",
+  ['level']=56,
+  ['questLevel']='60R',
+  ['rr']=77,
+  ['rq']=805459061
+ },,
+ [2694989448]={
+  ['name']="The Ancient Leaf",
+  ['startedType']="item",
+  ['finishedType']="monster",
+  ['startedBy']="unknown",
+  ['finishedBy']="Vartrus the Ancient",
+  ['level']=60,
+  ['questLevel']='60',
+  ['rc']=4
+ },,
+ [1383461952]={
+  ['name']="Into The Maw of Madness",
+  ['startedType']="monster",
+  ['finishedType']="monster",
+  ['startedBy']="Commander Mar'alith",
+  ['finishedBy']="Commander Mar'alith",
+  ['level']=58,
+  ['questLevel']='60+',
+  ['rq']=4234551376
+ },
+
 }
 
 QuestieAdditionalStartFinishLookup = { -- {C,Z,X,Y}
