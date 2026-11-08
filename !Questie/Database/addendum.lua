@@ -10237,7 +10237,8 @@ QuestieHashMap = {
   ['startedBy']="Lady Sylvanas Windrunner",
   ['finishedBy']="Nathanos Blightcaller",
   ['level']=54,
-  ['questLevel']='56'
+  ['questLevel']='56',
+   ['rr']=178,
  },
  [1239225082]={
   ['name']="Trial at the Field of Giants",
@@ -10490,7 +10491,8 @@ QuestieHashMap = {
   ['startedBy']="First Mate Fitzsimmons",
   ['finishedBy']="First Mate Fitzsimmons",
   ['level']=22,
-  ['questLevel']='27'
+  ['questLevel']='27',
+   ['rr']=77,
  },
  [2067163826]={
   ['name']="Torek's Assault",
@@ -10580,7 +10582,8 @@ QuestieHashMap = {
   ['startedBy']="Katie Hunter",
   ['finishedBy']="Katie Hunter",
   ['level']=60,
-  ['questLevel']='60'
+  ['questLevel']='60',
+   ['rr']=77,
  },
  [2303965674]={
   ['name']="The Hunter's Path",
@@ -10611,7 +10614,8 @@ QuestieHashMap = {
   ['startedBy']="Sentinel Elissa Starbreeze",
   ['finishedBy']="Balthule Shadowstrike",
   ['level']=13,
-  ['questLevel']='18'
+  ['questLevel']='18',
+   ['rr']=77,
  },
  [2162238992]={
   ['name']="Scarlet Subterfuge",
@@ -10874,6 +10878,7 @@ QuestieHashMap = {
   ['finishedBy']="Verner Osgood",
   ['level']=15,
   ['questLevel']='20',
+   ['rr']=77,
   ['rq']=3101570368
  },
  [3503772090]={
@@ -10946,6 +10951,7 @@ QuestieHashMap = {
   ['finishedBy']="Jarkal Mossmeld",
   ['level']=37,
   ['questLevel']='42D',
+   ['rr']=178,
   ['rq']=999631208
  },
  [2614330136]={
@@ -10956,6 +10962,7 @@ QuestieHashMap = {
   ['finishedBy']="Athridas Bearmantle",
   ['level']=8,
   ['questLevel']='12',
+   ['rr']=77,
   ['rq']=1413711128
  },
  [1193185098]={
@@ -11288,6 +11295,7 @@ QuestieHashMap = {
   ['finishedBy']="Orokk Omosh",
   ['level']=32,
   ['questLevel']='32',
+   ['rr']=178,
   ['rs']=164,
   ['rsc']=140
  },
@@ -11358,7 +11366,8 @@ QuestieHashMap = {
   ['startedBy']="Lexlort",
   ['finishedBy']="Bijou",
   ['level']=55,
-  ['questLevel']='59D'
+  ['questLevel']='59D',
+   ['rr']=178,
  },
  [1085037562]={
   ['name']="Warsong Scout Update",
@@ -11556,6 +11565,7 @@ QuestieHashMap = {
   ['finishedBy']="Quae",
   ['level']=30,
   ['questLevel']='37',
+   ['rr']=77,
   ['rq']=4017463192
  },
  [2772141890]={
@@ -11620,6 +11630,7 @@ QuestieHashMap = {
   ['finishedBy']="Nathanos Blightcaller",
   ['level']=56,
   ['questLevel']='60+',
+   ['rr']=178,
   ['rq']=3068577602
  },
  [275135445]={
@@ -11777,6 +11788,7 @@ QuestieHashMap = {
   ['finishedBy']="Milton Sheaf",
   ['level']=27,
   ['questLevel']='38',
+   ['rr']=77,
   ['rq']=1279517792
  },
  [891491501]={
@@ -11808,7 +11820,8 @@ QuestieHashMap = {
   ['startedBy']="Veron Amberstill",
   ['finishedBy']="Veron Amberstill",
   ['level']=60,
-  ['questLevel']='1'
+  ['questLevel']='1',
+   ['rr']=77,
  },
  [1544525192]={
   ['name']="Twilight Marauders",
@@ -12279,6 +12292,7 @@ QuestieHashMap = {
   ['finishedBy']="Delgren the Purifier",
   ['level']=16,
   ['questLevel']='24',
+   ['rr']=77,
   ['rq']=3519640688
  },
  [3217643960]={
@@ -12298,6 +12312,7 @@ QuestieHashMap = {
   ['finishedBy']="Mountaineer Thalos",
   ['level']=1,
   ['questLevel']='5',
+   ['rr']=77,
   ['rq']=3815619821
  },
  [314159997]={
@@ -12508,6 +12523,7 @@ QuestieHashMap = {
   ['finishedBy']="Tarindrella",
   ['level']=1,
   ['questLevel']='3',
+   ['rr']=77,
   ['rq']=676972856
  },
  [2879757802]={
@@ -12778,7 +12794,8 @@ QuestieHashMap = {
   ['startedBy']="Apothecary Zinge",
   ['finishedBy']="Shadowmage Vivian Lagrave",
   ['level']=57,
-  ['questLevel']='60R'
+  ['questLevel']='60R',
+   ['rr']=178,
  },
  [816179976]={
   ['name']="Celebrating Good Times",
@@ -12788,6 +12805,7 @@ QuestieHashMap = {
   ['finishedBy']="Major Mattingly",
   ['level']=60,
   ['questLevel']='60',
+   ['rr']=77,
   ['rq']=1655339632
  },
  [3086094712]={
@@ -12798,6 +12816,7 @@ QuestieHashMap = {
   ['finishedBy']="Deliana",
   ['level']=58,
   ['questLevel']='60D',
+   ['rr']=77,
   ['rc']=16,
   ['rq']=2085360877
  },
@@ -12883,6 +12902,7 @@ QuestieHashMap = {
   ['finishedBy']="Apothecary Lydon",
   ['level']=40,
   ['questLevel']='55+',
+   ['rr']=178,
   ['rq']=1626233826
  },
  [13253242]={
@@ -13450,6 +13470,7 @@ QuestieHashMap = {
   ['finishedBy']="Verner Osgood",
   ['level']=13,
   ['questLevel']='18',
+   ['rr']=77,
   ['rq']=3101570368
  },
  [1059133586]={
@@ -13793,7 +13814,8 @@ QuestieHashMap = {
   ['startedBy']="Field Marshal Snowfall",
   ['finishedBy']="Field Marshal Snowfall",
   ['level']=10,
-  ['questLevel']='19'
+  ['questLevel']='19',
+   ['rr']=77,
  },
  [1354019861]={
   ['name']="Morrowgrain to Darnassus",
@@ -13843,7 +13865,8 @@ QuestieHashMap = {
   ['startedBy']="Therylune",
   ['finishedBy']="Therysil",
   ['level']=14,
-  ['questLevel']='18'
+  ['questLevel']='18',
+   ['rr']=77,
  },
  [2077278568]={
   ['name']="The Ranger Lord's Behest",
@@ -13852,7 +13875,8 @@ QuestieHashMap = {
   ['startedBy']="Nathanos Blightcaller",
   ['finishedBy']="Nathanos Blightcaller",
   ['level']=54,
-  ['questLevel']='60'
+  ['questLevel']='60',
+   ['rr']=178,
  },
  [1529249881]={
   ['name']="Report to Jennea",
@@ -14039,7 +14063,7 @@ QuestieHashMap = {
   ['finishedBy']="Nartok",
   ['level']=1,
   ['questLevel']='1',
-  ['rr']=178,
+  ['rr']=2,
   ['rc']=256,
   ['rq']=1426477242
  },
@@ -14071,7 +14095,8 @@ QuestieHashMap = {
   ['startedBy']="Mathiel",
   ['finishedBy']="Klockmort Spannerspan",
   ['level']=24,
-  ['questLevel']='30D'
+  ['questLevel']='30D',
+   ['rr']=77,
  },
  [787038992]={
   ['name']="Mana Surges",
@@ -14102,6 +14127,7 @@ QuestieHashMap = {
   ['finishedBy']="Thrall",
   ['level']=13,
   ['questLevel']='16',
+   ['rr']=178,
   ['rq']=4077937424
  },
  [3489483064]={
@@ -14199,6 +14225,7 @@ QuestieHashMap = {
   ['finishedBy']="Sven Yorgen",
   ['level']=20,
   ['questLevel']='29',
+   ['rr']=77,
   ['rq']=3765140536
  },
  [3788283373]={
@@ -14293,6 +14320,7 @@ QuestieHashMap = {
   ['finishedBy']="Asterion",
   ['level']=11,
   ['questLevel']='13',
+   ['rr']=77,
   ['rq']=1538760088
  },
  [1892069717]={
@@ -14365,6 +14393,7 @@ QuestieHashMap = {
   ['finishedBy']="Talvash del Kissel",
   ['level']=37,
   ['questLevel']='42',
+   ['rr']=77,
   ['rq']=null
  },
  [2154916168]={
@@ -14842,6 +14871,7 @@ QuestieHashMap = {
   ['finishedBy']="Alchemist Arbington",
   ['level']=55,
   ['questLevel']='60+',
+   ['rr']=77,
   ['rq']=637698605
  },
  [3719807136]={
@@ -15036,6 +15066,7 @@ QuestieHashMap = {
   ['finishedBy']="Lord Jorach Ravenholdt",
   ['level']=50,
   ['questLevel']='52',
+   ['rr']=77,
   ['rc']=8
  },
  [891126141]={
@@ -15099,7 +15130,8 @@ QuestieHashMap = {
   ['startedBy']="Verner Osgood",
   ['finishedBy']="Smith Argus",
   ['level']=14,
-  ['questLevel']='18'
+  ['questLevel']='18',
+   ['rr']=77,
  },
  [1068119416]={
   ['name']="One Draenei's Junk...",
@@ -15295,6 +15327,7 @@ QuestieHashMap = {
   ['finishedBy']="Trollbane's Tomb",
   ['level']=32,
   ['questLevel']='42+',
+   ['rr']=178,
   ['rq']=3892384320
  },
  [3657747186]={
@@ -15418,6 +15451,7 @@ QuestieHashMap = {
   ['finishedBy']="Tinkmaster Overspark",
   ['level']=47,
   ['questLevel']='47',
+   ['rr']=77,
   ['rs']=202,
   ['rsc']=200,
   ['rq']=2279141821
@@ -15470,6 +15504,7 @@ QuestieHashMap = {
   ['finishedBy']="Arch Druid Fandral Staghelm",
   ['level']=8,
   ['questLevel']='11',
+   ['rr']=77,
   ['rq']=3726963760
  },
  [2608325648]={
@@ -16043,6 +16078,7 @@ QuestieHashMap = {
   ['finishedBy']="Deliana",
   ['level']=58,
   ['questLevel']='60D',
+   ['rr']=77,
   ['rc']=2,
   ['rq']=2085360877
  },
@@ -16167,6 +16203,7 @@ QuestieHashMap = {
   ['finishedBy']="Fraggar Thundermantle",
   ['level']=40,
   ['questLevel']='45',
+   ['rr']=77,
   ['rq']=397254976
  },
  [2752169749]={
@@ -16186,7 +16223,8 @@ QuestieHashMap = {
   ['startedBy']="Acolyte Dellis",
   ['finishedBy']="Watcher Mahar Ba",
   ['level']=37,
-  ['questLevel']='41'
+  ['questLevel']='41',
+   ['rr']=77,
  },
  [466911509]={
   ['name']="Wandering Shay",
@@ -16270,6 +16308,7 @@ QuestieHashMap = {
   ['finishedBy']="Ogtinc",
   ['level']=50,
   ['questLevel']='52',
+   ['rr']=77,
   ['rc']=4
  },
  [2154838096]={
@@ -16300,6 +16339,7 @@ QuestieHashMap = {
   ['finishedBy']="Archaeologist Hollee",
   ['level']=16,
   ['questLevel']='20+',
+   ['rr']=77,
   ['rq']=1169969928
  },
  [4228468245]={
@@ -16352,6 +16392,7 @@ QuestieHashMap = {
   ['finishedBy']="Mokvar",
   ['level']=58,
   ['questLevel']='60D',
+   ['rr']=178,
   ['rc']=8,
   ['rq']=380651482
  },
@@ -16435,7 +16476,8 @@ QuestieHashMap = {
   ['startedBy']="Ogunaro Wolfrunner",
   ['finishedBy']="Ogunaro Wolfrunner",
   ['level']=60,
-  ['questLevel']='1'
+  ['questLevel']='1',
+   ['rr']=178,
  },
  [4006060104]={
   ['name']="Kirtonos the Herald",
@@ -16477,6 +16519,7 @@ QuestieHashMap = {
   ['finishedBy']="Nathanos Blightcaller",
   ['level']=56,
   ['questLevel']='60+',
+   ['rr']=178,
   ['rq']=2077278568
  },
  [1020245245]={
@@ -16695,7 +16738,8 @@ QuestieHashMap = {
   ['startedBy']="Lelanai",
   ['finishedBy']="Lelanai",
   ['level']=60,
-  ['questLevel']='1'
+  ['questLevel']='1',
+   ['rr']=77,
  },
  [1086022408]={
   ['name']="The Eye of Zuldazar",
@@ -16758,6 +16802,7 @@ QuestieHashMap = {
   ['finishedBy']="Denalan",
   ['level']=4,
   ['questLevel']='7',
+   ['rr']=77,
   ['rq']=3394670240
  },
  [3879677600]={
@@ -17222,7 +17267,8 @@ QuestieHashMap = {
   ['startedBy']="Harb Clawhoof",
   ['finishedBy']="Harb Clawhoof",
   ['level']=60,
-  ['questLevel']='1'
+  ['questLevel']='1',
+   ['rr']=178,
  },
  [4187870093]={
   ['name']="Kurzen's Mystery",
@@ -17301,6 +17347,7 @@ QuestieHashMap = {
   ['finishedBy']="Asterion",
   ['level']=11,
   ['questLevel']='13',
+   ['rr']=77,
   ['rq']=3731840456
  },
  [1149550840]={
@@ -17364,6 +17411,7 @@ QuestieHashMap = {
   ['finishedBy']="Terenthis",
   ['level']=18,
   ['questLevel']='22',
+   ['rr']=77,
   ['rq']=907645176
  },
  [1290591832]={
@@ -17437,6 +17485,7 @@ QuestieHashMap = {
   ['finishedBy']="Orokk Omosh",
   ['level']=32,
   ['questLevel']='32',
+   ['rr']=178,
   ['rs']=164,
   ['rsc']=1,
   ['rq']=3272762496
@@ -17534,6 +17583,7 @@ QuestieHashMap = {
   ['finishedBy']="Apothecary Lydon",
   ['level']=24,
   ['questLevel']='30',
+   ['rr']=178,
   ['rq']=4143773314
  },
  [796465440]={
@@ -17677,6 +17727,7 @@ QuestieHashMap = {
   ['finishedBy']="Archaeologist Flagongut",
   ['level']=17,
   ['questLevel']='24',
+   ['rr']=77,
   ['rq']=4285418264
  },
  [3730983920]={
@@ -17687,6 +17738,7 @@ QuestieHashMap = {
   ['finishedBy']="Mokvar",
   ['level']=58,
   ['questLevel']='60D',
+   ['rr']=178,
   ['rc']=64,
   ['rq']=380651482
  },
@@ -17823,6 +17875,7 @@ QuestieHashMap = {
   ['finishedBy']="Gilshalan Windwalker",
   ['level']=3,
   ['questLevel']='5',
+   ['rr']=77,
   ['rq']=1277145424
  },
  [2798801344]={
@@ -17980,6 +18033,7 @@ QuestieHashMap = {
   ['finishedBy']="Athridas Bearmantle",
   ['level']=4,
   ['questLevel']='9',
+   ['rr']=77,
   ['rq']=3431699504
  },
  [3310116213]={
@@ -18013,7 +18067,7 @@ QuestieHashMap = {
   ['finishedBy']="High Executor Derrington",
   ['level']=50,
   ['questLevel']='58',
-  ['rr']=178,
+  ['rr']=77,
   ['rq']=2073558530
  },
  [1765824229]={
@@ -18387,7 +18441,8 @@ QuestieHashMap = {
   ['startedBy']="Chief Archaeologist Greywhisker",
   ['finishedBy']="Archaeologist Hollee",
   ['level']=14,
-  ['questLevel']='14'
+  ['questLevel']='14',
+   ['rr']=77,
  },
  [4088444192]={
   ['name']="The Instigator's Enchantment",
@@ -18500,6 +18555,7 @@ QuestieHashMap = {
   ['finishedBy']="Waterlogged Chest",
   ['level']=20,
   ['questLevel']='29',
+   ['rr']=77,
   ['rq']=4163210949
  },
  [1362926344]={
@@ -18796,7 +18852,8 @@ QuestieHashMap = {
   ['startedBy']="Helendis Riverhorn",
   ['finishedBy']="Helendis Riverhorn",
   ['level']=55,
-  ['questLevel']='59D'
+  ['questLevel']='59D',
+   ['rr']=77,
  },
  [3720534309]={
   ['name']="Stormpike's Deciphering",
@@ -19002,7 +19059,7 @@ QuestieHashMap = {
   ['finishedBy']="Commander Ashlam Valorfist",
   ['level']=50,
   ['questLevel']='58',
-  ['rr']=77,
+  ['rr']=178,
   ['rq']=1888544349
  },
  [673121882]={
@@ -19276,6 +19333,7 @@ QuestieHashMap = {
   ['finishedBy']="Kinelory",
   ['level']=30,
   ['questLevel']='36',
+   ['rr']=77,
   ['rq']=970351664
  },
  [289679936]={
@@ -19470,7 +19528,8 @@ QuestieHashMap = {
   ['startedBy']="Nathanos Blightcaller",
   ['finishedBy']="Varimathras",
   ['level']=59,
-  ['questLevel']='60'
+  ['questLevel']='60',
+   ['rr']=178,
  },
  [3780283840]={
   ['name']="Tiger Mastery",
@@ -19519,7 +19578,8 @@ QuestieHashMap = {
   ['startedBy']="Neeru Fireblade",
   ['finishedBy']="Neeru Fireblade",
   ['level']=9,
-  ['questLevel']='16D'
+  ['questLevel']='16D',
+   ['rr']=178,
  },
  [1373349890]={
   ['name']="Wanted: DWARVES!",
@@ -19538,7 +19598,8 @@ QuestieHashMap = {
   ['startedBy']="Kerlonian Evershade",
   ['finishedBy']="Liladris Moonriver",
   ['level']=17,
-  ['questLevel']='20'
+  ['questLevel']='20',
+   ['rr']=77,
  },
  [865636741]={
   ['name']="The Knife Revealed",
@@ -19771,6 +19832,7 @@ QuestieHashMap = {
   ['finishedBy']="James Halloran",
   ['level']=18,
   ['questLevel']='26',
+   ['rr']=77,
   ['rq']=1066717744
  },
  [2427160840]={
@@ -19990,6 +20052,7 @@ QuestieHashMap = {
   ['finishedBy']="Sanath Lim-yo",
   ['level']=50,
   ['questLevel']='52',
+   ['rr']=178,
   ['rc']=128
  },
  [3089997984]={
@@ -20142,6 +20205,7 @@ QuestieHashMap = {
   ['finishedBy']="Balthule Shadowstrike",
   ['level']=27,
   ['questLevel']='31',
+   ['rr']=77,
   ['rq']=351455456
  },
  [966267584]={
@@ -20225,6 +20289,7 @@ QuestieHashMap = {
   ['finishedBy']="Delgren the Purifier",
   ['level']=13,
   ['questLevel']='18',
+   ['rr']=77,
   ['rq']=3655428544
  },
  [3954546416]={
@@ -20564,6 +20629,7 @@ QuestieHashMap = {
   ['finishedBy']="Thrall",
   ['level']=9,
   ['questLevel']='16D',
+   ['rr']=178,
   ['rq']=3846293312
  },
  [3297163680]={
@@ -20604,6 +20670,7 @@ QuestieHashMap = {
   ['finishedBy']="Bonnie Stoneflayer",
   ['level']=1,
   ['questLevel']='60',
+   ['rr']=77,
   ['rq']=680783056
  },
  [4276972330]={
@@ -20964,6 +21031,7 @@ QuestieHashMap = {
   ['finishedBy']="Warmaster Laggrond",
   ['level']=55,
   ['questLevel']='60',
+   ['rr']=178,
   ['rq']=3768121608
  },
  [642785400]={
@@ -20983,6 +21051,7 @@ QuestieHashMap = {
   ['finishedBy']="Deliana",
   ['level']=58,
   ['questLevel']='60D',
+   ['rr']=77,
   ['rc']=1,
   ['rq']=2085360877
  },
@@ -21024,7 +21093,8 @@ QuestieHashMap = {
   ['startedBy']="Karl Boran",
   ['finishedBy']="Karl Boran",
   ['level']=20,
-  ['questLevel']='22'
+  ['questLevel']='22',
+   ['rr']=77,
  },
  [3503605680]={
   ['name']="The Bloodsail Buccaneers",
@@ -21351,7 +21421,8 @@ QuestieHashMap = {
   ['startedBy']="Henchman Valik",
   ['finishedBy']="Henchman Valik",
   ['level']=29,
-  ['questLevel']='34'
+  ['questLevel']='34',
+   ['rr']=178,
  },
  [3907607114]={
   ['name']="Return to Witch Doctor Uzer'i",
@@ -21531,7 +21602,8 @@ QuestieHashMap = {
   ['startedBy']="Dirania Silvershine",
   ['finishedBy']="Iverron",
   ['level']=2,
-  ['questLevel']='2'
+  ['questLevel']='2',
+   ['rr']=77,
  },
  [2381483698]={
   ['name']="In Defense of Frostwolf",
@@ -21601,7 +21673,8 @@ QuestieHashMap = {
   ['startedBy']="Cerellean Whiteclaw",
   ['finishedBy']="Cerellean Whiteclaw",
   ['level']=11,
-  ['questLevel']='16'
+  ['questLevel']='16',
+   ['rr']=77,
  },
  [2457903714]={
   ['name']="Avenging the Fallen",
@@ -21694,6 +21767,7 @@ QuestieHashMap = {
   ['finishedBy']="Corithras Moonrage",
   ['level']=4,
   ['questLevel']='5',
+   ['rr']=77,
   ['rq']=3779547568
  },
  [3126603978]={
@@ -21715,6 +21789,7 @@ QuestieHashMap = {
   ['finishedBy']="Herbalist Proudfeather",
   ['level']=1,
   ['questLevel']='60',
+   ['rr']=178,
   ['rq']=275479176
  },
  [1085659629]={
@@ -21884,6 +21959,7 @@ QuestieHashMap = {
   ['finishedBy']="Rethiel the Greenwarden",
   ['level']=20,
   ['questLevel']='23',
+   ['rr']=77,
   ['rq']=378222104
  },
  [137476834]={
@@ -21966,7 +22042,8 @@ QuestieHashMap = {
   ['startedBy']="Belgrom Rockmaul",
   ['finishedBy']="Ag'tor Bloodfist",
   ['level']=50,
-  ['questLevel']='53'
+  ['questLevel']='53',
+   ['rr']=178,
  },
  [2113599736]={
   ['name']="Target: Hive'Ashi Stingers",
@@ -22016,6 +22093,7 @@ QuestieHashMap = {
   ['finishedBy']="Volcor",
   ['level']=16,
   ['questLevel']='20',
+   ['rr']=77,
   ['rq']=1800505328
  },
  [2732908280]={
@@ -22364,7 +22442,7 @@ QuestieHashMap = {
   ['finishedBy']="Menara Voidrender",
   ['level']=31,
   ['questLevel']='31',
-  ['rr']=178,
+  ['rr']=77,
   ['rc']=256
  },
  [1959398416]={
@@ -22514,6 +22592,7 @@ QuestieHashMap = {
   ['finishedBy']="Grimand Elmore",
   ['level']=20,
   ['questLevel']='29',
+   ['rr']=77,
   ['rq']=3619351373
  },
  [1357057609]={
@@ -22576,7 +22655,7 @@ QuestieHashMap = {
   ['finishedBy']="Gornek",
   ['level']=1,
   ['questLevel']='1',
-  ['rr']=130
+  ['rr']=178
  },
  [4148450949]={
   ['name']="Speaking of Fortitude",
@@ -22618,6 +22697,7 @@ QuestieHashMap = {
   ['finishedBy']="Mokvar",
   ['level']=58,
   ['questLevel']='60D',
+   ['rr']=178,
   ['rc']=128,
   ['rq']=380651482
  },
@@ -22712,6 +22792,7 @@ QuestieHashMap = {
   ['finishedBy']="Fallen Hero of the Horde",
   ['level']=50,
   ['questLevel']='52',
+   ['rr']=77,
   ['rc']=1
  },
  [2069752338]={
@@ -22950,6 +23031,7 @@ QuestieHashMap = {
   ['finishedBy']="Terenthis",
   ['level']=12,
   ['questLevel']='20',
+   ['rr']=77,
   ['rq']=3554359192
  },
  [36927861]={
@@ -23064,7 +23146,8 @@ QuestieHashMap = {
   ['startedBy']="Sentinel Aynasha",
   ['finishedBy']="Sentinel Onaeya",
   ['level']=13,
-  ['questLevel']='15'
+  ['questLevel']='15',
+   ['rr']=77,
  },
  [1229284848]={
   ['name']="March of the Silithid",
@@ -23073,7 +23156,8 @@ QuestieHashMap = {
   ['startedBy']="Gracina Spiritmight",
   ['finishedBy']="Alchemist Pestlezugg",
   ['level']=50,
-  ['questLevel']='53'
+  ['questLevel']='53',
+   ['rr']=77,
  },
  [2104129845]={
   ['name']="Westbrook Garrison Needs Help!",
@@ -23157,6 +23241,7 @@ QuestieHashMap = {
   ['finishedBy']="Zengu",
   ['level']=32,
   ['questLevel']='41+',
+   ['rr']=178,
   ['rq']=18491744
  },
  [2854215506]={
@@ -23391,7 +23476,8 @@ QuestieHashMap = {
   ['startedBy']="Ormer Ironbraid",
   ['finishedBy']="Ormer Ironbraid",
   ['level']=22,
-  ['questLevel']='24'
+  ['questLevel']='24',
+   ['rr']=77,
  },
  [2623808320]={
   ['name']="Extinguishing the Idol",
@@ -23753,6 +23839,7 @@ QuestieHashMap = {
   ['finishedBy']="Gilveradin Sunchaser",
   ['level']=42,
   ['questLevel']='48',
+   ['rr']=178,
   ['rq']=808143192
  },
  [1811450909]={
@@ -23847,7 +23934,8 @@ QuestieHashMap = {
   ['startedBy']="Gubber Blump",
   ['finishedBy']="Gubber Blump",
   ['level']=10,
-  ['questLevel']='14'
+  ['questLevel']='14',
+   ['rr']=77,
  },
  [2997151810]={
   ['name']="Favor Amongst the Darkspear",
@@ -24044,6 +24132,7 @@ QuestieHashMap = {
   ['finishedBy']="Archaeologist Flagongut",
   ['level']=16,
   ['questLevel']='20',
+   ['rr']=77,
   ['rq']=2475999352
  },
  [3494954253]={
@@ -24254,6 +24343,7 @@ QuestieHashMap = {
   ['finishedBy']="Iverron",
   ['level']=2,
   ['questLevel']='4',
+   ['rr']=77,
   ['rq']=2003448272
  },
  [3347336536]={
@@ -24264,6 +24354,7 @@ QuestieHashMap = {
   ['finishedBy']="Oben Rageclaw",
   ['level']=7,
   ['questLevel']='10',
+   ['rr']=77,
   ['rq']=474854800
  },
  [3503766869]={
@@ -24502,6 +24593,7 @@ QuestieHashMap = {
   ['finishedBy']="Orokk Omosh",
   ['level']=33,
   ['questLevel']='36',
+   ['rr']=178,
   ['rs']=164,
   ['rsc']=1,
   ['rq']=4032282832
@@ -24543,6 +24635,7 @@ QuestieHashMap = {
   ['finishedBy']="Intrepid's Locked Strongbox",
   ['level']=22,
   ['questLevel']='30',
+   ['rr']=77,
   ['rq']=3570488600
  },
  [325980490]={
@@ -24732,7 +24825,8 @@ QuestieHashMap = {
   ['startedBy']="Prospector Stonehewer",
   ['finishedBy']="Prospector Stonehewer",
   ['level']=51,
-  ['questLevel']='60PVP'
+  ['questLevel']='60PVP',
+   ['rr']=77,
  },
  [1641774544]={
   ['name']="Safety First",
@@ -24859,7 +24953,8 @@ QuestieHashMap = {
   ['startedBy']="Thundris Windweaver",
   ['finishedBy']="Asterion",
   ['level']=8,
-  ['questLevel']='12'
+  ['questLevel']='12',
+   ['rr']=77,
  },
  [1736181808]={
   ['name']="Williden's Journal",
@@ -24969,7 +25064,8 @@ QuestieHashMap = {
   ['startedBy']="Master Mechanic Castpipe",
   ['finishedBy']="Master Mechanic Castpipe",
   ['level']=25,
-  ['questLevel']='30D'
+  ['questLevel']='30D',
+   ['rr']=77,
  },
  [4048613480]={
   ['name']="The Bounty of Teldrassil",
@@ -25029,7 +25125,8 @@ QuestieHashMap = {
   ['startedBy']="Belgrom Rockmaul",
   ['finishedBy']="Rok Orhan",
   ['level']=38,
-  ['questLevel']='43'
+  ['questLevel']='43',
+   ['rr']=178,
  },
  [1357019642]={
   ['name']="Coyote Thieves",
@@ -25277,6 +25374,7 @@ QuestieHashMap = {
   ['finishedBy']="Princess Moira Bronzebeard",
   ['level']=50,
   ['questLevel']='59D',
+   ['rr']=77,
   ['rq']=2918821437
  },
  [2147253301]={
@@ -25298,7 +25396,7 @@ QuestieHashMap = {
   ['finishedBy']="Menara Voidrender",
   ['level']=31,
   ['questLevel']='31',
-  ['rr']=77,
+  ['rr']=178,
   ['rc']=256
  },
  [1308963082]={
@@ -25400,7 +25498,7 @@ QuestieHashMap = {
   ['finishedBy']="Menara Voidrender",
   ['level']=35,
   ['questLevel']='35',
-  ['rr']=77,
+  ['rr']=178,
   ['rc']=256
  },
  [2452394104]={
@@ -25481,6 +25579,7 @@ QuestieHashMap = {
   ['finishedBy']="Terenthis",
   ['level']=11,
   ['questLevel']='14',
+   ['rr']=77,
   ['rq']=960178032
  },
  [3470135322]={
@@ -25514,6 +25613,7 @@ QuestieHashMap = {
   ['finishedBy']="Delgren the Purifier",
   ['level']=16,
   ['questLevel']='21',
+   ['rr']=77,
   ['rq']=2409189000
  },
  [3247385096]={
@@ -25835,7 +25935,8 @@ QuestieHashMap = {
   ['startedBy']="Zilzibin Drumlore",
   ['finishedBy']="Alchemist Pestlezugg",
   ['level']=50,
-  ['questLevel']='53'
+  ['questLevel']='53',
+   ['rr']=178,
  },
  [2000214770]={
   ['name']="Ribbons of Sacrifice",
@@ -26123,6 +26224,7 @@ QuestieHashMap = {
   ['finishedBy']="Athridas Bearmantle",
   ['level']=4,
   ['questLevel']='6',
+   ['rr']=77,
   ['rq']=2759173245
  },
  [1734639418]={
@@ -26155,7 +26257,8 @@ QuestieHashMap = {
   ['startedBy']="Craven Drok",
   ['finishedBy']="Keldran",
   ['level']=30,
-  ['questLevel']='30'
+  ['questLevel']='30',
+   ['rr']=178,
  },
  [2517047581]={
   ['name']="Look to an Old Friend",
@@ -26237,6 +26340,7 @@ QuestieHashMap = {
   ['finishedBy']="Elling Trias",
   ['level']=28,
   ['questLevel']='28',
+   ['rr']=77,
   ['rq']=314142637
  },
  [2866819845]={
@@ -26511,6 +26615,7 @@ QuestieHashMap = {
   ['finishedBy']="Jarkal Mossmeld",
   ['level']=37,
   ['questLevel']='42D',
+   ['rr']=178,
   ['rq']=1274664888
  },
  [14820544]={
@@ -26521,6 +26626,7 @@ QuestieHashMap = {
   ['finishedBy']="Deliana",
   ['level']=58,
   ['questLevel']='60D',
+   ['rr']=77,
   ['rc']=256,
   ['rq']=2085360877
  },
@@ -26532,6 +26638,7 @@ QuestieHashMap = {
   ['finishedBy']="Balthule Shadowstrike",
   ['level']=13,
   ['questLevel']='18',
+   ['rr']=77,
   ['rq']=358172088
  },
  [1104017669]={
@@ -26675,6 +26782,7 @@ QuestieHashMap = {
   ['finishedBy']="Takata Steelblade",
   ['level']=30,
   ['questLevel']='30',
+   ['rr']=178,
   ['rq']=291126256
  },
  [2341254162]={
@@ -26747,6 +26855,7 @@ QuestieHashMap = {
   ['finishedBy']="First Mate Fitzsimmons",
   ['level']=22,
   ['questLevel']='29',
+   ['rr']=77,
   ['rq']=263164520
  },
  [3705382637]={
@@ -26939,7 +27048,8 @@ QuestieHashMap = {
   ['startedBy']="Melithar Staghelm",
   ['finishedBy']="Tarindrella",
   ['level']=1,
-  ['questLevel']='2'
+  ['questLevel']='2',
+   ['rr']=77,
  },
  [813866252]={
   ['name']="The Tome of Divinity",
@@ -26970,6 +27080,7 @@ QuestieHashMap = {
   ['finishedBy']="Delgren the Purifier",
   ['level']=28,
   ['questLevel']='31',
+   ['rr']=77,
   ['rq']=432732864
  },
  [2691475272]={
@@ -27194,6 +27305,7 @@ QuestieHashMap = {
   ['finishedBy']="Terenthis",
   ['level']=17,
   ['questLevel']='20',
+   ['rr']=77,
   ['rq']=907645176
  },
  [1537766538]={
@@ -27527,6 +27639,7 @@ QuestieHashMap = {
   ['finishedBy']="Tabetha",
   ['level']=30,
   ['questLevel']='38',
+   ['rr']=178,
   ['rc']=128
  },
  [350103752]={
@@ -27537,7 +27650,6 @@ QuestieHashMap = {
   ['finishedBy']="Batrider Pele'keiki",
   ['level']=57,
   ['questLevel']='60',
-  ['rr']=178,
  },
  [1622724893]={
   ['name']="The Borrower",
@@ -27916,7 +28028,8 @@ QuestieHashMap = {
   ['startedBy']="Sentinel Farsong",
   ['finishedBy']="Sentinel Farsong",
   ['level']=10,
-  ['questLevel']='15PVP'
+  ['questLevel']='15PVP',
+   ['rr']=77,
  },
  [1814659981]={
   ['name']="Enraged Wildkin",
@@ -27997,6 +28110,7 @@ QuestieHashMap = {
   ['finishedBy']="Ol' Emma",
   ['level']=50,
   ['questLevel']='52',
+   ['rr']=77,
   ['rq']=57042381
  },
  [2108999226]={
@@ -28048,6 +28162,7 @@ QuestieHashMap = {
   ['finishedBy']="Tharnariun Treetender",
   ['level']=12,
   ['questLevel']='18',
+   ['rr']=77,
   ['rq']=3691288056
  },
  [2819658504]={
@@ -28088,6 +28203,7 @@ QuestieHashMap = {
   ['finishedBy']="Jonathan Carevin",
   ['level']=23,
   ['questLevel']='31',
+   ['rr']=77,
   ['rq']=2505187237
  },
  [482682792]={
@@ -28139,7 +28255,8 @@ QuestieHashMap = {
   ['startedBy']="Terenthis",
   ['finishedBy']="Terenthis",
   ['level']=10,
-  ['questLevel']='14'
+  ['questLevel']='14',
+   ['rr']=77,
  },
  [218880904]={
   ['name']="Hallowed Tablet",
@@ -28452,6 +28569,7 @@ QuestieHashMap = {
   ['finishedBy']="Dragonmaw Catapult",
   ['level']=23,
   ['questLevel']='31',
+   ['rr']=77,
   ['rq']=829258016
  },
  [1785827664]={
@@ -28660,6 +28778,7 @@ QuestieHashMap = {
   ['finishedBy']="Overlord Runthak",
   ['level']=60,
   ['questLevel']='60',
+   ['rr']=178,
   ['rs']=165,
   ['rsc']=300,
   ['rq']=2429238466
@@ -28793,6 +28912,7 @@ QuestieHashMap = {
   ['finishedBy']="Krug Skullsplit",
   ['level']=60,
   ['questLevel']='60',
+   ['rr']=178,
   ['rq']=null
  },
  [521088160]={
@@ -28895,7 +29015,8 @@ QuestieHashMap = {
   ['startedBy']="Denalan",
   ['finishedBy']="Denalan",
   ['level']=4,
-  ['questLevel']='7'
+  ['questLevel']='7',
+   ['rr']=77,
  },
  [125117760]={
   ['name']="Land Ho!",
@@ -28976,6 +29097,7 @@ QuestieHashMap = {
   ['finishedBy']="Tallonkai Swiftroot",
   ['level']=5,
   ['questLevel']='8',
+   ['rr']=77,
   ['rq']=3242835672
  },
  [3779547568]={
@@ -28986,6 +29108,7 @@ QuestieHashMap = {
   ['finishedBy']="Tenaron Stormgrip",
   ['level']=4,
   ['questLevel']='5',
+   ['rr']=77,
   ['rq']=173022680
  },
  [3957944208]={
@@ -29005,6 +29128,7 @@ QuestieHashMap = {
   ['finishedBy']="Warmaster Laggrond",
   ['level']=55,
   ['questLevel']='60',
+   ['rr']=178,
   ['rq']=278539016
  },
  [2949800336]={
@@ -29098,7 +29222,8 @@ QuestieHashMap = {
   ['startedBy']="Herbalist Proudfeather",
   ['finishedBy']="Herbalist Proudfeather",
   ['level']=54,
-  ['questLevel']='60'
+  ['questLevel']='60',
+   ['rr']=178,
  },
  [2509404821]={
   ['name']="Down the Scarlet Path",
@@ -29432,7 +29557,8 @@ QuestieHashMap = {
   ['startedBy']="Milli Featherwhistle",
   ['finishedBy']="Milli Featherwhistle",
   ['level']=60,
-  ['questLevel']='1'
+  ['questLevel']='1',
+   ['rr']=77,
  },
  [1735134704]={
   ['name']="Shadowguard",
@@ -29525,7 +29651,8 @@ QuestieHashMap = {
   ['startedBy']="Rethiel the Greenwarden",
   ['finishedBy']="Rethiel the Greenwarden",
   ['level']=20,
-  ['questLevel']='21'
+  ['questLevel']='21',
+   ['rr']=77,
  },
  [2423749450]={
   ['name']="The Angry Scytheclaws",
@@ -29568,7 +29695,6 @@ QuestieHashMap = {
   ['finishedBy']="Fisherman Lin'do",
   ['level']=52,
   ['questLevel']='60',
-  ['rr']=178,
  },
  [2913570210]={
   ['name']="Find the Gems and Power Source",
@@ -29589,6 +29715,7 @@ QuestieHashMap = {
   ['finishedBy']="Dirania Silvershine",
   ['level']=2,
   ['questLevel']='4',
+   ['rr']=77,
   ['rq']=1452330344
  },
  [3510018024]={
@@ -29669,6 +29796,7 @@ QuestieHashMap = {
   ['finishedBy']="Quae",
   ['level']=30,
   ['questLevel']='36',
+   ['rr']=77,
   ['rq']=386805293
  },
  [3996268360]={
@@ -29679,6 +29807,7 @@ QuestieHashMap = {
   ['finishedBy']="Mokvar",
   ['level']=58,
   ['questLevel']='60D',
+   ['rr']=178,
   ['rc']=256,
   ['rq']=380651482
  },
@@ -29755,6 +29884,7 @@ QuestieHashMap = {
   ['finishedBy']="Verner Osgood",
   ['level']=14,
   ['questLevel']='18',
+   ['rr']=77,
   ['rq']=3101570368
  },
  [4032996901]={
@@ -30158,7 +30288,8 @@ QuestieHashMap = {
   ['startedBy']="Fraggar Thundermantle",
   ['finishedBy']="Fraggar Thundermantle",
   ['level']=40,
-  ['questLevel']='45'
+  ['questLevel']='45',
+   ['rr']=77,
  },
  [1358144264]={
   ['name']="Allegiance to Cenarion Circle",
@@ -30290,7 +30421,8 @@ QuestieHashMap = {
   ['startedBy']="Conservator Ilthalaine",
   ['finishedBy']="Conservator Ilthalaine",
   ['level']=1,
-  ['questLevel']='2'
+  ['questLevel']='2',
+   ['rr']=77,
  },
  [2207394709]={
   ['name']="Knowledge of the Orb of Orahil",
@@ -30353,6 +30485,7 @@ QuestieHashMap = {
   ['finishedBy']="Corithras Moonrage",
   ['level']=6,
   ['questLevel']='11',
+   ['rr']=77,
   ['rq']=8875032
  },
  [4083262141]={
@@ -30592,6 +30725,7 @@ QuestieHashMap = {
   ['finishedBy']="Gelkak Gyromast",
   ['level']=18,
   ['questLevel']='20+',
+   ['rr']=77,
   ['rq']=1148000800
  },
  [1485941189]={
@@ -30631,6 +30765,7 @@ QuestieHashMap = {
   ['finishedBy']="Klannoc Macleod",
   ['level']=30,
   ['questLevel']='30',
+   ['rr']=77,
   ['rc']=1
  },
  [272488840]={
@@ -30734,7 +30869,8 @@ QuestieHashMap = {
   ['startedBy']="Oben Rageclaw",
   ['finishedBy']="Oben Rageclaw",
   ['level']=6,
-  ['questLevel']='8'
+  ['questLevel']='8',
+   ['rr']=77,
  },
  [1084952520]={
   ['name']="Libram of Constitution",
@@ -30764,6 +30900,7 @@ QuestieHashMap = {
   ['finishedBy']="Oglethorpe Obnoticus",
   ['level']=47,
   ['questLevel']='47',
+   ['rr']=77,
   ['rs']=202,
   ['rsc']=200,
   ['rq']=1706096282
@@ -31587,6 +31724,7 @@ QuestieHashMap = {
   ['finishedBy']="Deliana",
   ['level']=58,
   ['questLevel']='60D',
+   ['rr']=77,
   ['rc']=128,
   ['rq']=2085360877
  },
@@ -31629,6 +31767,7 @@ QuestieHashMap = {
   ['finishedBy']="Onu",
   ['level']=13,
   ['questLevel']='17',
+   ['rr']=77,
   ['rq']=2333541928
  },
  [3162494373]={
@@ -31853,6 +31992,7 @@ QuestieHashMap = {
   ['finishedBy']="Dirania Silvershine",
   ['level']=2,
   ['questLevel']='4',
+   ['rr']=77,
   ['rq']=2340534904
  },
  [2571749528]={
@@ -32031,7 +32171,8 @@ QuestieHashMap = {
   ['startedBy']="Thrall",
   ['finishedBy']="Thrall",
   ['level']=9,
-  ['questLevel']='12'
+  ['questLevel']='12',
+   ['rr']=178,
  },
  [3626672946]={
   ['name']="Rot Hide Ichor",
@@ -32206,7 +32347,8 @@ QuestieHashMap = {
   ['startedBy']="Apothecary Zinge",
   ['finishedBy']="Shadowmage Vivian Lagrave",
   ['level']=50,
-  ['questLevel']='55D'
+  ['questLevel']='55D',
+   ['rr']=178,
  },
  [400918794]={
   ['name']="An Earnest Proposition",
@@ -32237,6 +32379,7 @@ QuestieHashMap = {
   ['finishedBy']="Onu",
   ['level']=9,
   ['questLevel']='11',
+   ['rr']=77,
   ['rq']=1432467200
  },
  [113020088]={
@@ -32342,6 +32485,7 @@ QuestieHashMap = {
   ['finishedBy']="Loremaster Dibbs",
   ['level']=20,
   ['questLevel']='38',
+   ['rr']=77,
   ['rq']=1314270733
  },
  [49609525]={
@@ -32387,6 +32531,7 @@ QuestieHashMap = {
   ['finishedBy']="High Executor Derrington",
   ['level']=55,
   ['questLevel']='60',
+   ['rr']=178,
   ['rq']=2114907946
  },
  [720267600]={
@@ -32491,7 +32636,8 @@ QuestieHashMap = {
   ['startedBy']="Master Sergeant Fizzlebolt",
   ['finishedBy']="Field Marshal Snowfall",
   ['level']=49,
-  ['questLevel']='60'
+  ['questLevel']='60',
+   ['rr']=77,
  },
  [136346693]={
   ['name']="Seeking Wisdom",
@@ -32541,7 +32687,8 @@ QuestieHashMap = {
   ['startedBy']="Tallonkai Swiftroot",
   ['finishedBy']="Tallonkai Swiftroot",
   ['level']=4,
-  ['questLevel']='7'
+  ['questLevel']='7',
+   ['rr']=77,
  },
  [2219978584]={
   ['name']="Return to the Blasted Lands",
@@ -32717,6 +32864,7 @@ QuestieHashMap = {
   ['finishedBy']="Delgren the Purifier",
   ['level']=20,
   ['questLevel']='28',
+   ['rr']=77,
   ['rq']=3181993408
  },
  [698120285]={
@@ -33129,7 +33277,8 @@ QuestieHashMap = {
   ['startedBy']="Prospector Whelgar",
   ['finishedBy']="Prospector Whelgar",
   ['level']=25,
-  ['questLevel']='28'
+  ['questLevel']='28',
+   ['rr']=77,
  },
  [2841821173]={
   ['name']="A Plague Upon Thee",
@@ -33235,6 +33384,7 @@ QuestieHashMap = {
   ['finishedBy']="Thundris Windweaver",
   ['level']=11,
   ['questLevel']='15',
+   ['rr']=77,
   ['rq']=1552848976
  },
  [2809938800]={
@@ -33264,7 +33414,8 @@ QuestieHashMap = {
   ['startedBy']="Syral Bladeleaf",
   ['finishedBy']="Denalan",
   ['level']=4,
-  ['questLevel']='5'
+  ['questLevel']='5',
+   ['rr']=77,
  },
  [1383663885]={
   ['name']="Zombie Juice",
@@ -33285,7 +33436,7 @@ QuestieHashMap = {
   ['finishedBy']="Dendrite Starblaze",
   ['level']=16,
   ['questLevel']='16',
-  ['rr']=32,
+  ['rr']=8,
   ['rc']=1024
  },
  [1846219709]={
@@ -33793,7 +33944,8 @@ QuestieHashMap = {
   ['startedBy']="Deliana",
   ['finishedBy']="Bodley",
   ['level']=58,
-  ['questLevel']='60'
+  ['questLevel']='60',
+   ['rr']=77,
  },
  [1077918336]={
   ['name']="Lost!",
@@ -33843,6 +33995,7 @@ QuestieHashMap = {
   ['finishedBy']="Rellian Greenspyre",
   ['level']=6,
   ['questLevel']='9',
+   ['rr']=77,
   ['rq']=2249236744
  },
  [194422216]={
@@ -34357,7 +34510,8 @@ QuestieHashMap = {
   ['startedBy']="Lelanai",
   ['finishedBy']="Lelanai",
   ['level']=60,
-  ['questLevel']='1'
+  ['questLevel']='1',
+   ['rr']=77,
  },
  [1350591240]={
   ['name']="Signal for Pickup",
@@ -34366,7 +34520,8 @@ QuestieHashMap = {
   ['startedBy']="Xiggs Fuselighter",
   ['finishedBy']="Xiggs Fuselighter",
   ['level']=45,
-  ['questLevel']='52'
+  ['questLevel']='52',
+   ['rr']=77,
  },
  [2597010416]={
   ['name']="The Balance of Nature",
@@ -34376,6 +34531,7 @@ QuestieHashMap = {
   ['finishedBy']="Conservator Ilthalaine",
   ['level']=2,
   ['questLevel']='3',
+   ['rr']=77,
   ['rq']=1961053712
  },
  [3117016770]={
@@ -34510,6 +34666,7 @@ QuestieHashMap = {
   ['finishedBy']="Denalan",
   ['level']=6,
   ['questLevel']='9',
+   ['rr']=77,
   ['rq']=2875755232
  },
  [3419419349]={
@@ -34745,6 +34902,7 @@ QuestieHashMap = {
   ['finishedBy']="Tenaron Stormgrip",
   ['level']=4,
   ['questLevel']='5',
+   ['rr']=77,
   ['rq']=2950192384
  },
  [1235778317]={
@@ -34797,7 +34955,6 @@ QuestieHashMap = {
   ['level']=1,
   ['questLevel']='60',
   ['rq']=2411992296,
-  ['rr']=178,
  },
  [326329624]={
   ['name']="Ignition",
@@ -34989,6 +35146,7 @@ QuestieHashMap = {
   ['finishedBy']="Chemist Cuely",
   ['level']=45,
   ['questLevel']='52',
+   ['rr']=178,
   ['rq']=529962450
  },
  [1002486617]={
@@ -35043,6 +35201,7 @@ QuestieHashMap = {
   ['finishedBy']="Mokvar",
   ['level']=58,
   ['questLevel']='60D',
+   ['rr']=178,
   ['rc']=1,
   ['rq']=380651482
  },
@@ -35159,6 +35318,7 @@ QuestieHashMap = {
   ['finishedBy']="Varimathras",
   ['level']=19,
   ['questLevel']='32',
+   ['rr']=178,
   ['rq']=405676786
  },
  [2782441320]={
@@ -35586,6 +35746,7 @@ QuestieHashMap = {
   ['finishedBy']="Arch Druid Fandral Staghelm",
   ['level']=6,
   ['questLevel']='11',
+   ['rr']=77,
   ['rq']=172976144
  },
  [3269431154]={
@@ -36108,7 +36269,8 @@ QuestieHashMap = {
   ['startedBy']="Sergeant Hartman",
   ['finishedBy']="Sergeant Hartman",
   ['level']=59,
-  ['questLevel']='0PVP'
+  ['questLevel']='0PVP',
+   ['rr']=77,
  },
  [3518259384]={
   ['name']="The Wildlife Suffers Too",
@@ -36384,6 +36546,7 @@ QuestieHashMap = {
   ['finishedBy']="Mokvar",
   ['level']=58,
   ['questLevel']='60D',
+   ['rr']=178,
   ['rc']=16,
   ['rq']=380651482
  },
@@ -36426,7 +36589,8 @@ QuestieHashMap = {
   ['startedBy']="Zjolnir",
   ['finishedBy']="Zjolnir",
   ['level']=60,
-  ['questLevel']='1'
+  ['questLevel']='1',
+   ['rr']=178,
  },
  [1726250701]={
   ['name']="Dusky Crab Cakes",
@@ -36755,7 +36919,8 @@ QuestieHashMap = {
   ['startedBy']="Captain Shatterskull",
   ['finishedBy']="Captain Shatterskull",
   ['level']=10,
-  ['questLevel']='15PVP'
+  ['questLevel']='15PVP',
+   ['rr']=178,
  },
  [130610840]={
   ['name']="Death From Below",
@@ -36836,7 +37001,8 @@ QuestieHashMap = {
   ['startedBy']="Bonnie Stoneflayer",
   ['finishedBy']="Bonnie Stoneflayer",
   ['level']=50,
-  ['questLevel']='60'
+  ['questLevel']='60',
+   ['rr']=77,
  },
  [3792855168]={
   ['name']="Icy Scale Gauntlets",
@@ -37080,6 +37246,7 @@ QuestieHashMap = {
   ['finishedBy']="Major Mattingly",
   ['level']=60,
   ['questLevel']='60',
+   ['rr']=77,
   ['rs']=165,
   ['rsc']=300,
   ['rq']=816179976
@@ -37209,6 +37376,7 @@ QuestieHashMap = {
   ['finishedBy']="Archbishop Benedictus",
   ['level']=22,
   ['questLevel']='30',
+   ['rr']=77,
   ['rq']=2036359320
  },
  [1351948552]={
@@ -37269,7 +37437,8 @@ QuestieHashMap = {
   ['startedBy']="Moon Priestess Amara",
   ['finishedBy']="Moon Priestess Amara",
   ['level']=5,
-  ['questLevel']='8'
+  ['questLevel']='8',
+   ['rr']=77,
  },
  [2973211912]={
   ['name']="The Unmarred Vision of Voodress",
@@ -37403,6 +37572,7 @@ QuestieHashMap = {
   ['finishedBy']="Commander Althea Ebonlocke",
   ['level']=28,
   ['questLevel']='35+',
+   ['rr']=77,
   ['rq']=145064797
  },
  [1974146472]={
@@ -37455,7 +37625,8 @@ QuestieHashMap = {
   ['startedBy']="James Halloran",
   ['finishedBy']="James Halloran",
   ['level']=18,
-  ['questLevel']='22'
+  ['questLevel']='22',
+   ['rr']=77,
  },
  [3741115437]={
   ['name']="Goldtooth",
@@ -37515,7 +37686,8 @@ QuestieHashMap = {
   ['startedBy']="Einar Stonegrip",
   ['finishedBy']="James Halloran",
   ['level']=18,
-  ['questLevel']='21'
+  ['questLevel']='21',
+   ['rr']=77,
  },
  [3953587248]={
   ['name']="Crystal in the Mountains",
@@ -37624,6 +37796,7 @@ QuestieHashMap = {
   ['finishedBy']="Denalan",
   ['level']=8,
   ['questLevel']='9+',
+   ['rr']=77,
   ['rq']=339851576
  },
  [548221370]={
@@ -37698,7 +37871,8 @@ QuestieHashMap = {
   ['startedBy']="Master Sergeant Moonshadow",
   ['finishedBy']="Field Marshal Snowfall",
   ['level']=49,
-  ['questLevel']='60'
+  ['questLevel']='60',
+   ['rr']=77,
  },
  [2150321344]={
   ['name']="Securing the Lines",
@@ -37750,7 +37924,8 @@ QuestieHashMap = {
   ['startedBy']="Gorbold Steelhand",
   ['finishedBy']="Gorbold Steelhand",
   ['level']=13,
-  ['questLevel']='17'
+  ['questLevel']='17',
+   ['rr']=77,
  },
  [1353914168]={
   ['name']="News for Fizzle",
@@ -37969,7 +38144,8 @@ QuestieHashMap = {
   ['startedBy']="Bounty Hunter Kolark",
   ['finishedBy']="Bounty Hunter Kolark",
   ['level']=55,
-  ['questLevel']='60'
+  ['questLevel']='60',
+   ['rr']=178,
  },
  [1621216008]={
   ['name']="Copper Modulator",
@@ -38059,6 +38235,7 @@ QuestieHashMap = {
   ['finishedBy']="Chief Archaeologist Greywhisker",
   ['level']=15,
   ['questLevel']='20',
+   ['rr']=77,
   ['rq']=2628071680
  },
  [2207396346]={
@@ -38069,7 +38246,7 @@ QuestieHashMap = {
   ['finishedBy']="Menara Voidrender",
   ['level']=35,
   ['questLevel']='35',
-  ['rr']=178,
+  ['rr']=77,
   ['rc']=256
  },
  [4055635458]={
@@ -38089,7 +38266,8 @@ QuestieHashMap = {
   ['startedBy']="Nogg",
   ['finishedBy']="Nogg",
   ['level']=25,
-  ['questLevel']='35D'
+  ['questLevel']='35D',
+   ['rr']=178,
  },
  [386805293]={
   ['name']="Hints of a New Plague?",
@@ -38181,6 +38359,7 @@ QuestieHashMap = {
   ['finishedBy']="Scrying Bowl",
   ['level']=14,
   ['questLevel']='17',
+   ['rr']=77,
   ['rq']=4023064552
  },
  [3402749989]={
@@ -38221,7 +38400,8 @@ QuestieHashMap = {
   ['startedBy']="Commander Karl Philips",
   ['finishedBy']="Commander Karl Philips",
   ['level']=51,
-  ['questLevel']='60PVP'
+  ['questLevel']='60PVP',
+   ['rr']=77,
  },
  [2715103160]={
   ['name']="Finding the Source",
@@ -38357,6 +38537,7 @@ QuestieHashMap = {
   ['finishedBy']="Shadowmage Vivian Lagrave",
   ['level']=50,
   ['questLevel']='55D',
+   ['rr']=178,
   ['rq']=63826568
  },
  [803529744]={
@@ -38499,7 +38680,8 @@ QuestieHashMap = {
   ['startedBy']="Dalar Dawnweaver",
   ['finishedBy']="Dalar Dawnweaver",
   ['level']=18,
-  ['questLevel']='27D'
+  ['questLevel']='27D',
+   ['rr']=178,
  },
  [1807817410]={
   ['name']="Wrenix of Ratchet",
@@ -38719,7 +38901,8 @@ QuestieHashMap = {
   ['startedBy']="Katie Hunter",
   ['finishedBy']="Katie Hunter",
   ['level']=60,
-  ['questLevel']='1'
+  ['questLevel']='1',
+   ['rr']=77,
  },
  [3220691834]={
   ['name']="Return to Primal Torntusk",
@@ -38823,6 +39006,7 @@ QuestieHashMap = {
   ['finishedBy']="Rellian Greenspyre",
   ['level']=4,
   ['questLevel']='7',
+   ['rr']=77,
   ['rq']=1862917640
  },
  [794729472]={
@@ -38853,6 +39037,7 @@ QuestieHashMap = {
   ['finishedBy']="Bethor Iceshard",
   ['level']=5,
   ['questLevel']='8',
+   ['rr']=178,
   ['rq']=860166874
  },
  [3134921186]={
@@ -38906,6 +39091,7 @@ QuestieHashMap = {
   ['finishedBy']="Onu",
   ['level']=16,
   ['questLevel']='20',
+   ['rr']=77,
   ['rq']=4207757200
  },
  [1185299053]={
@@ -38966,7 +39152,8 @@ QuestieHashMap = {
   ['startedBy']="Dran Droffers",
   ['finishedBy']="Dran Droffers",
   ['level']=37,
-  ['questLevel']='41D'
+  ['questLevel']='41D',
+   ['rr']=178,
  },
  [1944716722]={
   ['name']="Wanted: Maggot Eye",
@@ -39129,7 +39316,6 @@ QuestieHashMap = {
   ['level']=1,
   ['questLevel']='60',
   ['rq']=4228324784,
-  ['rr']=178,
  },
  [524543314]={
   ['name']="Chimaeric Horn",
@@ -39268,7 +39454,8 @@ QuestieHashMap = {
   ['startedBy']="Sida",
   ['finishedBy']="Sida",
   ['level']=19,
-  ['questLevel']='24'
+  ['questLevel']='24',
+   ['rr']=77,
  },
  [4012619680]={
   ['name']="Prayer to Elune",
@@ -39277,7 +39464,8 @@ QuestieHashMap = {
   ['startedBy']="Zamael Lunthistle",
   ['finishedBy']="Zamael Lunthistle",
   ['level']=40,
-  ['questLevel']='50'
+  ['questLevel']='50',
+   ['rr']=77,
  },
  [1791222136]={
   ['name']="Noxious Lair Investigation",
@@ -39296,7 +39484,8 @@ QuestieHashMap = {
   ['startedBy']="Gilshalan Windwalker",
   ['finishedBy']="Gilshalan Windwalker",
   ['level']=3,
-  ['questLevel']='4'
+  ['questLevel']='4',
+   ['rr']=77,
  },
  [1968055197]={
   ['name']="Gearing Redridge",
@@ -39329,6 +39518,7 @@ QuestieHashMap = {
   ['finishedBy']="Apothecary Lydon",
   ['level']=13,
   ['questLevel']='18',
+   ['rr']=178,
   ['rq']=537892802
  },
  [3948900776]={
@@ -39783,6 +39973,7 @@ QuestieHashMap = {
   ['finishedBy']="Motley Garmason",
   ['level']=22,
   ['questLevel']='27D',
+   ['rr']=77,
   ['rq']=2729989296
  },
  [130066008]={
@@ -39834,7 +40025,8 @@ QuestieHashMap = {
   ['startedBy']="Sentinel Tysha Moonblade",
   ['finishedBy']="Sentinel Tysha Moonblade",
   ['level']=9,
-  ['questLevel']='12'
+  ['questLevel']='12',
+   ['rr']=77,
  },
  [1024666281]={
   ['name']="Grimand Elmore",
@@ -39844,7 +40036,7 @@ QuestieHashMap = {
   ['finishedBy']="Grimand Elmore",
   ['level']=27,
   ['questLevel']='28',
-  ['rr']=65,
+  ['rr']=1,
   ['rc']=1,
   ['rq']=417173653
  },
@@ -39922,6 +40114,7 @@ QuestieHashMap = {
   ['finishedBy']="Neeru Fireblade",
   ['level']=13,
   ['questLevel']='15',
+   ['rr']=178,
   ['rq']=3388528800
  },
  [1110716525]={
@@ -40017,7 +40210,8 @@ QuestieHashMap = {
   ['startedBy']="Vorrel Sengutz",
   ['finishedBy']="Monika Sengutz",
   ['level']=25,
-  ['questLevel']='33+'
+  ['questLevel']='33+',
+   ['rr']=178,
  },
  [279235250]={
   ['name']="The Captain's Cutlass",
@@ -40162,6 +40356,7 @@ QuestieHashMap = {
   ['finishedBy']="Thundris Windweaver",
   ['level']=11,
   ['questLevel']='15',
+   ['rr']=77,
   ['rq']=960178032
  },
  [2866468474]={
@@ -40311,7 +40506,8 @@ QuestieHashMap = {
   ['startedBy']="Motley Garmason",
   ['finishedBy']="Motley Garmason",
   ['level']=25,
-  ['questLevel']='30+'
+  ['questLevel']='30+',
+   ['rr']=77,
  },
  [2167072298]={
   ['name']="Consumed by Hatred",
@@ -40441,7 +40637,8 @@ QuestieHashMap = {
   ['startedBy']="Master Sergeant Maclure",
   ['finishedBy']="Field Marshal Snowfall",
   ['level']=49,
-  ['questLevel']='60'
+  ['questLevel']='60',
+   ['rr']=77,
  },
  [1485943173]={
   ['name']="Fight for Warsong Gulch",
@@ -40503,6 +40700,7 @@ QuestieHashMap = {
   ['finishedBy']="Krinkle Goodsteel",
   ['level']=55,
   ['questLevel']='57',
+   ['rr']=77,
   ['rq']=2745968488
  },
  [2266996472]={
@@ -40739,6 +40937,7 @@ QuestieHashMap = {
   ['finishedBy']="Captain Stoutfist",
   ['level']=23,
   ['questLevel']='28',
+   ['rr']=77,
   ['rq']=4083244960
  },
  [819329544]={
@@ -40758,6 +40957,7 @@ QuestieHashMap = {
   ['finishedBy']="Lieutenant Haggerdin",
   ['level']=51,
   ['questLevel']='60',
+   ['rr']=77,
   ['rq']=2862657320
  },
  [3504791528]={
@@ -40956,6 +41156,7 @@ QuestieHashMap = {
   ['finishedBy']="Magistrate Henry Maleb",
   ['level']=30,
   ['questLevel']='34',
+   ['rr']=77,
   ['rq']=3717333813
  },
  [3557217440]={
@@ -41121,7 +41322,7 @@ QuestieHashMap = {
   ['finishedBy']="Dendrite Starblaze",
   ['level']=16,
   ['questLevel']='16',
-  ['rr']=8,
+  ['rr']=32,
   ['rc']=1024
  },
  [3768577480]={
@@ -41132,6 +41333,7 @@ QuestieHashMap = {
   ['finishedBy']="Oran Snakewrithe",
   ['level']=42,
   ['questLevel']='47',
+   ['rr']=178,
   ['rq']=1067196810
  },
  [82340765]={
@@ -41184,7 +41386,8 @@ QuestieHashMap = {
   ['startedBy']="High Executor Hadrec",
   ['finishedBy']="Deathstalker Vincent",
   ['level']=18,
-  ['questLevel']='25D'
+  ['questLevel']='25D',
+   ['rr']=178,
  },
  [2097226272]={
   ['name']="Epic Armaments of Battle - Honored Amongst the Dawn",
@@ -41307,7 +41510,8 @@ QuestieHashMap = {
   ['startedBy']="Tallonkai Swiftroot",
   ['finishedBy']="Tallonkai Swiftroot",
   ['level']=2,
-  ['questLevel']='6'
+  ['questLevel']='6',
+   ['rr']=77,
  },
  [1901043093]={
   ['name']="Malin's Request",
@@ -41433,7 +41637,6 @@ QuestieHashMap = {
   ['finishedBy']="Senior Sergeant T'kelah",
   ['level']=52,
   ['questLevel']='60',
-  ['rr']=178,
  },
  [537127125]={
   ['name']="The Battle for Arathi Basin!",
@@ -41476,6 +41679,7 @@ QuestieHashMap = {
   ['finishedBy']="Orokk Omosh",
   ['level']=33,
   ['questLevel']='36',
+   ['rr']=178,
   ['rs']=164,
   ['rsc']=1,
   ['rq']=79912496
@@ -41518,6 +41722,7 @@ QuestieHashMap = {
   ['finishedBy']="Remains of a Paladin",
   ['level']=37,
   ['questLevel']='41D',
+   ['rr']=178,
   ['rq']=2574499136
  },
  [518708629]={
@@ -41570,7 +41775,8 @@ QuestieHashMap = {
   ['startedBy']="Wizbang Cranktoggle",
   ['finishedBy']="Buzzbox 827",
   ['level']=7,
-  ['questLevel']='10'
+  ['questLevel']='10',
+   ['rr']=77,
  },
  [2427008776]={
   ['name']="A Blue Light Bargain",
@@ -41654,6 +41860,7 @@ QuestieHashMap = {
   ['finishedBy']="Captain Nials",
   ['level']=28,
   ['questLevel']='31',
+   ['rr']=77,
   ['rq']=3569957224
  },
  [981057821]={
@@ -41748,6 +41955,7 @@ QuestieHashMap = {
   ['finishedBy']="Rhag Garmason",
   ['level']=28,
   ['questLevel']='31',
+   ['rr']=77,
   ['rq']=3885094896
  },
  [4046399752]={
@@ -41789,6 +41997,7 @@ QuestieHashMap = {
   ['finishedBy']="Lieutenant Haggerdin",
   ['level']=55,
   ['questLevel']='60',
+   ['rr']=77,
   ['rq']=278541576
  },
  [814511368]={
@@ -41913,6 +42122,7 @@ QuestieHashMap = {
   ['finishedBy']="Ogtinc",
   ['level']=50,
   ['questLevel']='52',
+   ['rr']=77,
   ['rc']=16
  },
  [3139312768]={
@@ -42086,6 +42296,7 @@ QuestieHashMap = {
   ['finishedBy']="Lieutenant Haggerdin",
   ['level']=55,
   ['questLevel']='60',
+   ['rr']=77,
   ['rq']=3768124168
  },
  [3357906256]={
@@ -42095,7 +42306,8 @@ QuestieHashMap = {
   ['startedBy']="Zenn Foulhoof",
   ['finishedBy']="Zenn Foulhoof",
   ['level']=4,
-  ['questLevel']='5'
+  ['questLevel']='5',
+   ['rr']=77,
  },
  [2422130632]={
   ['name']="Return Trip",
@@ -42177,7 +42389,8 @@ QuestieHashMap = {
   ['startedBy']="Sentinel Arynia Cloudsbreak",
   ['finishedBy']="Sentinel Arynia Cloudsbreak",
   ['level']=6,
-  ['questLevel']='11'
+  ['questLevel']='11',
+   ['rr']=77,
  },
  [1445412397]={
   ['name']="The Source Revealed",
@@ -42556,7 +42769,8 @@ QuestieHashMap = {
   ['startedBy']="Ogunaro Wolfrunner",
   ['finishedBy']="Ogunaro Wolfrunner",
   ['level']=60,
-  ['questLevel']='1'
+  ['questLevel']='1',
+   ['rr']=178,
  },
  [1399480416]={
   ['name']="The Horde Needs More Purple Lotus!",
@@ -42780,6 +42994,7 @@ QuestieHashMap = {
   ['finishedBy']="Loremaster Dibbs",
   ['level']=24,
   ['questLevel']='38+',
+   ['rr']=77,
   ['rq']=3965716960
  },
  [3207545725]={
@@ -42810,7 +43025,8 @@ QuestieHashMap = {
   ['startedBy']="Rhag Garmason",
   ['finishedBy']="Ebenezer Rustlocke's Corpse",
   ['level']=28,
-  ['questLevel']='31+'
+  ['questLevel']='31+',
+   ['rr']=77,
  },
  [3013858824]={
   ['name']="Sunken Treasure",
@@ -42900,7 +43116,8 @@ QuestieHashMap = {
   ['startedBy']="Nathanos Blightcaller",
   ['finishedBy']="Nathanos Blightcaller",
   ['level']=54,
-  ['questLevel']='58'
+  ['questLevel']='58',
+   ['rr']=178,
  },
  [1339691760]={
   ['name']="Taming the Beast",
@@ -42972,6 +43189,7 @@ QuestieHashMap = {
   ['finishedBy']="Zarrin",
   ['level']=5,
   ['questLevel']='7',
+   ['rr']=77,
   ['rs']=185,
   ['rsc']=1
  },
@@ -43117,6 +43335,7 @@ QuestieHashMap = {
   ['finishedBy']="Asterion",
   ['level']=9,
   ['questLevel']='12',
+   ['rr']=77,
   ['rq']=733448824
  },
  [2356542976]={
@@ -43561,6 +43780,7 @@ QuestieHashMap = {
   ['finishedBy']="Corithras Moonrage",
   ['level']=4,
   ['questLevel']='5',
+   ['rr']=77,
   ['rq']=658982664
  },
  [1930094845]={
@@ -43852,7 +44072,8 @@ QuestieHashMap = {
   ['startedBy']="Zjolnir",
   ['finishedBy']="Zjolnir",
   ['level']=60,
-  ['questLevel']='1'
+  ['questLevel']='1',
+   ['rr']=178,
  },
  [1985345301]={
   ['name']="A Little Slime Goes a Long Way",
@@ -44054,7 +44275,8 @@ QuestieHashMap = {
   ['startedBy']="Milli Featherwhistle",
   ['finishedBy']="Milli Featherwhistle",
   ['level']=60,
-  ['questLevel']='1'
+  ['questLevel']='1',
+   ['rr']=77,
  },
  [496038240]={
   ['name']="Clamlette Surprise",
@@ -44136,7 +44358,8 @@ QuestieHashMap = {
   ['startedBy']="Jeremiah Payson",
   ['finishedBy']="Janice Felstone",
   ['level']=50,
-  ['questLevel']='52'
+  ['questLevel']='52',
+   ['rr']=178,
  },
  [90156106]={
   ['name']="The Den",
@@ -44709,6 +44932,7 @@ QuestieHashMap = {
   ['finishedBy']="Balthule Shadowstrike",
   ['level']=23,
   ['questLevel']='28',
+   ['rr']=77,
   ['rq']=2661493280
  },
  [3910548856]={
@@ -44814,6 +45038,7 @@ QuestieHashMap = {
   ['finishedBy']="Mokvar",
   ['level']=58,
   ['questLevel']='60D',
+   ['rr']=178,
   ['rc']=4,
   ['rq']=380651482
  },
@@ -44981,7 +45206,8 @@ QuestieHashMap = {
   ['startedBy']="First Mate Fitzsimmons",
   ['finishedBy']="Rethiel the Greenwarden",
   ['level']=20,
-  ['questLevel']='21'
+  ['questLevel']='21',
+   ['rr']=77,
  },
  [3854595648]={
   ['name']="The Thirsty Goblin",
@@ -45109,6 +45335,7 @@ QuestieHashMap = {
   ['finishedBy']="Zengu",
   ['level']=32,
   ['questLevel']='42+',
+   ['rr']=178,
   ['rq']=1707327808
  },
  [38850976]={
@@ -45226,7 +45453,8 @@ QuestieHashMap = {
   ['startedBy']="Lexlort",
   ['finishedBy']="Grark Lorkrub",
   ['level']=52,
-  ['questLevel']='58D'
+  ['questLevel']='58D',
+   ['rr']=178,
  },
  [75738032]={
   ['name']="Cloak of Unending Life",
@@ -45245,7 +45473,8 @@ QuestieHashMap = {
   ['startedBy']="Thundris Windweaver",
   ['finishedBy']="Thundris Windweaver",
   ['level']=9,
-  ['questLevel']='12'
+  ['questLevel']='12',
+   ['rr']=77,
  },
  [1760607360]={
   ['name']="Camp Mojache",
@@ -45254,7 +45483,8 @@ QuestieHashMap = {
   ['startedBy']="Warcaller Gorlach",
   ['finishedBy']="Talo Thornhoof",
   ['level']=54,
-  ['questLevel']='57D'
+  ['questLevel']='57D',
+   ['rr']=178,
  },
  [3044459709]={
   ['name']="In Search of The Excavation Team",
@@ -45275,6 +45505,7 @@ QuestieHashMap = {
   ['finishedBy']="Zenn Foulhoof",
   ['level']=5,
   ['questLevel']='7',
+   ['rr']=77,
   ['rq']=3357906256
  },
  [4032978064]={
@@ -45405,6 +45636,7 @@ QuestieHashMap = {
   ['finishedBy']="Shadowmage Vivian Lagrave",
   ['level']=57,
   ['questLevel']='60R',
+   ['rr']=178,
   ['rq']=1290956144
  },
  [1349649978]={
@@ -45497,7 +45729,8 @@ QuestieHashMap = {
   ['startedBy']="Captain Nials",
   ['finishedBy']="Captain Nials",
   ['level']=30,
-  ['questLevel']='31'
+  ['questLevel']='31',
+   ['rr']=77,
  },
  [3658774640]={
   ['name']="Jonespyre's Request",
@@ -45507,6 +45740,7 @@ QuestieHashMap = {
   ['finishedBy']="Quintis Jonespyre",
   ['level']=45,
   ['questLevel']='50',
+   ['rr']=77,
   ['rq']=461774661
  },
  [2625778514]={
@@ -45890,6 +46124,7 @@ QuestieHashMap = {
   ['finishedBy']="Alchemist Arbington",
   ['level']=55,
   ['questLevel']='57',
+   ['rr']=77,
   ['rq']=1930094845
  },
  [3982357880]={
@@ -45966,6 +46201,7 @@ QuestieHashMap = {
   ['finishedBy']="Lieutenant Haggerdin",
   ['level']=55,
   ['questLevel']='60',
+   ['rr']=77,
   ['rq']=2429280520
  },
  [2979987744]={
@@ -46201,6 +46437,7 @@ QuestieHashMap = {
   ['finishedBy']="Alanndarian Nightsong",
   ['level']=9,
   ['questLevel']='12',
+   ['rr']=77,
   ['rs']=185,
   ['rsc']=10
  },
@@ -46669,6 +46906,7 @@ QuestieHashMap = {
   ['finishedBy']="Deliana",
   ['level']=58,
   ['questLevel']='60D',
+   ['rr']=77,
   ['rc']=8,
   ['rq']=2085360877
  },
@@ -46679,7 +46917,8 @@ QuestieHashMap = {
   ['startedBy']="Barithras Moonshade",
   ['finishedBy']="Barithras Moonshade",
   ['level']=12,
-  ['questLevel']='17'
+  ['questLevel']='17',
+   ['rr']=77,
  },
  [1604629136]={
   ['name']="Hive in the Tower",
@@ -46743,7 +46982,8 @@ QuestieHashMap = {
   ['startedBy']="Lieutenant Haggerdin",
   ['finishedBy']="Lieutenant Haggerdin",
   ['level']=51,
-  ['questLevel']='60'
+  ['questLevel']='60',
+   ['rr']=77,
  },
  [2649856472]={
   ['name']="Verdant Note",
@@ -47119,7 +47359,7 @@ QuestieHashMap = {
   ['finishedBy']="Gelvas Grimegate",
   ['level']=1,
   ['questLevel']='1',
-  ['rr']=78
+  ['rr']=178
  },
  [808808456]={
   ['name']="Paragons of Power: The Freethinker's Breastplate",
@@ -47161,6 +47401,7 @@ QuestieHashMap = {
   ['finishedBy']="Thundris Windweaver",
   ['level']=15,
   ['questLevel']='18',
+   ['rr']=77,
   ['rq']=1861584928
  },
  [2509859069]={
@@ -47233,6 +47474,7 @@ QuestieHashMap = {
   ['finishedBy']="Ormer Ironbraid",
   ['level']=22,
   ['questLevel']='29',
+   ['rr']=77,
   ['rq']=3105668072
  },
  [1598428088]={
@@ -47264,7 +47506,6 @@ QuestieHashMap = {
   ['level']=1,
   ['questLevel']='60',
   ['rq']=350103752,
-  ['rr']=178,
  },
  [2671410906]={
   ['name']="Report to Hadrec",
@@ -47325,7 +47566,8 @@ QuestieHashMap = {
   ['startedBy']="Gaxim Rustfizzle",
   ['finishedBy']="Master Mechanic Castpipe",
   ['level']=25,
-  ['questLevel']='28D'
+  ['questLevel']='28D',
+   ['rr']=77,
  },
  [2985857032]={
   ['name']="The Heart of the Mountain",
@@ -47355,6 +47597,7 @@ QuestieHashMap = {
   ['finishedBy']="Thrall",
   ['level']=9,
   ['questLevel']='12',
+   ['rr']=178,
   ['rq']=3043002304
  },
  [2268090965]={
@@ -47511,6 +47754,7 @@ QuestieHashMap = {
   ['finishedBy']="Sven Yorgen",
   ['level']=20,
   ['questLevel']='32+',
+   ['rr']=77,
   ['rq']=2431657136
  },
  [1831996872]={
@@ -47560,7 +47804,8 @@ QuestieHashMap = {
   ['startedBy']="Gubber Blump",
   ['finishedBy']="Gubber Blump",
   ['level']=15,
-  ['questLevel']='17'
+  ['questLevel']='17',
+   ['rr']=77,
  },
  [2393301653]={
   ['name']="A Bundle of Trouble",
@@ -47600,6 +47845,7 @@ QuestieHashMap = {
   ['finishedBy']="Commander Ashlam Valorfist",
   ['level']=55,
   ['questLevel']='60',
+   ['rr']=77,
   ['rq']=3426155464
  },
  [843633424]={
@@ -47637,7 +47883,8 @@ QuestieHashMap = {
   ['startedBy']="Valstag Ironjaw",
   ['finishedBy']="Captain Stoutfist",
   ['level']=23,
-  ['questLevel']='28'
+  ['questLevel']='28',
+   ['rr']=77,
  },
  [552154453]={
   ['name']="Arathor Standard Care Package",
@@ -47793,6 +48040,7 @@ QuestieHashMap = {
   ['finishedBy']="Mor'zul Bloodbringer",
   ['level']=58,
   ['questLevel']='58',
+   ['rr']=178,
   ['rc']=256
  },
  [4166657944]={
@@ -47886,7 +48134,8 @@ QuestieHashMap = {
   ['startedBy']="Harlo Barnaby",
   ['finishedBy']="Longbraid the Grim",
   ['level']=25,
-  ['questLevel']='25'
+  ['questLevel']='25',
+   ['rr']=77,
  },
  [1169969928]={
   ['name']="The Absent Minded Prospector",
@@ -47895,7 +48144,8 @@ QuestieHashMap = {
   ['startedBy']="Archaeologist Hollee",
   ['finishedBy']="Prospector Remtravel",
   ['level']=15,
-  ['questLevel']='20'
+  ['questLevel']='20',
+   ['rr']=77,
  },
  [297675714]={
   ['name']="A Humble Task",
@@ -47925,6 +48175,7 @@ QuestieHashMap = {
   ['finishedBy']="Warmaster Laggrond",
   ['level']=51,
   ['questLevel']='60',
+   ['rr']=178,
   ['rq']=839408744
  },
  [2868687872]={
@@ -48122,7 +48373,8 @@ QuestieHashMap = {
   ['startedBy']="Fenstad Argyle",
   ['finishedBy']="Fenstad Argyle",
   ['level']=1,
-  ['questLevel']='0'
+  ['questLevel']='0',
+   ['rr']=178,
  },
  [1669164736]={
   ['name']="The Pledge of Secrecy",
@@ -48320,7 +48572,8 @@ QuestieHashMap = {
   ['startedBy']="Warmaster Laggrond",
   ['finishedBy']="Warmaster Laggrond",
   ['level']=58,
-  ['questLevel']='60'
+  ['questLevel']='60',
+   ['rr']=178,
  },
  [3502155554]={
   ['name']="Rite of Strength",
@@ -48661,6 +48914,7 @@ QuestieHashMap = {
   ['finishedBy']="Corithras Moonrage",
   ['level']=4,
   ['questLevel']='9',
+   ['rr']=77,
   ['rq']=3898559928
  },
  [4141725365]={
@@ -48735,7 +48989,8 @@ QuestieHashMap = {
   ['startedBy']="Dran Droffers",
   ['finishedBy']="Malton Droffers",
   ['level']=42,
-  ['questLevel']='48'
+  ['questLevel']='48',
+   ['rr']=178,
  },
  [4037205960]={
   ['name']="Corrupted Songflower",
@@ -48774,7 +49029,8 @@ QuestieHashMap = {
   ['startedBy']="Veron Amberstill",
   ['finishedBy']="Veron Amberstill",
   ['level']=60,
-  ['questLevel']='1'
+  ['questLevel']='1',
+   ['rr']=77,
  },
  [13620154]={
   ['name']="One Commendation Signet",
@@ -48837,7 +49093,8 @@ QuestieHashMap = {
   ['startedBy']="Longbraid the Grim",
   ['finishedBy']="Longbraid the Grim",
   ['level']=26,
-  ['questLevel']='34+'
+  ['questLevel']='34+',
+   ['rr']=77,
  },
  [3634488440]={
   ['name']="Winterfall Ritual Totem",
@@ -49316,6 +49573,7 @@ QuestieHashMap = {
   ['finishedBy']="Orokk Omosh",
   ['level']=33,
   ['questLevel']='36',
+   ['rr']=178,
   ['rs']=164,
   ['rsc']=1,
   ['rq']=3948461560
@@ -49579,6 +49837,7 @@ QuestieHashMap = {
   ['finishedBy']="Deliana",
   ['level']=58,
   ['questLevel']='60D',
+   ['rr']=77,
   ['rc']=4,
   ['rq']=2085360877
  },
@@ -49645,7 +49904,8 @@ QuestieHashMap = {
   ['startedBy']="Harb Clawhoof",
   ['finishedBy']="Harb Clawhoof",
   ['level']=60,
-  ['questLevel']='1'
+  ['questLevel']='1',
+   ['rr']=178,
  },
  [4095272584]={
   ['name']="The Alliance Needs Spotted Yellowtail!",
@@ -49738,6 +49998,7 @@ QuestieHashMap = {
   ['finishedBy']="Nogg",
   ['level']=34,
   ['questLevel']='60',
+   ['rr']=178,
   ['rq']=550039738
  },
  [2860301797]={
@@ -50039,7 +50300,8 @@ QuestieHashMap = {
   ['startedBy']="Tharnariun Treetender",
   ['finishedBy']="Tharnariun Treetender",
   ['level']=10,
-  ['questLevel']='14'
+  ['questLevel']='14',
+   ['rr']=77,
  },
  [3105668072]={
   ['name']="Ormer's Revenge",
@@ -50049,6 +50311,7 @@ QuestieHashMap = {
   ['finishedBy']="Ormer Ironbraid",
   ['level']=22,
   ['questLevel']='27',
+   ['rr']=77,
   ['rq']=3606334264
  },
  [3170254125]={
@@ -50202,6 +50465,7 @@ QuestieHashMap = {
   ['finishedBy']="Rethiel the Greenwarden",
   ['level']=20,
   ['questLevel']='26',
+   ['rr']=77,
   ['rq']=3966529448
  },
  [3474432245]={
@@ -50264,6 +50528,7 @@ QuestieHashMap = {
   ['finishedBy']="Deliana",
   ['level']=58,
   ['questLevel']='60D',
+   ['rr']=77,
   ['rc']=1024,
   ['rq']=2085360877
  },
@@ -50568,6 +50833,7 @@ QuestieHashMap = {
   ['finishedBy']="Lieutenant Farren Orinelle",
   ['level']=25,
   ['questLevel']='32',
+   ['rr']=77,
   ['rq']=39787493
  },
  [1583144736]={
@@ -51010,7 +51276,8 @@ QuestieHashMap = {
   ['startedBy']="Warmaster Laggrond",
   ['finishedBy']="Warmaster Laggrond",
   ['level']=51,
-  ['questLevel']='60'
+  ['questLevel']='60',
+   ['rr']=178,
  },
  [4037205448]={
   ['name']="Corrupted Songflower",
@@ -51051,7 +51318,8 @@ QuestieHashMap = {
   ['startedBy']="Commander Louis Philips",
   ['finishedBy']="Commander Louis Philips",
   ['level']=51,
-  ['questLevel']='60PVP'
+  ['questLevel']='60PVP',
+   ['rr']=178,
  },
  [2857590157]={
   ['name']="Corruption of Earth and Seed",
@@ -51152,7 +51420,8 @@ QuestieHashMap = {
   ['startedBy']="Klockmort Spannerspan",
   ['finishedBy']="Klockmort Spannerspan",
   ['level']=24,
-  ['questLevel']='30D'
+  ['questLevel']='30D',
+   ['rr']=77,
  },
  [3931710045]={
   ['name']="The Legend of Stalvan",
@@ -51321,6 +51590,7 @@ QuestieHashMap = {
   ['finishedBy']="Verner Osgood",
   ['level']=15,
   ['questLevel']='25',
+   ['rr']=77,
   ['rq']=3718108280
  },
  [701624480]={
@@ -51498,6 +51768,7 @@ QuestieHashMap = {
   ['finishedBy']="Impsy",
   ['level']=52,
   ['questLevel']='60',
+   ['rr']=77,
   ['rc']=256
  },
  [837514432]={
@@ -51508,6 +51779,7 @@ QuestieHashMap = {
   ['finishedBy']="Scooty",
   ['level']=25,
   ['questLevel']='35D',
+   ['rr']=178,
   ['rq']=null
  },
  [3066435056]={
@@ -51567,6 +51839,7 @@ QuestieHashMap = {
   ['finishedBy']="Tharnariun Treetender",
   ['level']=10,
   ['questLevel']='16',
+   ['rr']=77,
   ['rq']=1210063744
  },
  [3532761730]={
@@ -51934,7 +52207,8 @@ QuestieHashMap = {
   ['startedBy']="Gelkak Gyromast",
   ['finishedBy']="Gelkak Gyromast",
   ['level']=14,
-  ['questLevel']='20'
+  ['questLevel']='20',
+   ['rr']=77,
  },
  [3511940266]={
   ['name']="Call of Water",
@@ -52363,7 +52637,8 @@ QuestieHashMap = {
   ['startedBy']="Deino",
   ['finishedBy']="Tabetha",
   ['level']=40,
-  ['questLevel']='46D'
+  ['questLevel']='46D',
+   ['rr']=178,
  },
  [66685000]={
   ['name']="Mantles of the Dawn",
