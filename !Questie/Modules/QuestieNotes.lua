@@ -1285,6 +1285,11 @@ function Questie_AvailableQuestClick()
             local registerDewdrop = function(frame, quests, k1, v1, k2, v2)
                 Dewdrop:Register(frame,
                     'children', function()
+                        Dewdrop:AddLine(
+                            'text', "Manually complete quest:",
+                            'notClickable', true
+                        );
+
                         for questHash, questMeta in pairs(quests) do
                             local quest = questMeta.quest;
                             local hash = questHash;
