@@ -10170,7 +10170,7 @@ QuestieHashMap = {
   ['startedBy']="Stoneguard Clayhoof",
   ['finishedBy']="Stoneguard Clayhoof",
   ['level']=59,
-  ['questLevel']='60'
+  ['questLevel']='60',
   ['rr']=178,
  },
  [3843657045]={
