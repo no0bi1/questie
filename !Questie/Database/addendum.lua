@@ -10217,6 +10217,7 @@ QuestieHashMap = {
   ['rs']=333,
   ['rsc']=1,
   ['rq']=1353438152
+     ['rr'] = 77,
  },
  [4194114960]={
   ['name']="Etched Note",
@@ -10260,6 +10261,7 @@ QuestieHashMap = {
   ['finishedBy']="Zanza the Restless",
   ['level']=58,
   ['questLevel']='60R'
+     ['rr'] = 77,
  },
  [105421549]={
   ['name']="Ride to Ironforge",
@@ -11414,6 +11416,7 @@ QuestieHashMap = {
   ['questLevel']='60R',
   ['rc']=2,
   ['rq']=2427120904
+     ['rr'] = 77,
  },
  [1499264005]={
   ['name']="Tome of the Cabal",
@@ -11654,6 +11657,7 @@ QuestieHashMap = {
   ['level']=11,
   ['questLevel']='14',
   ['rq']=3937606536
+     ['rr'] = 77,
  },
  [995949914]={
   ['name']="Lost Deathstalkers",
@@ -11976,6 +11980,7 @@ QuestieHashMap = {
   ['finishedBy']="Denalan",
   ['level']=7,
   ['questLevel']='10'
+     ['rr'] = 77,
  },
  [4040764680]={
   ['name']="The Protector of Kalimdor",
@@ -12016,6 +12021,7 @@ QuestieHashMap = {
   ['finishedBy']="Voggah Deathgrip",
   ['level']=51,
   ['questLevel']='60PVP'
+     ['rr'] = 178,
  },
  [3229463047]={
   ['name']="Frostsaber E'ko",
@@ -12419,6 +12425,7 @@ QuestieHashMap = {
   ['rs']=393,
   ['rsc']=1,
   ['rq']=2499347578
+     ['rr'] = 178,
  },
  [1544635581]={
   ['name']="Collection of Goods",
@@ -12492,6 +12499,7 @@ QuestieHashMap = {
   ['rs']=182,
   ['rsc']=1,
   ['rq']=2499347578
+     ['rr'] = 178,
  },
  [1146365498]={
   ['name']="Guile of the Raptor",
@@ -13103,6 +13111,7 @@ QuestieHashMap = {
   ['level']=22,
   ['questLevel']='30',
   ['rq']=1040226328
+     ['rr'] = 77,
  },
  [1641376597]={
   ['name']="Claiming Arathi Basin",
@@ -13650,6 +13659,7 @@ QuestieHashMap = {
   ['finishedBy']="Jes'rimon",
   ['level']=48,
   ['questLevel']='52'
+     ['rr'] = 178,
  },
  [3682519512]={
   ['name']="The Prophecy of Mosh'aru",
@@ -14415,6 +14425,7 @@ QuestieHashMap = {
   ['level']=29,
   ['questLevel']='40',
   ['rq']=3498620250
+     ['rr'] = 178,
  },
  [3383057274]={
   ['name']="Ambermill Investigations",
@@ -14718,6 +14729,7 @@ QuestieHashMap = {
   ['finishedBy']="Sentinel Glynda Nal'Shea",
   ['level']=15,
   ['questLevel']='18'
+     ['rr'] = 77,
  },
  [2939904194]={
   ['name']="The Scarlet Crusade",
@@ -14883,6 +14895,7 @@ QuestieHashMap = {
   ['level']=50,
   ['questLevel']='54D',
   ['rq']=1643376242
+     ['rr'] = 178,
  },
  [3230250888]={
   ['name']="The Sparklematic 5200!",
@@ -15036,6 +15049,7 @@ QuestieHashMap = {
   ['level']=55,
   ['questLevel']='60R',
   ['rq']=1471449378
+     ['rr'] = 178,
  },
  [720996965]={
   ['name']="The Curse of the Tides",
@@ -16842,6 +16856,7 @@ QuestieHashMap = {
   ['level']=48,
   ['questLevel']='48',
   ['rq']=1223001800
+     ['rr'] = 178,
  },
  [3393529818]={
   ['name']="Prove Your Worth",
@@ -17085,6 +17100,7 @@ QuestieHashMap = {
   ['rs']=393,
   ['rsc']=1,
   ['rq']=1351349000
+     ['rr'] = 77,
  },
  [813864201]={
   ['name']="The Tome of Divinity",
@@ -17476,6 +17492,7 @@ QuestieHashMap = {
   ['rs']=333,
   ['rsc']=1,
   ['rq']=2499347578
+     ['rr'] = 178,
  },
  [79912496]={
   ['name']="On Iron Pauldrons",
@@ -17540,6 +17557,7 @@ QuestieHashMap = {
   ['level']=30,
   ['questLevel']='32',
   ['rq']=4244683229
+     ['rr'] = 77,
  },
  [1887307720]={
   ['name']="Salve via Mining",
@@ -17552,6 +17570,7 @@ QuestieHashMap = {
   ['rs']=186,
   ['rsc']=1,
   ['rq']=1887305480
+     ['rr'] = 77,
  },
  [3114598570]={
   ['name']="Verog the Dervish",
@@ -18163,6 +18182,7 @@ QuestieHashMap = {
   ['rs']=186,
   ['rsc']=1,
   ['rq']=3958442293
+     ['rr'] = 77,
  },
  [1236113890]={
   ['name']="The Corpulent One",
@@ -18215,6 +18235,7 @@ QuestieHashMap = {
   ['level']=28,
   ['questLevel']='31',
   ['rq']=75587616
+     ['rr'] = 77,
  },
  [4164503552]={
   ['name']="Tiara of the Oracle",
@@ -18822,6 +18843,7 @@ QuestieHashMap = {
   ['level']=5,
   ['questLevel']='55',
   ['rq']=3958442293
+     ['rr'] = 77,
  },
  [1202930874]={
   ['name']="Raising Spirits",
@@ -20063,6 +20085,7 @@ QuestieHashMap = {
   ['finishedBy']="Rezlak",
   ['level']=7,
   ['questLevel']='9'
+     ['rr'] = 178,
  },
  [1517459552]={
   ['name']="The Dread Citadel - Naxxramas",
@@ -22352,6 +22375,7 @@ QuestieHashMap = {
   ['level']=55,
   ['questLevel']='60D',
   ['rq']=344732320
+     ['rr'] = 178,
  },
  [1062068898]={
   ['name']="Battle of Hillsbrad",
@@ -22433,6 +22457,7 @@ QuestieHashMap = {
   ['level']=12,
   ['questLevel']='14',
   ['rq']=2886207605
+     ['rr'] = 77,
  },
  [596775162]={
   ['name']="In Search of Menara Voidrender",
@@ -22474,6 +22499,7 @@ QuestieHashMap = {
   ['finishedBy']="Pratt McGrubben",
   ['level']=43,
   ['questLevel']='48'
+     ['rr'] = 77,
  },
  [529924589]={
   ['name']="The Stockade Riots",
@@ -22899,6 +22925,7 @@ QuestieHashMap = {
   ['finishedBy']="Gerrig Bonegrip",
   ['level']=15,
   ['questLevel']='20'
+     ['rr'] = 77,
  },
  [2882877765]={
   ['name']="Shimmer Stout",
@@ -23551,6 +23578,7 @@ QuestieHashMap = {
   ['finishedBy']="Denalan",
   ['level']=8,
   ['questLevel']='12'
+     ['rr'] = 77,
  },
  [3846569680]={
   ['name']="Marauders of Darrowshire",
@@ -23820,6 +23848,7 @@ QuestieHashMap = {
   ['level']=54,
   ['questLevel']='56',
   ['rq']=859845544
+     ['rr'] = 178,
  },
  [233761562]={
   ['name']="Stone Tokens",
@@ -24712,6 +24741,7 @@ QuestieHashMap = {
   ['finishedBy']="Argent Quartermaster Lightspark",
   ['level']=55,
   ['questLevel']='60'
+     ['rr'] = 77,
  },
  [2696554938]={
   ['name']="Additional Runecloth",
@@ -25056,6 +25086,7 @@ QuestieHashMap = {
   ['level']=29,
   ['questLevel']='36',
   ['rq']=617943570
+     ['rr'] = 178,
  },
  [3855078336]={
   ['name']="Data Rescue",
@@ -25344,6 +25375,7 @@ QuestieHashMap = {
   ['finishedBy']="Highlord Bolvar Fordragon",
   ['level']=50,
   ['questLevel']='60'
+     ['rr'] = 77,
  },
  [302516749]={
   ['name']="Twilight Falls",
@@ -26424,6 +26456,7 @@ QuestieHashMap = {
   ['rs']=333,
   ['rsc']=1,
   ['rq']=3958442293
+     ['rr'] = 77,
  },
  [1818035429]={
   ['name']="Muigin and Larion",
@@ -27011,6 +27044,7 @@ QuestieHashMap = {
   ['level']=23,
   ['questLevel']='32+',
   ['rq']=4010609432
+     ['rr'] = 77,
  },
  [2147662389]={
   ['name']="Mirages",
@@ -27371,6 +27405,7 @@ QuestieHashMap = {
   ['rs']=393,
   ['rsc']=1,
   ['rq']=3958442293
+     ['rr'] = 77,
  },
  [1963047133]={
   ['name']="Empty Stables",
@@ -28089,6 +28124,7 @@ QuestieHashMap = {
   ['finishedBy']="Denalan",
   ['level']=6,
   ['questLevel']='10'
+     ['rr'] = 77,
  },
  [664064485]={
   ['name']="Avenger's Greaves",
@@ -28297,6 +28333,7 @@ QuestieHashMap = {
   ['finishedBy']="Prospector Stonehewer",
   ['level']=51,
   ['questLevel']='60PVP'
+     ['rr'] = 77,
  },
  [3486635184]={
   ['name']="Wheel of the Black March",
@@ -29078,6 +29115,7 @@ QuestieHashMap = {
   ['level']=38,
   ['questLevel']='50D',
   ['rq']=1450372178
+     ['rr'] = 178,
  },
  [1845413170]={
   ['name']="The Hammer May Fall",
@@ -30582,6 +30620,7 @@ QuestieHashMap = {
   ['level']=32,
   ['questLevel']='40',
   ['rq']=3117016770
+     ['rr'] = 178,
  },
  [2568157088]={
   ['name']="Returning Home",
@@ -30914,6 +30953,7 @@ QuestieHashMap = {
   ['level']=13,
   ['questLevel']='17',
   ['rq']=1987777144
+     ['rr'] = 77,
  },
  [960326938]={
   ['name']="Elixir of Pain",
@@ -31087,6 +31127,7 @@ QuestieHashMap = {
   ['finishedBy']="Argent Outfitter",
   ['level']=50,
   ['questLevel']='60'
+     ['rr'] = 178,
  },
  [3344796392]={
   ['name']="The Left Piece of Lord Valthalak's Amulet",
@@ -34134,6 +34175,7 @@ QuestieHashMap = {
   ['questLevel']='60R',
   ['rc']=2,
   ['rq']=2427119880
+     ['rr'] = 77,
  },
  [3020781045]={
   ['name']="Red Leather Bandanas",
@@ -34742,6 +34784,7 @@ QuestieHashMap = {
   ['questLevel']='30',
   ['rc']=1,
   ['rq']=2273397546
+     ['rr'] = 178,
  },
  [343715944]={
   ['name']="Darkmoon Beast Deck",
@@ -35047,6 +35090,7 @@ QuestieHashMap = {
   ['level']=48,
   ['questLevel']='55',
   ['rq']=2499347578
+     ['rr'] = 178,
  },
  [4005466149]={
   ['name']="An Earnest Proposition",
@@ -35511,6 +35555,7 @@ QuestieHashMap = {
   ['level']=49,
   ['questLevel']='56',
   ['rq']=38850976
+     ['rr'] = 178,
  },
  [392078559]={
   ['name']="The Captain's Chest",
@@ -35727,6 +35772,7 @@ QuestieHashMap = {
   ['rs']=182,
   ['rsc']=1,
   ['rq']=3230757128
+     ['rr'] = 77,
  },
  [3843816834]={
   ['name']="Sharing the Land",
@@ -36901,6 +36947,7 @@ QuestieHashMap = {
   ['level']=60,
   ['questLevel']='60R',
   ['rc']=2
+     ['rr'] = 77,
  },
  [429323085]={
   ['name']="Mayara Brightwing",
@@ -37261,6 +37308,7 @@ QuestieHashMap = {
   ['questLevel']='60R',
   ['rc']=64,
   ['rq']=3773671176
+     ['rr'] = 178,
  },
  [1468811421]={
   ['name']="Anthion's Parting Words",
@@ -37450,6 +37498,7 @@ QuestieHashMap = {
   ['questLevel']='60R',
   ['rc']=64,
   ['rq']=3773672200
+     ['rr'] = 178,
  },
  [73094874]={
   ['name']="Zapper Fuel",
@@ -37731,6 +37780,7 @@ QuestieHashMap = {
   ['rs']=182,
   ['rsc']=1,
   ['rq']=3231667976
+     ['rr'] = 178,
  },
  [2628414165]={
   ['name']="The Work of Grimand Elmore",
@@ -37883,6 +37933,7 @@ QuestieHashMap = {
   ['level']=7,
   ['questLevel']='11',
   ['rq']=3089997984
+     ['rr'] = 178,
  },
  [1661855778]={
   ['name']="Etched Parchment",
@@ -39205,6 +39256,7 @@ QuestieHashMap = {
   ['rs']=186,
   ['rsc']=1,
   ['rq']=1888216328
+     ['rr'] = 178,
  },
  [2963777480]={
   ['name']="Corrupted Windblossom",
@@ -39954,6 +40006,7 @@ QuestieHashMap = {
   ['questLevel']='60R',
   ['rc']=64,
   ['rq']=3773671688
+     ['rr'] = 178,
  },
  [2129436293]={
   ['name']="James Hyal",
@@ -40864,6 +40917,7 @@ QuestieHashMap = {
   ['level']=25,
   ['questLevel']='35D',
   ['rq']=837514432
+     ['rr'] = 178,
  },
  [3216652722]={
   ['name']="Hinott's Assistance",
@@ -41703,6 +41757,7 @@ QuestieHashMap = {
   ['questLevel']='60R',
   ['rc']=2,
   ['rq']=2427120392
+     ['rr'] = 77,
  },
  [147161472]={
   ['name']="Breaking the Keystone",
@@ -42381,6 +42436,7 @@ QuestieHashMap = {
   ['rs']=333,
   ['rsc']=1,
   ['rq']=1354349000
+     ['rr'] = 178,
  },
  [3726963760]={
   ['name']="The Enchanted Glade",
@@ -42465,6 +42521,7 @@ QuestieHashMap = {
   ['level']=48,
   ['questLevel']='55',
   ['rq']=3230896584
+     ['rr'] = 178,
  },
  [822428368]={
   ['name']="Conqueror's Breastplate",
@@ -42635,6 +42692,7 @@ QuestieHashMap = {
   ['level']=55,
   ['questLevel']='59D',
   ['rq']=2727578184
+     ['rr'] = 77,
  },
  [188169333]={
   ['name']="Reagents for Reclaimers Inc.",
@@ -44616,6 +44674,7 @@ QuestieHashMap = {
   ['finishedBy']="Uthel'nay",
   ['level']=38,
   ['questLevel']='42D'
+     ['rr'] = 178,
  },
  [4210828988]={
   ['name']="The Tome of Divinity",
@@ -44714,6 +44773,7 @@ QuestieHashMap = {
   ['rs']=182,
   ['rsc']=1,
   ['rq']=3958442293
+     ['rr'] = 77,
  },
  [2458934488]={
   ['name']="The Nightmare Manifests",
@@ -44901,6 +44961,7 @@ QuestieHashMap = {
   ['level']=48,
   ['questLevel']='55',
   ['rq']=3229985736
+     ['rr'] = 77,
  },
  [545402909]={
   ['name']="Eagan Peltskinner",
@@ -45347,6 +45408,7 @@ QuestieHashMap = {
   ['level']=45,
   ['questLevel']='53',
   ['rq']=3041868208
+     ['rr'] = 178,
  },
  [1195849784]={
   ['name']="Frostfire Belt",
@@ -45596,6 +45658,7 @@ QuestieHashMap = {
   ['rs']=393,
   ['rsc']=1,
   ['rq']=1352259848
+     ['rr'] = 178,
  },
  [4179347880]={
   ['name']="Khan Hratha",
@@ -45627,6 +45690,7 @@ QuestieHashMap = {
   ['level']=32,
   ['questLevel']='42+',
   ['rq']=1358100816
+     ['rr'] = 178,
  },
  [1950654624]={
   ['name']="The Darkstone Tablet",
@@ -46367,6 +46431,7 @@ QuestieHashMap = {
   ['level']=60,
   ['questLevel']='60R',
   ['rc']=64
+     ['rr'] = 178,
  },
  [4036641416]={
   ['name']="Corrupted Songflower",
@@ -48790,6 +48855,7 @@ QuestieHashMap = {
   ['questLevel']='0',
   ['rc']=64,
   ['rq']=null
+     ['rr'] = 178,
  },
  [2900354021]={
   ['name']="Staghelm's Requiem",
@@ -49345,6 +49411,7 @@ QuestieHashMap = {
   ['finishedBy']="Argent Outfitter",
   ['level']=55,
   ['questLevel']='60'
+     ['rr'] = 178,
  },
  [1526833536]={
   ['name']="Gerenzo's Orders",
@@ -49448,6 +49515,7 @@ QuestieHashMap = {
   ['finishedBy']="Zanza the Restless",
   ['level']=58,
   ['questLevel']='60R'
+     ['rr'] = 178,
  },
  [3345796594]={
   ['name']="The Corrupter",
@@ -50194,6 +50262,7 @@ QuestieHashMap = {
   ['rs']=186,
   ['rsc']=1,
   ['rq']=2499347578
+     ['rr'] = 178,
  },
  [1111592032]={
   ['name']="Extraordinary Materials",
@@ -50385,6 +50454,7 @@ QuestieHashMap = {
   ['finishedBy']="Argent Quartermaster Hasana",
   ['level']=55,
   ['questLevel']='60'
+     ['rr'] = 178,
  },
  [4066776320]={
   ['name']="Dukes of the Council",
@@ -50894,6 +50964,7 @@ QuestieHashMap = {
   ['finishedBy']="Gwennyth Bly'Leggonde",
   ['level']=11,
   ['questLevel']='13'
+     ['rr'] = 77,
  },
  [4143129192]={
   ['name']="Forces of Jaedenar",
@@ -51238,6 +51309,7 @@ QuestieHashMap = {
   ['level']=42,
   ['questLevel']='48',
   ['rq']=2546182104
+     ['rr'] = 178,
  },
  [3204607869]={
   ['name']="Bazil Thredd",
@@ -51611,6 +51683,7 @@ QuestieHashMap = {
   ['finishedBy']="Argent Quartermaster Hasana",
   ['level']=55,
   ['questLevel']='60'
+     ['rr'] = 178,
  },
  [2158547208]={
   ['name']="Gaining Acceptance",
@@ -52648,6 +52721,7 @@ QuestieHashMap = {
   ['finishedBy']="Argent Quartermaster Lightspark",
   ['level']=55,
   ['questLevel']='60'
+     ['rr'] = 77,
  },
  [949127781]={
   ['name']="Order Must Be Restored",
