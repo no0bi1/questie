@@ -1172,7 +1172,11 @@ function Questie:ConfirmManualComplete(quest)
         name = questName,
     };
 
-    StaticPopup_Show("QUESTIE_CONFIRM_MANUAL_COMPLETE", questName);
+    local popup = StaticPopup_Show("QUESTIE_CONFIRM_MANUAL_COMPLETE", questName);
+    if popup then
+        -- Keep the confirmation above WorldMapFrame and its quest-note overlays.
+        popup:SetFrameStrata("FULLSCREEN_DIALOG");
+    end
 end
 
 function Questie_AvailableQuestClick()
