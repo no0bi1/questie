@@ -10171,6 +10171,7 @@ QuestieHashMap = {
   ['finishedBy']="Stoneguard Clayhoof",
   ['level']=59,
   ['questLevel']='60'
+  ['rr']=178,
  },
  [3843657045]={
   ['name']="I Know A Guy...",
@@ -10395,6 +10396,7 @@ QuestieHashMap = {
   ['level']=1,
   ['questLevel']='60',
   ['rq']=1811977416
+  ['rr']=178,
  },
  [1084333114]={
   ['name']="A Donation of Silk",
@@ -10822,6 +10824,7 @@ QuestieHashMap = {
   ['level']=1,
   ['questLevel']='60',
   ['rq']=1139593272
+  ['rr']=77,
  },
  [4269630848]={
   ['name']="Speak with Deino",
@@ -12183,6 +12186,7 @@ QuestieHashMap = {
   ['level']=1,
   ['questLevel']='60',
   ['rq']=1050834840
+  ['rr']=77,
  },
  [1578875960]={
   ['name']="Envelope from the Front",
@@ -14518,6 +14522,7 @@ QuestieHashMap = {
   ['level']=51,
   ['questLevel']='0PVP',
   ['rq']=350236800
+  ['rr']=77,
  },
  [1882807944]={
   ['name']="Azsharite",
@@ -14568,6 +14573,7 @@ QuestieHashMap = {
   ['finishedBy']="unknown",
   ['level']=55,
   ['questLevel']='60PVP'
+  ['rr']=77,
  },
  [1924493264]={
   ['name']="Rescue OOX-22/FE!",
@@ -14732,6 +14738,7 @@ QuestieHashMap = {
   ['finishedBy']="unknown",
   ['level']=10,
   ['questLevel']='15PVP'
+  ['rr']=178,
  },
  [3166190386]={
   ['name']="Portals of the Legion",
@@ -15177,6 +15184,7 @@ QuestieHashMap = {
   ['finishedBy']="Onu",
   ['level']=1,
   ['questLevel']='1'
+  ['rr']=77,
  },
  [73905509]={
   ['name']="The True Masters",
@@ -15378,6 +15386,7 @@ QuestieHashMap = {
   ['level']=1,
   ['questLevel']='60',
   ['rq']=2571749528
+  ['rr']=178,
  },
  [1663960077]={
   ['name']="Fragments of the Past",
@@ -16355,6 +16364,7 @@ QuestieHashMap = {
   ['level']=1,
   ['questLevel']='60',
   ['rq']=4095272584
+  ['rr']=77,
  },
  [611883498]={
   ['name']="Vile Familiars",
@@ -16539,6 +16549,7 @@ QuestieHashMap = {
   ['finishedBy']="Private Porter",
   ['level']=52,
   ['questLevel']='60'
+  ['rr']=77,
  },
  [3689439533]={
   ['name']="Moontouched Wildkin",
@@ -17191,6 +17202,7 @@ QuestieHashMap = {
   ['level']=1,
   ['questLevel']='60',
   ['rq']=3485512656
+  ['rr']=77,
  },
  [1877180589]={
   ['name']="Prospect of Faith",
@@ -18234,6 +18246,7 @@ QuestieHashMap = {
   ['level']=1,
   ['questLevel']='60',
   ['rq']=960619432
+  ['rr']=77,
  },
  [3859909405]={
   ['name']="The Missing Diplomat",
@@ -18702,6 +18715,7 @@ QuestieHashMap = {
   ['level']=43,
   ['questLevel']='60',
   ['rq']=1235778317
+  ['rr']=77,
  },
  [327627712]={
   ['name']="The Cover of Darkness",
@@ -20222,6 +20236,7 @@ QuestieHashMap = {
   ['level']=1,
   ['questLevel']='60',
   ['rq']=2342151408
+  ['rr']=178,
  },
  [1587636725]={
   ['name']="The Legend of Stalvan",
@@ -20317,6 +20332,7 @@ QuestieHashMap = {
   ['level']=1,
   ['questLevel']='60',
   ['rq']=1583144736
+  ['rr']=178,
  },
  [4039358074]={
   ['name']="A Donation of Runecloth",
@@ -20506,6 +20522,7 @@ QuestieHashMap = {
   ['finishedBy']="Master Nightsong",
   ['level']=37,
   ['questLevel']='60'
+  ['rr']=77,
  },
  [973539144]={
   ['name']="Stave of the Ancients",
@@ -21836,6 +21853,7 @@ QuestieHashMap = {
   ['level']=50,
   ['questLevel']='55',
   ['rq']=1866386530
+  ['rr']=178,
  },
  [1648995789]={
   ['name']="The Missing Diplomat",
@@ -21978,6 +21996,7 @@ QuestieHashMap = {
   ['level']=1,
   ['questLevel']='60',
   ['rq']=2185296896
+  ['rr']=178,
  },
  [535995674]={
   ['name']="Quell the Silverwing Usurpers",
@@ -22408,6 +22427,7 @@ QuestieHashMap = {
   ['level']=55,
   ['questLevel']='60PVP',
   ['rq']=1373349890
+  ['rr']=178,
  },
  [2295450348]={
   ['name']="Taming the Beast",
@@ -24753,6 +24773,7 @@ QuestieHashMap = {
   ['level']=1,
   ['questLevel']='60',
   ['rq']=3611500648
+  ['rr']=178,
  },
  [4036264904]={
   ['name']="The Spectral Chalice",
@@ -25757,6 +25778,7 @@ QuestieHashMap = {
   ['finishedBy']="Sarah Sadwhistle",
   ['level']=33,
   ['questLevel']='60'
+  ['rr']=77,
  },
  [1729051490]={
   ['name']="Allegiance to the Old Gods",
@@ -26017,6 +26039,7 @@ QuestieHashMap = {
   ['level']=1,
   ['questLevel']='60',
   ['rq']=4128825392
+  ['rr']=178,
  },
  [236395010]={
   ['name']="WANTED: Syndicate Personnel",
@@ -27068,6 +27091,7 @@ QuestieHashMap = {
   ['finishedBy']="Grunt Maug",
   ['level']=54,
   ['questLevel']='60'
+  ['rr']=178,
  },
  [3589817602]={
   ['name']="Sacred Fire",
@@ -27513,6 +27537,7 @@ QuestieHashMap = {
   ['finishedBy']="Batrider Pele'keiki",
   ['level']=57,
   ['questLevel']='60'
+  ['rr']=178,
  },
  [1622724893]={
   ['name']="The Borrower",
@@ -27882,6 +27907,7 @@ QuestieHashMap = {
   ['finishedBy']="Warmaster Laggrond",
   ['level']=55,
   ['questLevel']='60'
+  ['rr']=178,
  },
  [4292548632]={
   ['name']="Vanquish the Invaders!",
@@ -28002,6 +28028,7 @@ QuestieHashMap = {
   ['finishedBy']="Dame Twinbraid",
   ['level']=48,
   ['questLevel']='60'
+  ['rr']=77,
  },
  [465112320]={
   ['name']="Bor Wildmane",
@@ -29019,6 +29046,7 @@ QuestieHashMap = {
   ['finishedBy']="Chief Sharpclaw",
   ['level']=20,
   ['questLevel']='60'
+  ['rr']=178,
  },
  [1139940189]={
   ['name']="In Search of Menara Voidrender",
@@ -29540,6 +29568,7 @@ QuestieHashMap = {
   ['finishedBy']="Fisherman Lin'do",
   ['level']=52,
   ['questLevel']='60'
+  ['rr']=178,
  },
  [2913570210]={
   ['name']="Find the Gems and Power Source",
@@ -30006,6 +30035,7 @@ QuestieHashMap = {
   ['level']=1,
   ['questLevel']='60',
   ['rq']=2930483360
+  ['rr']=77,
  },
  [3631723474]={
   ['name']="Job Opening: Guard Captain of Revantusk Village",
@@ -30501,6 +30531,7 @@ QuestieHashMap = {
   ['level']=51,
   ['questLevel']='60',
   ['rq']=4038430472
+  ['rr']=77,
  },
  [4214696864]={
   ['name']="Ring of Unspoken Names",
@@ -31578,6 +31609,7 @@ QuestieHashMap = {
   ['finishedBy']="Slicky Gastronome",
   ['level']=54,
   ['questLevel']='60'
+  ['rr']=77,
  },
  [1133791962]={
   ['name']="The Damned",
@@ -31831,6 +31863,7 @@ QuestieHashMap = {
   ['finishedBy']="Sergeant Umala",
   ['level']=54,
   ['questLevel']='60'
+  ['rr']=178,
  },
  [2493930637]={
   ['name']="The Apple Falls",
@@ -31935,6 +31968,7 @@ QuestieHashMap = {
   ['level']=1,
   ['questLevel']='60',
   ['rq']=2718223312
+  ['rr']=77,
  },
  [236635928]={
   ['name']="Goldleaf's Discovery",
@@ -32298,6 +32332,7 @@ QuestieHashMap = {
   ['finishedBy']="Sentinel Silversky",
   ['level']=51,
   ['questLevel']='60'
+  ['rr']=77,
  },
  [3965716960]={
   ['name']="Southshore",
@@ -33694,6 +33729,7 @@ QuestieHashMap = {
   ['level']=1,
   ['questLevel']='60',
   ['rq']=266402072
+  ['rr']=77,
  },
  [314142637]={
   ['name']="The Missing Diplomat",
@@ -34526,6 +34562,7 @@ QuestieHashMap = {
   ['finishedBy']="Keeper Moonshade",
   ['level']=56,
   ['questLevel']='60'
+  ['rr']=77,
  },
  [3359396221]={
   ['name']="Raene's Cleansing",
@@ -34760,6 +34797,7 @@ QuestieHashMap = {
   ['level']=1,
   ['questLevel']='60',
   ['rq']=2411992296
+  ['rr']=178,
  },
  [326329624]={
   ['name']="Ignition",
@@ -34789,6 +34827,7 @@ QuestieHashMap = {
   ['level']=1,
   ['questLevel']='60',
   ['rq']=969989248
+  ['rr']=77,
  },
  [2713603629]={
   ['name']="Rise of the Silithid",
@@ -35015,6 +35054,7 @@ QuestieHashMap = {
   ['finishedBy']="Innkeeper Allison",
   ['level']=18,
   ['questLevel']='0'
+  ['rr']=77,
  },
  [275170893]={
   ['name']="The Captain's Cutlass",
@@ -35482,6 +35522,7 @@ QuestieHashMap = {
   ['questLevel']='8',
   ['rs']=171,
   ['rsc']=20
+  ['rr']=77,
  },
  [1493254741]={
   ['name']="Encroaching Gnolls",
@@ -35616,6 +35657,7 @@ QuestieHashMap = {
   ['finishedBy']="Apothecary Jezel",
   ['level']=50,
   ['questLevel']='60'
+  ['rr']=178,
  },
  [3470907400]={
   ['name']="Curing the Sick",
@@ -36146,6 +36188,7 @@ QuestieHashMap = {
   ['finishedBy']="Fenstad Argyle",
   ['level']=58,
   ['questLevel']='0'
+  ['rr']=178,
  },
  [539468397]={
   ['name']="A Sign of Hope",
@@ -37185,6 +37228,7 @@ QuestieHashMap = {
   ['finishedBy']="Voggah Deathgrip",
   ['level']=51,
   ['questLevel']='60PVP'
+  ['rr']=178,
  },
  [3488834040]={
   ['name']="Wavethrashing",
@@ -38237,6 +38281,7 @@ QuestieHashMap = {
   ['level']=1,
   ['questLevel']='60',
   ['rq']=1276163152
+  ['rr']=178,
  },
  [343138242]={
   ['name']="Venom to the Undercity",
@@ -39084,6 +39129,7 @@ QuestieHashMap = {
   ['level']=1,
   ['questLevel']='60',
   ['rq']=4228324784
+  ['rr']=178,
  },
  [524543314]={
   ['name']="Chimaeric Horn",
@@ -39105,6 +39151,7 @@ QuestieHashMap = {
   ['finishedBy']="Private Draxlegauge",
   ['level']=37,
   ['questLevel']='60'
+  ['rr']=77,
  },
  [4061676304]={
   ['name']="Aquatic Form",
@@ -40064,6 +40111,7 @@ QuestieHashMap = {
   ['finishedBy']="Marta Finespindle",
   ['level']=44,
   ['questLevel']='60'
+  ['rr']=77,
  },
  [3808588888]={
   ['name']="The Human, Ras Frostwhisper",
@@ -41106,6 +41154,7 @@ QuestieHashMap = {
   ['level']=55,
   ['questLevel']='60PVP',
   ['rq']=2668433696
+  ['rr']=77,
  },
  [3855231680]={
   ['name']="Retribution of the Light",
@@ -41289,6 +41338,7 @@ QuestieHashMap = {
   ['finishedBy']="Corporal Carnes",
   ['level']=40,
   ['questLevel']='60'
+  ['rr']=77,
  },
  [4192190573]={
   ['name']="Sven's Camp",
@@ -41383,6 +41433,7 @@ QuestieHashMap = {
   ['finishedBy']="Senior Sergeant T'kelah",
   ['level']=52,
   ['questLevel']='60'
+  ['rr']=178,
  },
  [537127125]={
   ['name']="The Battle for Arathi Basin!",
@@ -41759,6 +41810,7 @@ QuestieHashMap = {
   ['level']=1,
   ['questLevel']='60',
   ['rq']=1233768224
+  ['rr']=178,
  },
  [29525856]={
   ['name']="The Scrimshank Redemption",
@@ -42515,6 +42567,7 @@ QuestieHashMap = {
   ['level']=1,
   ['questLevel']='60',
   ['rq']=592391776
+  ['rr']=178,
  },
  [7516488]={
   ['name']="Crystal Spire",
@@ -42640,6 +42693,7 @@ QuestieHashMap = {
   ['level']=1,
   ['questLevel']='60',
   ['rq']=4252666304
+  ['rr']=178,
  },
  [2561009149]={
   ['name']="The Barrens Port",
@@ -43558,6 +43612,7 @@ QuestieHashMap = {
   ['finishedBy']="Lady Callow",
   ['level']=57,
   ['questLevel']='60'
+  ['rr']=178,
  },
  [2435011080]={
   ['name']="Rare Fish - Brownell's Blue Striped Racer",
@@ -45921,6 +45976,7 @@ QuestieHashMap = {
   ['finishedBy']="Sergeant Stonebrow",
   ['level']=50,
   ['questLevel']='60'
+  ['rr']=77,
  },
  [2915617101]={
   ['name']="Ribbons of Sacrifice",
@@ -46542,6 +46598,7 @@ QuestieHashMap = {
   ['level']=16,
   ['questLevel']='22',
   ['rc']=8
+  ['rr']=77,
  },
  [3252089312]={
   ['name']="Superior Armaments of Battle - Friend of the Dawn",
@@ -46793,6 +46850,7 @@ QuestieHashMap = {
   ['finishedBy']="Doctor Serratus",
   ['level']=55,
   ['questLevel']='60'
+  ['rr']=178,
  },
  [694347778]={
   ['name']="The Last Barov",
@@ -47206,6 +47264,7 @@ QuestieHashMap = {
   ['level']=1,
   ['questLevel']='60',
   ['rq']=350103752
+  ['rr']=178,
  },
  [2671410906]={
   ['name']="Report to Hadrec",
@@ -47745,6 +47804,7 @@ QuestieHashMap = {
   ['level']=1,
   ['questLevel']='60',
   ['rq']=2979987744
+  ['rr']=77,
  },
  [1450752197]={
   ['name']="Assassin's Contract",
@@ -48311,6 +48371,7 @@ QuestieHashMap = {
   ['finishedBy']="Healer Longrunner",
   ['level']=55,
   ['questLevel']='60'
+  ['rr']=178,
  },
  [1348600250]={
   ['name']="Razorhide",
@@ -48538,6 +48599,7 @@ QuestieHashMap = {
   ['level']=1,
   ['questLevel']='60',
   ['rq']=1949484904
+  ['rr']=77,
  },
  [4181245104]={
   ['name']="The Key to Freedom",
@@ -48803,6 +48865,7 @@ QuestieHashMap = {
   ['finishedBy']="Skinner Jamani",
   ['level']=53,
   ['questLevel']='60'
+  ['rr']=178,
  },
  [3266446432]={
   ['name']="Grinding Stones for the Guard",
@@ -49592,6 +49655,7 @@ QuestieHashMap = {
   ['finishedBy']="Huntress Swiftriver",
   ['level']=42,
   ['questLevel']='60'
+  ['rr']=77,
  },
  [468859941]={
   ['name']="The Missing Diplomat",
@@ -50128,6 +50192,7 @@ QuestieHashMap = {
   ['level']=1,
   ['questLevel']='60',
   ['rq']=1147316168
+  ['rr']=77,
  },
  [2693620840]={
   ['name']="Blisters on The Land",
@@ -50388,6 +50453,7 @@ QuestieHashMap = {
   ['finishedBy']="Bloodguard Rawtar",
   ['level']=49,
   ['questLevel']='60'
+  ['rr']=178,
  },
  [1166496981]={
   ['name']="Gakin's Summons",
@@ -50512,6 +50578,7 @@ QuestieHashMap = {
   ['finishedBy']="Miner Cromwell",
   ['level']=54,
   ['questLevel']='60'
+  ['rr']=178,
  },
  [3847232824]={
   ['name']="Legends of the Earth",
@@ -50705,6 +50772,7 @@ QuestieHashMap = {
   ['level']=51,
   ['questLevel']='0PVP',
   ['rq']=95380336
+  ['rr']=178,
  },
  [36587261]={
   ['name']="Journey to Stonetalon Peak",
@@ -51898,6 +51966,7 @@ QuestieHashMap = {
   ['finishedBy']="Sergeant Major Germaine",
   ['level']=34,
   ['questLevel']='60'
+  ['rr']=77,
  },
  [3780643082]={
   ['name']="Eitrigg's Wisdom",
@@ -52066,6 +52135,7 @@ QuestieHashMap = {
   ['level']=1,
   ['questLevel']='60',
   ['rq']=4011868664
+  ['rr']=77,
  },
  [255561112]={
   ['name']="Stone Is Better than Cloth",
