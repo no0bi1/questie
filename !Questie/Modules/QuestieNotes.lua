@@ -1133,6 +1133,48 @@ end
 ---------------------------------------------------------------------------------------------------
 -- Force a quest to be finished via the Minimap or Worldmap
 ---------------------------------------------------------------------------------------------------
+-- Confirm manual quest completion before changing Questie's saved quest state.
+Questie.PendingManualComplete = nil;
+
+StaticPopupDialogs["QUESTIE_CONFIRM_MANUAL_COMPLETE"] = {
+    text = "Manually mark %s complete, including its prerequisite quests?",
+    button1 = YES,
+    button2 = NO,
+    OnAccept = function()
+        local pending = Questie.PendingManualComplete;
+        Questie.PendingManualComplete = nil;
+
+        if pending and pending.hash then
+            Questie:finishAndRecurse(pending.hash);
+            DEFAULT_CHAT_FRAME:AddMessage("Completing quest |cFF00FF00\"" .. pending.name .. "\"|r ("..pending.hash..") and parent quests.");
+            Questie:AddEvent("DRAWNOTES", 0.1);
+        end
+    end,
+    OnCancel = function()
+        Questie.PendingManualComplete = nil;
+    end,
+    timeout = 0,
+    whileDead = 1,
+    hideOnEscape = 1,
+    showAlert = 1,
+};
+
+function Questie:ConfirmManualComplete(quest)
+    if not quest or not quest.questHash then return; end
+
+    local hash = quest.questHash;
+    local info = QuestieHashMap[hash];
+    if not info then return; end
+
+    local questName = "["..info.questLevel.."] "..info.name;
+    Questie.PendingManualComplete = {
+        hash = hash,
+        name = questName,
+    };
+
+    StaticPopup_Show("QUESTIE_CONFIRM_MANUAL_COMPLETE", questName);
+end
+
 function Questie_AvailableQuestClick()
     if IsAltKeyDown() and arg1 == "RightButton" and this.quests then
         Questie:AltClickCopy(this);
@@ -1214,13 +1256,7 @@ function Questie_AvailableQuestClick()
     if ((this.data.icontype == "available" or this.data.icontype == "availablesoon" or this.data.icontype == "complete") and IsShiftKeyDown() and Tooltip ) then
         local finishQuest = function(quest)
             if (quest.icontype == "available" or quest.icontype == "availablesoon") then
-                local hash = quest.questHash;
-                local questName = "["..QuestieHashMap[hash].questLevel.."] "..QuestieHashMap[hash]['name'];
-
-                Questie:finishAndRecurse(hash);
-
-                DEFAULT_CHAT_FRAME:AddMessage("Completing quest |cFF00FF00\"" .. questName .. "\"|r ("..hash..") and parent quests.");
-                Questie:AddEvent("DRAWNOTES", 0.1);
+                Questie:ConfirmManualComplete(quest);
             end
         end
 
