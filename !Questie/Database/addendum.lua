@@ -10216,7 +10216,7 @@ QuestieHashMap = {
   ['questLevel']='60',
   ['rs']=333,
   ['rsc']=1,
-  ['rq']=1353438152
+  ['rq']=1353438152,
      ['rr'] = 77,
  },
  [4194114960]={
@@ -10260,7 +10260,7 @@ QuestieHashMap = {
   ['startedBy']="Zanza the Restless",
   ['finishedBy']="Zanza the Restless",
   ['level']=58,
-  ['questLevel']='60R'
+  ['questLevel']='60R',
      ['rr'] = 77,
  },
  [105421549]={
@@ -11415,7 +11415,7 @@ QuestieHashMap = {
   ['level']=60,
   ['questLevel']='60R',
   ['rc']=2,
-  ['rq']=2427120904
+  ['rq']=2427120904,
      ['rr'] = 77,
  },
  [1499264005]={
@@ -11656,7 +11656,7 @@ QuestieHashMap = {
   ['finishedBy']="Gwennyth Bly'Leggonde",
   ['level']=11,
   ['questLevel']='14',
-  ['rq']=3937606536
+  ['rq']=3937606536,
      ['rr'] = 77,
  },
  [995949914]={
@@ -11979,7 +11979,7 @@ QuestieHashMap = {
   ['startedBy']="Strange Fronded Plant",
   ['finishedBy']="Denalan",
   ['level']=7,
-  ['questLevel']='10'
+  ['questLevel']='10',
      ['rr'] = 77,
  },
  [4040764680]={
@@ -12020,7 +12020,7 @@ QuestieHashMap = {
   ['startedBy']="unknown",
   ['finishedBy']="Voggah Deathgrip",
   ['level']=51,
-  ['questLevel']='60PVP'
+  ['questLevel']='60PVP',
      ['rr'] = 178,
  },
  [3229463047]={
@@ -12424,7 +12424,7 @@ QuestieHashMap = {
   ['questLevel']='60',
   ['rs']=393,
   ['rsc']=1,
-  ['rq']=2499347578
+  ['rq']=2499347578,
      ['rr'] = 178,
  },
  [1544635581]={
@@ -12498,7 +12498,7 @@ QuestieHashMap = {
   ['questLevel']='60',
   ['rs']=182,
   ['rsc']=1,
-  ['rq']=2499347578
+  ['rq']=2499347578,
      ['rr'] = 178,
  },
  [1146365498]={
@@ -13110,7 +13110,7 @@ QuestieHashMap = {
   ['finishedBy']="Glorin Steelbrow",
   ['level']=22,
   ['questLevel']='30',
-  ['rq']=1040226328
+  ['rq']=1040226328,
      ['rr'] = 77,
  },
  [1641376597]={
@@ -13658,7 +13658,7 @@ QuestieHashMap = {
   ['startedBy']="Jes'rimon",
   ['finishedBy']="Jes'rimon",
   ['level']=48,
-  ['questLevel']='52'
+  ['questLevel']='52',
      ['rr'] = 178,
  },
  [3682519512]={
@@ -14424,7 +14424,7 @@ QuestieHashMap = {
   ['finishedBy']="Krusk",
   ['level']=29,
   ['questLevel']='40',
-  ['rq']=3498620250
+  ['rq']=3498620250,
      ['rr'] = 178,
  },
  [3383057274]={
@@ -14728,7 +14728,7 @@ QuestieHashMap = {
   ['startedBy']="WANTED: Murkdeep!",
   ['finishedBy']="Sentinel Glynda Nal'Shea",
   ['level']=15,
-  ['questLevel']='18'
+  ['questLevel']='18',
      ['rr'] = 77,
  },
  [2939904194]={
@@ -14894,7 +14894,7 @@ QuestieHashMap = {
   ['finishedBy']="Warlord Goretooth",
   ['level']=50,
   ['questLevel']='54D',
-  ['rq']=1643376242
+  ['rq']=1643376242,
      ['rr'] = 178,
  },
  [3230250888]={
@@ -15048,7 +15048,7 @@ QuestieHashMap = {
   ['finishedBy']="Myranda the Hag",
   ['level']=55,
   ['questLevel']='60R',
-  ['rq']=1471449378
+  ['rq']=1471449378,
      ['rr'] = 178,
  },
  [720996965]={
@@ -16855,7 +16855,7 @@ QuestieHashMap = {
   ['finishedBy']="Dran Droffers",
   ['level']=48,
   ['questLevel']='48',
-  ['rq']=1223001800
+  ['rq']=1223001800,
      ['rr'] = 178,
  },
  [3393529818]={
@@ -17099,7 +17099,7 @@ QuestieHashMap = {
   ['questLevel']='55',
   ['rs']=393,
   ['rsc']=1,
-  ['rq']=1351349000
+  ['rq']=1351349000,
      ['rr'] = 77,
  },
  [813864201]={
@@ -17491,7 +17491,7 @@ QuestieHashMap = {
   ['questLevel']='55',
   ['rs']=333,
   ['rsc']=1,
-  ['rq']=2499347578
+  ['rq']=2499347578,
      ['rr'] = 178,
  },
  [79912496]={
@@ -17556,7 +17556,7 @@ QuestieHashMap = {
   ['finishedBy']="Warug",
   ['level']=30,
   ['questLevel']='32',
-  ['rq']=4244683229
+  ['rq']=4244683229,
      ['rr'] = 77,
  },
  [1887307720]={
@@ -17569,7 +17569,7 @@ QuestieHashMap = {
   ['questLevel']='55',
   ['rs']=186,
   ['rsc']=1,
-  ['rq']=1887305480
+  ['rq']=1887305480,
      ['rr'] = 77,
  },
  [3114598570]={
@@ -18181,7 +18181,7 @@ QuestieHashMap = {
   ['questLevel']='60',
   ['rs']=186,
   ['rsc']=1,
-  ['rq']=3958442293
+  ['rq']=3958442293,
      ['rr'] = 77,
  },
  [1236113890]={
@@ -18234,7 +18234,7 @@ QuestieHashMap = {
   ['finishedBy']="Rhag Garmason",
   ['level']=28,
   ['questLevel']='31',
-  ['rq']=75587616
+  ['rq']=75587616,
      ['rr'] = 77,
  },
  [4164503552]={
@@ -18842,7 +18842,7 @@ QuestieHashMap = {
   ['finishedBy']="Arathandris Silversky",
   ['level']=5,
   ['questLevel']='55',
-  ['rq']=3958442293
+  ['rq']=3958442293,
      ['rr'] = 77,
  },
  [1202930874]={
@@ -20084,7 +20084,7 @@ QuestieHashMap = {
   ['startedBy']="Rezlak",
   ['finishedBy']="Rezlak",
   ['level']=7,
-  ['questLevel']='9'
+  ['questLevel']='9',
      ['rr'] = 178,
  },
  [1517459552]={
@@ -22374,7 +22374,7 @@ QuestieHashMap = {
   ['finishedBy']="Lexlort",
   ['level']=55,
   ['questLevel']='60D',
-  ['rq']=344732320
+  ['rq']=344732320,
      ['rr'] = 178,
  },
  [1062068898]={
@@ -22456,7 +22456,7 @@ QuestieHashMap = {
   ['finishedBy']="Sentinel Glynda Nal'Shea",
   ['level']=12,
   ['questLevel']='14',
-  ['rq']=2886207605
+  ['rq']=2886207605,
      ['rr'] = 77,
  },
  [596775162]={
@@ -22498,7 +22498,7 @@ QuestieHashMap = {
   ['startedBy']="unknown",
   ['finishedBy']="Pratt McGrubben",
   ['level']=43,
-  ['questLevel']='48'
+  ['questLevel']='48',
      ['rr'] = 77,
  },
  [529924589]={
@@ -22924,7 +22924,7 @@ QuestieHashMap = {
   ['startedBy']="unknown",
   ['finishedBy']="Gerrig Bonegrip",
   ['level']=15,
-  ['questLevel']='20'
+  ['questLevel']='20',
      ['rr'] = 77,
  },
  [2882877765]={
@@ -23577,7 +23577,7 @@ QuestieHashMap = {
   ['startedBy']="unknown",
   ['finishedBy']="Denalan",
   ['level']=8,
-  ['questLevel']='12'
+  ['questLevel']='12',
      ['rr'] = 77,
  },
  [3846569680]={
@@ -23847,7 +23847,7 @@ QuestieHashMap = {
   ['finishedBy']="Belgrom Rockmaul",
   ['level']=54,
   ['questLevel']='56',
-  ['rq']=859845544
+  ['rq']=859845544,
      ['rr'] = 178,
  },
  [233761562]={
@@ -24740,7 +24740,7 @@ QuestieHashMap = {
   ['startedBy']="Argent Quartermaster Lightspark",
   ['finishedBy']="Argent Quartermaster Lightspark",
   ['level']=55,
-  ['questLevel']='60'
+  ['questLevel']='60',
      ['rr'] = 77,
  },
  [2696554938]={
@@ -25085,7 +25085,7 @@ QuestieHashMap = {
   ['finishedBy']="Krusk",
   ['level']=29,
   ['questLevel']='36',
-  ['rq']=617943570
+  ['rq']=617943570,
      ['rr'] = 178,
  },
  [3855078336]={
@@ -25374,7 +25374,7 @@ QuestieHashMap = {
   ['startedBy']="unknown",
   ['finishedBy']="Highlord Bolvar Fordragon",
   ['level']=50,
-  ['questLevel']='60'
+  ['questLevel']='60',
      ['rr'] = 77,
  },
  [302516749]={
@@ -26455,7 +26455,7 @@ QuestieHashMap = {
   ['questLevel']='55',
   ['rs']=333,
   ['rsc']=1,
-  ['rq']=3958442293
+  ['rq']=3958442293,
      ['rr'] = 77,
  },
  [1818035429]={
@@ -27043,7 +27043,7 @@ QuestieHashMap = {
   ['finishedBy']="Captain Stoutfist",
   ['level']=23,
   ['questLevel']='32+',
-  ['rq']=4010609432
+  ['rq']=4010609432,
      ['rr'] = 77,
  },
  [2147662389]={
@@ -27404,7 +27404,7 @@ QuestieHashMap = {
   ['questLevel']='60',
   ['rs']=393,
   ['rsc']=1,
-  ['rq']=3958442293
+  ['rq']=3958442293,
      ['rr'] = 77,
  },
  [1963047133]={
@@ -28123,7 +28123,7 @@ QuestieHashMap = {
   ['startedBy']="Strange Fruited Plant",
   ['finishedBy']="Denalan",
   ['level']=6,
-  ['questLevel']='10'
+  ['questLevel']='10',
      ['rr'] = 77,
  },
  [664064485]={
@@ -28332,7 +28332,7 @@ QuestieHashMap = {
   ['startedBy']="unknown",
   ['finishedBy']="Prospector Stonehewer",
   ['level']=51,
-  ['questLevel']='60PVP'
+  ['questLevel']='60PVP',
      ['rr'] = 77,
  },
  [3486635184]={
@@ -29114,7 +29114,7 @@ QuestieHashMap = {
   ['finishedBy']="Fel'zerul",
   ['level']=38,
   ['questLevel']='50D',
-  ['rq']=1450372178
+  ['rq']=1450372178,
      ['rr'] = 178,
  },
  [1845413170]={
@@ -30619,7 +30619,7 @@ QuestieHashMap = {
   ['finishedBy']="Zengu",
   ['level']=32,
   ['questLevel']='40',
-  ['rq']=3117016770
+  ['rq']=3117016770,
      ['rr'] = 178,
  },
  [2568157088]={
@@ -30952,7 +30952,7 @@ QuestieHashMap = {
   ['finishedBy']="Onu",
   ['level']=13,
   ['questLevel']='17',
-  ['rq']=1987777144
+  ['rq']=1987777144,
      ['rr'] = 77,
  },
  [960326938]={
@@ -31126,7 +31126,7 @@ QuestieHashMap = {
   ['startedBy']="Argent Outfitter",
   ['finishedBy']="Argent Outfitter",
   ['level']=50,
-  ['questLevel']='60'
+  ['questLevel']='60',
      ['rr'] = 178,
  },
  [3344796392]={
@@ -34174,7 +34174,7 @@ QuestieHashMap = {
   ['level']=60,
   ['questLevel']='60R',
   ['rc']=2,
-  ['rq']=2427119880
+  ['rq']=2427119880,
      ['rr'] = 77,
  },
  [3020781045]={
@@ -34783,7 +34783,7 @@ QuestieHashMap = {
   ['level']=27,
   ['questLevel']='30',
   ['rc']=1,
-  ['rq']=2273397546
+  ['rq']=2273397546,
      ['rr'] = 178,
  },
  [343715944]={
@@ -35089,7 +35089,7 @@ QuestieHashMap = {
   ['finishedBy']="Maybess Riverbreeze",
   ['level']=48,
   ['questLevel']='55',
-  ['rq']=2499347578
+  ['rq']=2499347578,
      ['rr'] = 178,
  },
  [4005466149]={
@@ -35554,7 +35554,7 @@ QuestieHashMap = {
   ['finishedBy']="Ag'tor Bloodfist",
   ['level']=49,
   ['questLevel']='56',
-  ['rq']=38850976
+  ['rq']=38850976,
      ['rr'] = 178,
  },
  [392078559]={
@@ -35771,7 +35771,7 @@ QuestieHashMap = {
   ['questLevel']='60',
   ['rs']=182,
   ['rsc']=1,
-  ['rq']=3230757128
+  ['rq']=3230757128,
      ['rr'] = 77,
  },
  [3843816834]={
@@ -36946,7 +36946,7 @@ QuestieHashMap = {
   ['finishedBy']="Jin'rokh the Breaker",
   ['level']=60,
   ['questLevel']='60R',
-  ['rc']=2
+  ['rc']=2,
      ['rr'] = 77,
  },
  [429323085]={
@@ -37307,7 +37307,7 @@ QuestieHashMap = {
   ['level']=60,
   ['questLevel']='60R',
   ['rc']=64,
-  ['rq']=3773671176
+  ['rq']=3773671176,
      ['rr'] = 178,
  },
  [1468811421]={
@@ -37497,7 +37497,7 @@ QuestieHashMap = {
   ['level']=60,
   ['questLevel']='60R',
   ['rc']=64,
-  ['rq']=3773672200
+  ['rq']=3773672200,
      ['rr'] = 178,
  },
  [73094874]={
@@ -37779,7 +37779,7 @@ QuestieHashMap = {
   ['questLevel']='60',
   ['rs']=182,
   ['rsc']=1,
-  ['rq']=3231667976
+  ['rq']=3231667976,
      ['rr'] = 178,
  },
  [2628414165]={
@@ -37932,7 +37932,7 @@ QuestieHashMap = {
   ['finishedBy']="Rezlak",
   ['level']=7,
   ['questLevel']='11',
-  ['rq']=3089997984
+  ['rq']=3089997984,
      ['rr'] = 178,
  },
  [1661855778]={
@@ -39255,7 +39255,7 @@ QuestieHashMap = {
   ['questLevel']='55',
   ['rs']=186,
   ['rsc']=1,
-  ['rq']=1888216328
+  ['rq']=1888216328,
      ['rr'] = 178,
  },
  [2963777480]={
@@ -40005,7 +40005,7 @@ QuestieHashMap = {
   ['level']=60,
   ['questLevel']='60R',
   ['rc']=64,
-  ['rq']=3773671688
+  ['rq']=3773671688,
      ['rr'] = 178,
  },
  [2129436293]={
@@ -40916,7 +40916,7 @@ QuestieHashMap = {
   ['finishedBy']="Scooty",
   ['level']=25,
   ['questLevel']='35D',
-  ['rq']=837514432
+  ['rq']=837514432,
      ['rr'] = 178,
  },
  [3216652722]={
@@ -41756,7 +41756,7 @@ QuestieHashMap = {
   ['level']=60,
   ['questLevel']='60R',
   ['rc']=2,
-  ['rq']=2427120392
+  ['rq']=2427120392,
      ['rr'] = 77,
  },
  [147161472]={
@@ -42435,7 +42435,7 @@ QuestieHashMap = {
   ['questLevel']='55',
   ['rs']=333,
   ['rsc']=1,
-  ['rq']=1354349000
+  ['rq']=1354349000,
      ['rr'] = 178,
  },
  [3726963760]={
@@ -42520,7 +42520,7 @@ QuestieHashMap = {
   ['finishedBy']="Maybess Riverbreeze",
   ['level']=48,
   ['questLevel']='55',
-  ['rq']=3230896584
+  ['rq']=3230896584,
      ['rr'] = 178,
  },
  [822428368]={
@@ -42691,7 +42691,7 @@ QuestieHashMap = {
   ['finishedBy']="Marshal Maxwell",
   ['level']=55,
   ['questLevel']='59D',
-  ['rq']=2727578184
+  ['rq']=2727578184,
      ['rr'] = 77,
  },
  [188169333]={
@@ -44673,7 +44673,7 @@ QuestieHashMap = {
   ['startedBy']="Uthel'nay",
   ['finishedBy']="Uthel'nay",
   ['level']=38,
-  ['questLevel']='42D'
+  ['questLevel']='42D',
      ['rr'] = 178,
  },
  [4210828988]={
@@ -44772,7 +44772,7 @@ QuestieHashMap = {
   ['questLevel']='60',
   ['rs']=182,
   ['rsc']=1,
-  ['rq']=3958442293
+  ['rq']=3958442293,
      ['rr'] = 77,
  },
  [2458934488]={
@@ -44960,7 +44960,7 @@ QuestieHashMap = {
   ['finishedBy']="Arathandris Silversky",
   ['level']=48,
   ['questLevel']='55',
-  ['rq']=3229985736
+  ['rq']=3229985736,
      ['rr'] = 77,
  },
  [545402909]={
@@ -45407,7 +45407,7 @@ QuestieHashMap = {
   ['finishedBy']="Kaldorei Tome of Summoning",
   ['level']=45,
   ['questLevel']='53',
-  ['rq']=3041868208
+  ['rq']=3041868208,
      ['rr'] = 178,
  },
  [1195849784]={
@@ -45657,7 +45657,7 @@ QuestieHashMap = {
   ['questLevel']='55',
   ['rs']=393,
   ['rsc']=1,
-  ['rq']=1352259848
+  ['rq']=1352259848,
      ['rr'] = 178,
  },
  [4179347880]={
@@ -45689,7 +45689,7 @@ QuestieHashMap = {
   ['finishedBy']="Zengu",
   ['level']=32,
   ['questLevel']='42+',
-  ['rq']=1358100816
+  ['rq']=1358100816,
      ['rr'] = 178,
  },
  [1950654624]={
@@ -46430,7 +46430,7 @@ QuestieHashMap = {
   ['finishedBy']="Maywiki of Zuldazar",
   ['level']=60,
   ['questLevel']='60R',
-  ['rc']=64
+  ['rc']=64,
      ['rr'] = 178,
  },
  [4036641416]={
@@ -48854,7 +48854,7 @@ QuestieHashMap = {
   ['level']=20,
   ['questLevel']='0',
   ['rc']=64,
-  ['rq']=null
+  ['rq']=null,
      ['rr'] = 178,
  },
  [2900354021]={
@@ -49410,7 +49410,7 @@ QuestieHashMap = {
   ['startedBy']="Argent Outfitter",
   ['finishedBy']="Argent Outfitter",
   ['level']=55,
-  ['questLevel']='60'
+  ['questLevel']='60',
      ['rr'] = 178,
  },
  [1526833536]={
@@ -49514,7 +49514,7 @@ QuestieHashMap = {
   ['startedBy']="Zanza the Restless",
   ['finishedBy']="Zanza the Restless",
   ['level']=58,
-  ['questLevel']='60R'
+  ['questLevel']='60R',
      ['rr'] = 178,
  },
  [3345796594]={
@@ -50261,7 +50261,7 @@ QuestieHashMap = {
   ['questLevel']='60',
   ['rs']=186,
   ['rsc']=1,
-  ['rq']=2499347578
+  ['rq']=2499347578,
      ['rr'] = 178,
  },
  [1111592032]={
@@ -50453,7 +50453,7 @@ QuestieHashMap = {
   ['startedBy']="Argent Quartermaster Hasana",
   ['finishedBy']="Argent Quartermaster Hasana",
   ['level']=55,
-  ['questLevel']='60'
+  ['questLevel']='60',
      ['rr'] = 178,
  },
  [4066776320]={
@@ -50963,7 +50963,7 @@ QuestieHashMap = {
   ['startedBy']="Gwennyth Bly'Leggonde",
   ['finishedBy']="Gwennyth Bly'Leggonde",
   ['level']=11,
-  ['questLevel']='13'
+  ['questLevel']='13',
      ['rr'] = 77,
  },
  [4143129192]={
@@ -51308,7 +51308,7 @@ QuestieHashMap = {
   ['finishedBy']="Gilveradin Sunchaser",
   ['level']=42,
   ['questLevel']='48',
-  ['rq']=2546182104
+  ['rq']=2546182104,
      ['rr'] = 178,
  },
  [3204607869]={
@@ -51682,7 +51682,7 @@ QuestieHashMap = {
   ['startedBy']="Argent Quartermaster Hasana",
   ['finishedBy']="Argent Quartermaster Hasana",
   ['level']=55,
-  ['questLevel']='60'
+  ['questLevel']='60',
      ['rr'] = 178,
  },
  [2158547208]={
@@ -52720,7 +52720,7 @@ QuestieHashMap = {
   ['startedBy']="Argent Quartermaster Lightspark",
   ['finishedBy']="Argent Quartermaster Lightspark",
   ['level']=55,
-  ['questLevel']='60'
+  ['questLevel']='60',
      ['rr'] = 77,
  },
  [949127781]={
