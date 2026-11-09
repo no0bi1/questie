@@ -765,7 +765,13 @@ function Questie_Tooltip_OnEnter()
                             end
 
                             Tooltip:AddLine(objectiveName,1,1,1);
-                            Questie:AddPathToTooltip(Tooltip, objectivePath, 1);
+
+                            local tooltipPath = objectivePath;
+                            if questMeta.tooltipObjectives and questMeta.tooltipObjectives[objectiveid] then
+                                tooltipPath = questMeta.tooltipObjectives[objectiveid];
+                            end
+
+                            Questie:AddPathToTooltip(Tooltip, tooltipPath, 1);
                         end
                     end
                 else
@@ -2030,7 +2036,7 @@ function Questie:AddClusterFromNote(frame, identifier, v)
     local roundedX = v.x;
     local roundedY = v.y;
 
-    if QuestieConfig.clusterQuests and identifier == "Objectives" then
+    if QuestieConfig.clusterQuests and frame == "WorldMapNote" and identifier == "Objectives" then
         roundedX = Questie:RoundCoordinate(v.x, 5);
         roundedY = Questie:RoundCoordinate(v.y, 5);
     end
@@ -2091,6 +2097,8 @@ end
 -- Checks first if there are any notes for the current zone, then draws the desired icon
 ---------------------------------------------------------------------------------------------------
 function Questie:DRAW_NOTES()
+    QuestieWorldMapObjectivePaths = {};
+
     local c, z = GetCurrentMapContinent(), GetCurrentMapZone();
 
     if (not QuestieConfig.hideMinimapIcons) then
@@ -2189,14 +2197,14 @@ function Questie:DRAW_NOTES()
         scale = QUESTIE_NOTES_CONTINENT_ICON_SCALE;
     end
 
-    Questie:DrawClusters(worldMapObjectiveClusters, "WorldMapNote", scale, WorldMapFrame, WorldMapButton);
-    Questie:DrawClusters(worldMapClusters, "WorldMapNote", scale, WorldMapFrame, WorldMapButton);
-    Questie:DrawClusters(minimapObjectiveClusters, "MiniMapNote", QUESTIE_NOTES_MINIMAP_ICON_SCALE, Minimap);
-    Questie:DrawClusters(minimapClusters, "MiniMapNote", QUESTIE_NOTES_MINIMAP_ICON_SCALE, Minimap);
+    Questie:DrawClusters(worldMapObjectiveClusters, "WorldMapNote", scale, WorldMapFrame, WorldMapButton, "Objectives");
+    Questie:DrawClusters(worldMapClusters, "WorldMapNote", scale, WorldMapFrame, WorldMapButton, "Quests");
+    Questie:DrawClusters(minimapObjectiveClusters, "MiniMapNote", QUESTIE_NOTES_MINIMAP_ICON_SCALE, Minimap, nil, "Objectives");
+    Questie:DrawClusters(minimapClusters, "MiniMapNote", QUESTIE_NOTES_MINIMAP_ICON_SCALE, Minimap, nil, "Quests");
 end
 
 ---------------------------------------------------------------------------------------------------
-function Questie:DrawClusters(clusters, frameName, scale, frame, button)
+function Questie:DrawClusters(clusters, frameName, scale, frame, button, clusterType)
     local frameLevel = 9;
 
     if frameName == "MiniMapNote" then
@@ -2253,6 +2261,26 @@ function Questie:DrawClusters(clusters, frameName, scale, frame, button)
         end
 
         Questie:PostProcessIconPaths(Icon);
+
+        if clusterType == "Objectives" then
+            for j, v in pairs(cluster.points) do
+                local questMeta = Icon.quests[v.questHash];
+                local objectivePath = questMeta and questMeta.objectives[v.objectiveid];
+
+                if objectivePath then
+                    if frameName == "WorldMapNote" then
+                        QuestieWorldMapObjectivePaths[v] = objectivePath;
+                    elseif frameName == "MiniMapNote" then
+                        local worldMapPath = QuestieWorldMapObjectivePaths[v];
+
+                        if worldMapPath then
+                            questMeta.tooltipObjectives = questMeta.tooltipObjectives or {};
+                            questMeta.tooltipObjectives[v.objectiveid] = deepcopy(worldMapPath);
+                        end
+                    end
+                end
+            end
+        end
 
         if frameName == "MiniMapNote" then
             Icon:SetHighlightTexture(QuestieIcons[Icon.data.icontype].path, "ADD");
