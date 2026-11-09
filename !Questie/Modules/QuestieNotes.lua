@@ -2030,7 +2030,7 @@ function Questie:AddClusterFromNote(frame, identifier, v)
     local roundedX = v.x;
     local roundedY = v.y;
 
-    if QuestieConfig.clusterQuests and frame == "WorldMapNote" and identifier == "Objectives" then
+    if QuestieConfig.clusterQuests and identifier == "Objectives" then
         roundedX = Questie:RoundCoordinate(v.x, 5);
         roundedY = Questie:RoundCoordinate(v.y, 5);
     end
